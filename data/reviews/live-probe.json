@@ -1,0 +1,23 @@
+{
+ "note": "Team-channel live probes (exported observation records; costs are run costs, not prices).",
+ "wake_probe": {
+  "date": "2026-10-01",
+  "what": "a message from Codex woke an idle Claude window"
+ },
+ "done_message_probe": {
+  "date": "2026-10-01",
+  "command_wait_seconds": 5,
+  "what": "a test run that only waits 5 seconds reported 'done' by itself right after it ended"
+ },
+ "first_live_test": {
+  "date": "2026-09-30",
+  "cost_usd": 0.037,
+  "paper_rounded_usd": 0.04,
+  "what": "messages went both ways; only the last read confirmation was missing"
+ },
+ "jev_live_probe_cost": {
+  "date": "2026-09-27",
+  "cost_cents": 0.5,
+  "paper_words": "about half a cent"
+ }
+}

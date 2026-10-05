@@ -1,0 +1,10 @@
+{
+ "note": "Scenarios selected for implementation after the 1 Oct 2026 rating run (paper: 'I picked the top three'). The three selected ones are the three top composite scores of the rating run and the three features the team-channel tool actually got; the fourth-rated scenario (handover check) was deliberately not used.",
+ "ausgewaehlt": [
+  "uebergabe_limit",
+  "fatih_unterwegs",
+  "fertigmeldung"
+ ],
+ "date": "2026-10-01",
+ "source": "feature set built in the team-channel tool on 1 Oct 2026"
+}

@@ -1,0 +1,12 @@
+{
+ "note": "Package U7 (memory into the context package), 27 Sept 2026. Timestamps from the commit history of the private team repo; only times and commit IDs are exported.",
+ "task_committed": {
+  "commit": "4a15cca",
+  "time": "2026-09-27T13:31:28"
+ },
+ "done_committed": {
+  "commit": "ed70760",
+  "time": "2026-09-27T14:07:15"
+ },
+ "unit": "seconds"
+}

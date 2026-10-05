@@ -1,0 +1,124 @@
+{
+  "A4": {
+    "B01": {
+      "relevant": false,
+      "grund": "Behandelt nur den Vergleich CLAUDE.md/AGENTS.md zu Wiedereinstiegsprüfung, Kommunikation, Design und Prinzipien — nichts davon betrifft die Ersetzungstabelle oder das Installieren von Codex-Regeln."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Zählt nur die Gesamtabweichungen der Erhalt-Matrix (137 Regeln, GLM-Versionsangabe, falscher Pfad ~/.Codex/) und ist reine Prüfmethodik, ohne Anleitung zum Eintragen oder Installieren einer Ersetzung."
+    },
+    "B03": {
+      "relevant": true,
+      "grund": "Enthält die konkreten Pfade/Umgebungsvariable REGELN_HOME sowie die Exit-Code-Regeln von pruefe/erzeuge/rueckgabe und die R3-Symlink-/Eindeutigkeitsregeln, die beim Eintragen einer neuen Ersetzung direkt beachtet werden müssen."
+    },
+    "B04": {
+      "relevant": false,
+      "grund": "Wiederholt nur Erhalt-Matrix-Zeilen zu Prinzipien, Design und Kommunikation sowie die allgemeine Zählung — ohne Bezug zur Ersetzungstabelle."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Behandelt Erhalt-Matrix-Zeilen zu Merkzettel, Projektprotokoll und größeren Projekten — thematisch fern vom Auftrag, Codex-Regeln zu ändern."
+    },
+    "B06": {
+      "relevant": true,
+      "grund": "Nennt die bestehenden vier Ersetzungstabellen-Einträge (R17/R69/R82/R85), die Gültigkeitsregel „neu darf 0-mal in der Quelle vorkommen“ und die Byte-Obergrenze (Gate 3) — direkt entscheidend für einen neuen Eintrag."
+    },
+    "B07": {
+      "relevant": false,
+      "grund": "Beschreibt Tests des Abschluss-Check-Regeldrifts und den Messaufbau für den Jev-Live-Versuch (U4), nicht die Vorgehensweise zum Ändern der Ersetzungstabelle selbst."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Ist die übergeordnete Paketübersicht (U0–U4) und allgemeine Kosten-/Datenregeln des Upgrade-Plans, ohne konkrete Anleitung zur Ersetzungstabelle."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Nur die kurze Feststellung, dass B keine substanziellen eigenen Regeln gegenüber A einführt — irrelevant für den Auftrag."
+    },
+    "B10": {
+      "relevant": true,
+      "grund": "Legt die Reihenfolge fest und hält ausdrücklich fest, dass inhaltliche Regeländerungen nur mit Fatihs OK zum Wortlaut installiert werden dürfen — das betrifft direkt jede neue Ersetzung."
+    },
+    "B11": {
+      "relevant": true,
+      "grund": "Beschreibt exakt die Unterbefehle erzeuge, pruefe, installiere und rueckgabe mit ihren Exit-Codes — die Werkzeuge, die zum Eintragen und Installieren gebraucht werden."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Beschreibt den Messaufbau für den Jev-Live-Versuch (Kandidaten, Läufe, Messgrößen) — ohne Bezug zur Ersetzungstabelle."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Enthält die Gates aus §13.3, insbesondere „Ersetzungstabelle: falsche anzahl → Exit 2“ und die Rückwärtsanwendungs-Prüfung — genau die Abnahmekriterien für den Auftrag."
+    },
+    "B14": {
+      "relevant": false,
+      "grund": "Listet die geplanten Test-Gates des Gesamt-Upgrades (Kontextpaket/Jev-Ausfälle) — betrifft nicht die Ersetzungstabelle."
+    },
+    "B15": {
+      "relevant": true,
+      "grund": "Wiederholt die Gates aus §13.3 inklusive der Ersetzungstabellen-Prüfung — direkt für den Auftrag relevant."
+    },
+    "B16": {
+      "relevant": true,
+      "grund": "Enthält §13.1 mit dem exakten Format von ersetzungen-codex.json sowie die Unterbefehle und Gates — Kernwissen für den Auftrag."
+    },
+    "B17": {
+      "relevant": true,
+      "grund": "Wiederholt dieselbe Kernspezifikation (§13.1–§13.3) des Dateiformats und der Gates, die für das Eintragen und Installieren nötig ist."
+    },
+    "B18": {
+      "relevant": true,
+      "grund": "Enthält ebenfalls §13.1 mit dem Format der Ersetzungstabelle und den Beginn von §13.2 — auch wenn der erste Teil (kontextpaket-Manifest) nicht zum Auftrag gehört."
+    },
+    "B19": {
+      "relevant": false,
+      "grund": "Beschreibt die Regelprüfung im Abschluss-Check (REGELN_DRIFT) — ein nachgelagertes Prüfwerkzeug, keine Anleitung zum Ändern der Ersetzungstabelle."
+    },
+    "B20": {
+      "relevant": true,
+      "grund": "Enthält die vollständigen R3-Regeln (Symlink-Sicherheit, Eindeutigkeit der Ersetzungen, Exit-Codes) — bindend für jede Änderung an regeln.py bzw. der Tabelle."
+    },
+    "B21": {
+      "relevant": false,
+      "grund": "Beschreibt Kurzbefehle, KONTEXT.json, die Jev-Pipe und Plan-Gate 7 — andere U3-Teile ohne Bezug zur Ersetzungstabelle."
+    },
+    "B22": {
+      "relevant": true,
+      "grund": "Wiederholt §13.6 mit den vier bestehenden Ersetzungen und der Gültigkeits-/Größenregel sowie den OK-zum-Wortlaut-Hinweis — zentral für den Auftrag."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Erhalt-Matrix-Zeilen zu Projektprotokoll und Wiedereinstiegsprüfung — kein Bezug zur Ersetzungstabelle."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Behandelt den Abschluss-Check-Regeldrift und den Messaufbau U4 — nicht die Vorgehensweise zum Ändern der Tabelle."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Vollständig anderes Projekt (Video), thematisch und inhaltlich ohne jeden Bezug zum Auftrag."
+    },
+    "B26": {
+      "relevant": false,
+      "grund": "Allgemeiner Zielrahmen und Architekturüberblick des Upgrade-Plans, keine konkrete Anleitung zur Ersetzungstabelle."
+    },
+    "B27": {
+      "relevant": true,
+      "grund": "Enthält vollständig die R3-Regeln (Eindeutigkeit, Symlink-Schutz, Exit-Codes) — bindend genau für das Bearbeiten der Ersetzungstabelle."
+    },
+    "B28": {
+      "relevant": true,
+      "grund": "Enthält den Rest der R3-Regeln (Sicherungsnamen, Eingabefehler, REGELN_HOME leer, rueckgabe-Sicherheit) — direkt für den Auftrag verbindlich."
+    },
+    "B29": {
+      "relevant": false,
+      "grund": "Beschreibt den Messaufbau des U4-Jev-Live-Versuchs (Daten, Läufe, Kosten) — nennt A4 nur als Beispielauftrag, ohne Anleitung zu dessen Ausführung."
+    },
+    "B30": {
+      "relevant": true,
+      "grund": "Enthält exakt §13.1 mit dem Datenformat der Ersetzungstabelle (alt/neu/anzahl) — das Kernformat, das beim Eintragen einer neuen Ersetzung zwingend gebraucht wird."
+    }
+  }
+}

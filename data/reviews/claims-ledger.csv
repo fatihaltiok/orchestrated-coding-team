@@ -1,0 +1,8 @@
+claim_id,value,kind,logged_date,source_ref,reproduction,note
+byte_lists_biggest_project,305000,measured,2026-09-26,project contract section on the context package (private),count bytes of the condition and decision lists in a big project log,lists of rules and decisions were about 305000 bytes long in the biggest project
+token_estimate_biggest_project,76000,estimate,2026-09-26,project contract section on the context package (private),bytes divided by about 4,roughly 76000 tokens estimated from the byte size
+index_lines_before,165,measured,2026-09-21,project log entry on the index rebuild (private),count index lines before the rebuild,165 index lines before the lossless restructure
+index_lines_after,45,measured,2026-09-21,project log entry on the index rebuild (private),count index lines after the rebuild,45 index lines after; no note was shortened
+review_cost_estimate,1-2 dollars,estimate,2026-09-27,project log entry with the OK for package U7 (private),plan estimate of the outside review cost given before the run,estimate before the run; not a measured cost
+jev_cost_estimate_per_package,2 cents,estimate,2026-09-27,project log entry with the OK for package U7 (private),plan estimate given before the run,estimate before the run: Jev under 2 cents per package
+decision_log_range,E-001 to E-028,documented,2026-09-28,paper sources note citing the project decision log (private),count decision entries in the project log,as cited in the paper; entry E-029 was added on 2026-10-01 after version 1.1

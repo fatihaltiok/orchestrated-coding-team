@@ -1,0 +1,6 @@
+{
+ "note": "Vendor list price used to recompute the rating cost of the 1 Oct 2026 team-channel scenario run (numbers.csv N069). Input tokens per 1e6, USD. This is the vendor's published list price, not a customer price and not a negotiated rate.",
+ "usd_per_million_tokens": 0.042,
+ "date": "2026-10-01",
+ "source": "Anbieter-Preisliste"
+}

@@ -1,0 +1,124 @@
+{
+  "A4": {
+    "B01": {
+      "relevant": false,
+      "grund": "Der Abschnitt behandelt Erhalt-Matrix-Zeilen R117–R137 (Wiedereinstiegsprüfung, Kommunikation, Design, Prinzipien) und allgemeine Methodik der Matrix, ohne Bezug zur Codex-Ersetzungstabelle."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Der Abschnitt ist eine Zählung/Methodik-Zusammenfassung der Erhalt-Matrix (Stichproben, Zeilenzuordnungen) und nennt keine Regel zum Eintragen oder Installieren einer neuen Ersetzung."
+    },
+    "B03": {
+      "relevant": true,
+      "grund": "Der Abschnitt nennt die Pfad-/Umgebungsmechanik von regeln.py (REGELN_HOME, Quelle, pruefe/erzeuge/installiere, Sicherung, Encoding) sowie den Beginn der Eindeutigkeits-Regel für Ersetzungen (R3-3), die für das korrekte Eintragen einer neuen Ersetzung nötig sind."
+    },
+    "B04": {
+      "relevant": false,
+      "grund": "Der Abschnitt wiederholt Erhalt-Matrix-Zeilen R129–R137 und die Nur-in-B-Analyse ohne Bezug zur Ersetzungstabelle oder zum Installationsvorgang."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Der Abschnitt listet Erhalt-Matrix-Zeilen zu Größere-Projekte/Merkzettel/Projektprotokoll auf, die für das Ändern der Codex-Ersetzungstabelle ohne Belang sind."
+    },
+    "B06": {
+      "relevant": true,
+      "grund": "Der Abschnitt nennt den genauen Startbestand der Ersetzungstabelle (R17/R69/R82/R85), die Byte-Größengrenze (Gate 3) und die Regel, dass eine Ersetzung nur gültig ist, wenn ihr `neu` 0-mal in der Quelle vorkommt — Kernbedingungen für eine neue Ersetzung."
+    },
+    "B07": {
+      "relevant": false,
+      "grund": "Der Abschnitt beschreibt Tests des Abschluss-Checks für REGELN_DRIFT und den Beginn des U4-Messaufbaus, ändert aber nicht, wie eine neue Ersetzung korrekt eingetragen und installiert wird."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Der Abschnitt zeigt die Paket-Tabelle U0–U4 auf hoher Planungsebene, ohne konkrete Vorgaben zur Ersetzungstabelle oder zum Installationsbefehl."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Der Abschnitt ist die allgemeine Feststellung, dass B keine substantiellen eigenen Regeln enthält — irrelevant für das Eintragen einer neuen Ersetzung."
+    },
+    "B10": {
+      "relevant": true,
+      "grund": "Der Abschnitt hält als Reihenfolge fest, dass jede weitere inhaltliche Regeländerung (also auch eine neue Ersetzung) nur mit Fatihs OK zum Wortlaut erfolgen darf — eine Bedingung, die vor dem Ausführen von A4 geprüft werden muss."
+    },
+    "B11": {
+      "relevant": true,
+      "grund": "Der Abschnitt nennt exakt die Unterbefehle und Exit-Codes von `regeln` (erzeuge, pruefe, installiere --ja, rueckgabe) inklusive Sicherung und Symlink-Sperre — die direkte Bedienungsanleitung für die Installation nach dem Eintragen."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Der Abschnitt beschreibt die Methodik der U4-Messung (Kandidatenauswahl, Referenzurteil, Gegenprobe) und nicht, wie eine neue Codex-Ersetzung korrekt eingetragen wird."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Der Abschnitt nennt die Gates aus §13.3 (Bytegleichheit, Rückwärtsanwendung, Größe, Sperren, Drift, falsche Ersetzungstabelle → Exit 2) — genau die Prüfungen, die eine neue Ersetzung bestehen muss."
+    },
+    "B14": {
+      "relevant": false,
+      "grund": "Der Abschnitt zeigt allgemeine geplante Test-Gates und frühe Befunde der Bestandslektüre auf Planungsebene, ohne konkrete Vorgabe zur Ersetzungstabelle."
+    },
+    "B15": {
+      "relevant": true,
+      "grund": "Der Abschnitt (identisch zu den Gates aus §13.3) nennt die Prüfungen, die eine neue Ersetzung bestehen muss, u. a. dass eine falsche Trefferzahl zu Exit 2 ohne Ausgabe führt."
+    },
+    "B16": {
+      "relevant": true,
+      "grund": "Der Abschnitt enthält §13.6 mit dem exakten Startbestand der Ersetzungstabelle und der Regel, dass `neu` 0-mal in der Quelle vorkommen darf, sowie den Hinweis, dass inhaltliche Regeländerungen Fatihs OK brauchen — beides unmittelbar für A4 relevant."
+    },
+    "B17": {
+      "relevant": true,
+      "grund": "Der Abschnitt legt in §13.1 das genaue Dateiformat der Ersetzungstabelle fest (`alt`/`neu`/`anzahl`, wörtliche Ersetzung, erwartete Trefferzahl) und hält im Leitsatz fest, dass jede inhaltliche Regeländerung Fatihs OK braucht — das ist die Bauanleitung für A4."
+    },
+    "B18": {
+      "relevant": true,
+      "grund": "Der Abschnitt enthält am Ende erneut §13.1 (Dateiformat/Startbestand der Ersetzungstabelle) und den Leitsatz zur Freigabepflicht, auch wenn der größere Teil unabhängige kontextpaket-Befunde behandelt."
+    },
+    "B19": {
+      "relevant": false,
+      "grund": "Der Abschnitt beschreibt, wie der Abschluss-Check Regel-Drift zwischen Quelle und installierter Datei aufspürt — nützliche Hintergrundinfo, ändert aber nicht, wie man selbst eine neue Ersetzung einträgt und installiert."
+    },
+    "B20": {
+      "relevant": true,
+      "grund": "Der Abschnitt wiederholt die Eindeutigkeits- und Sicherheitsregeln R3-1 bis O-2 (u. a. Ersetzungen müssen eindeutig sein, keine Teilstring-Überschneidung, REGELN_HOME darf nicht leer sein) — direkt bindend für eine korrekt eingetragene neue Ersetzung."
+    },
+    "B21": {
+      "relevant": false,
+      "grund": "Der Abschnitt behandelt Kurzbefehle, KONTEXT.json und die Jev-Pipe aus §13.4, die nichts mit dem Eintragen einer neuen Codex-Ersetzung zu tun haben."
+    },
+    "B22": {
+      "relevant": true,
+      "grund": "Der Abschnitt enthält erneut die Byte-Grenze, den Startbestand der Ersetzungstabelle, die 0-mal-Regel für `neu` sowie die Pfad-/REGELN_HOME-Mechanik — zentrale Vorgaben für A4."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Der Abschnitt listet Erhalt-Matrix-Zeilen zu Projektprotokoll und Wiedereinstiegsprüfung auf, ohne Bezug zur Ersetzungstabelle."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Der Abschnitt beschreibt REGELN_DRIFT im Abschluss-Check und den Beginn des U4-Messaufbaus, nicht aber die Vorgaben zum Eintragen einer neuen Ersetzung selbst."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Der Abschnitt ist ein Merkzettel-Eintrag zu einem völlig anderen Projekt (Video, Stopmotion) und hat keinen Bezug zur Codex-Ersetzungstabelle."
+    },
+    "B26": {
+      "relevant": false,
+      "grund": "Der Abschnitt beschreibt Ziel, Architektur und Pakete des Upgrades auf hoher Ebene, ohne konkrete Vorgabe zum Eintragen einer Ersetzung."
+    },
+    "B27": {
+      "relevant": true,
+      "grund": "Der Abschnitt listet die bindenden Regeln R3-1 bis R3-7.6 (u. a. Eindeutigkeit der Ersetzungen, keine Teilstring-Überschneidung, REGELN_HOME nicht leer) vollständig auf — Muss-Bedingungen für eine neue Ersetzung."
+    },
+    "B28": {
+      "relevant": true,
+      "grund": "Der Abschnitt wiederholt dieselben R3-Regeln zur Eindeutigkeit von Ersetzungen und ergänzt §13.9/§13.10 — die Kernregeln bleiben unmittelbar bindend für A4."
+    },
+    "B29": {
+      "relevant": false,
+      "grund": "Der Abschnitt beschreibt die Datenfreigabe und Methodik des U4-Messaufbaus (welche Daten das Haus verlassen, Kandidatenauswahl), nicht die Vorgaben zum Eintragen einer neuen Ersetzung."
+    },
+    "B30": {
+      "relevant": true,
+      "grund": "Der Abschnitt legt exakt das Dateiformat und den Startbestand der Ersetzungstabelle fest (`alt`/`neu`/`anzahl`, was übernommen wird und was nicht) — unmittelbare Bauanleitung für A4."
+    }
+  }
+}

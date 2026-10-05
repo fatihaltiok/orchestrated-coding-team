@@ -1,0 +1,101 @@
+id,value,paper_section,paper_quote,source_file,method,note
+N001,25,p.1 summary,I run about 25 projects at the same time,data/reviews/projects-count.json#/measured_project_rows,literal,paper-1.2: 'about 25 projects' (was 'about twenty' in 1.1); measured project rows 2026-10-05
+N002,181,p.1 summary,"A shared memory of lessons learned, 181 notes by now",data/recorded/merkzettel-state.md#L9,recorded,memory size 2026-09-27; note folder not versioned (2026-09-27)
+N003,31 of 137,p.2 summary,the copy Codex was reading had quietly lost 31 of 137 rules,data/reviews/u0-matrix.csv,script:scripts/numbers/count_u0_matrix.py,rule-file comparison of 2026-09-26
+N004,34,p.2 summary,In our test it put 34 relevant sections into the top ten,data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,U4 measurement 2026-09-27; also S.14 table
+N005,20,p.2 summary,Plain keyword search got 20,data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,U4 measurement 2026-09-27; also S.14 table
+N006,8,p.4 how it grew,It was built in eight packages (U0 to U7) over two days,data/reviews/package-list.json#/count,literal,paper: 'eight packages'
+N007,6,p.4 team table,On the team since 27 Sept: six runs in three packages,data/reviews/devin-runs.json#/runs_up_to_u6,literal,paper: 'six runs'; runs up to U6; two more Devin runs followed in U7 the same day
+N008,3,p.4 team table,six runs in three packages,data/reviews/devin-runs.json#/packages_up_to_u6,literal,paper: 'three packages'
+N009,2,p.4 team table,"two runs stopped, correctly, because their context package was out of date",data/reviews/devin-runs.json#/stopped_correctly,literal,paper: 'two runs stopped'; the two first U6 attempts
+N010,28,p.5 team table,Gave the most thorough reviews (up to 28 findings),data/reviews/findings-counts.json#/reviews/V1_contract_check/findings,literal,"V1 contract review; typed-in counter in the JSON, checked at its field"
+N011,2,p.5 team table,In two weeks two models dropped out,data/reviews/team-lineup-changes.json#/dropped_count,literal,paper: 'two models dropped out'
+N012,2,p.5 team table,and two joined,data/reviews/team-lineup-changes.json#/joined_count,literal,paper: 'and two joined'
+N013,2,p.5 package table,"2, both real (a third was only noted for later)",data/reviews/findings-counts.json#/reviews/R7_u7/findings,literal,U7 review: 2 confirmed; a third item kept as memo; paper-1.2
+N014,0,p.5 package table,U6 Small fixes Devin Kimi 0,data/reviews/findings-counts.json#/reviews/R6_u6/findings,literal,U6 review: no findings
+N015,8,p.5 package table,"U5 Jev in the context package Codex, Devin Kimi 8, one of medium weight",data/reviews/findings-counts.json#/reviews/R5_u5/findings,literal,"U5 review: 8 findings, 1 of medium weight"
+N016,7,p.5 package table,"U3 One rule file GLM Kimi, Muse 7 and 3",data/reviews/findings-counts.json#/reviews/R3_rule_tool/findings,literal,U3 review by Kimi
+N017,3,p.5 package table,"U3 One rule file GLM Kimi, Muse 7 and 3",data/reviews/findings-counts.json#/reviews/R4_small_parts/findings,literal,U3 review by Muse (small parts)
+N018,6,p.5 package table,"U2 Jev module Muse Codex 6, including 3 leaks",data/reviews/findings-counts.json#/reviews/R2_jev_module/findings,literal,U2 review by Codex
+N019,3,p.5 package table,including 3 leaks through which a secret key could have gone out,data/reviews/findings-counts.json#/reviews/R2_jev_module/of_which_leaks,literal,3 of the U2 findings were leaks
+N020,12,p.5 package table,U1 Context package GLM Codex 12,data/reviews/findings-counts.json#/reviews/R1_context_package/findings,literal,U1 review by Codex
+N021,28,p.6 package table,"U0 Contracts Claude Kimi 28, all taken on board",data/reviews/findings-counts.json#/reviews/V1_contract_check/findings,literal,U0 review by Kimi; same count as N010
+N022,499,p.9 blocks,covered by 499 automated tests (counted on 27 September 2026),data/reviews/findings-counts.json#/tests_499/passed,literal,suite state 2026-09-27 (commit 2ca90d4); paper-1.2 adds the date
+N023,less than an hour,p.9 example,"From my OK to ""done"" took less than an hour",data/reviews/u7-timing.json,script:scripts/numbers/u7_duration.py,U7 2026-09-27: 36 minutes between the two commits
+N024,1-2 dollars,p.9 example,"what it costs (review about 1-2 dollars, Jev under 2 cents per package)",data/reviews/claims-ledger.csv#L6,literal,plan estimate logged before the run 2026-09-27
+N025,2 cents,p.9 example,Jev under 2 cents per package,data/reviews/claims-ledger.csv#L7,literal,plan estimate logged before the run 2026-09-27; paper: 'under 2 cents'
+N026,11,p.9 example,which eleven test cases have to prove it,data/reviews/u7-contract-tests.json#/test_cases,literal,paper: 'eleven test cases'; contract cases (a)-(k)
+N027,0.5 cent,p.10 example,Jev cost about half a cent,data/reviews/live-probe.json#/jev_live_probe_cost/cost_cents,literal,paper: 'about half a cent'; live probe 2026-09-27
+N028,9 minutes,p.11 why a team,The run watcher waits up to nine minutes at a time,data/reviews/code-constants.json#/run_watcher/minutes,literal,paper: 'nine minutes'; tool default 540 s
+N029,"305,000",p.11 context package,"those lists were about 305,000 bytes long",data/reviews/claims-ledger.csv#L2,literal,measured 2026-09-26 on a big project's log (private)
+N030,"76,000",p.11 context package,"roughly 76,000 tokens",data/reviews/claims-ledger.csv#L3,literal,"estimate from the byte size, 2026-09-26"
+N031,7,p.11 one rule file,and 7 more said something different,data/reviews/u0-matrix.csv,script:scripts/numbers/count_u0_matrix.py,7 differing rules; 4 more trivial differences not counted
+N032,"76,983",p.12 index,"It had grown to 76,983 bytes",data/reviews/wegweiser-bytes.json#/before/bytes,literal,measured via git show of the private index file (commit 70be269)
+N033,"32,768",p.12 index,"Codex only read the first 32,768 bytes of it",data/reviews/code-constants.json#/codex_read_limit/bytes,literal,documented read limit of the Codex tool
+N034,43 %,p.12 index,so 43 %,data/reviews/wegweiser-bytes.json,script:scripts/numbers/wegweiser_share.py,"32768/76983 = 42.6 %, rounded"
+N035,"16,542",p.12 index,"Now it's 16,542 bytes",data/reviews/wegweiser-bytes.json#/after/bytes,literal,after the 2026-09-27 rewrite (commit 751fc49)
+N036,10,p.13 memory,found ten places where notes pointed to files that no longer existed,data/recorded/merkzettel-check-first-run.md#L6,recorded,first memory-checker run 2026-09-21: 10 dead paths; paper-1.2
+N037,3,p.13 no vector db,"For three search questions, plain grep found the right note in the top four twice",data/recorded/search-grep-vs-semantic.md#L9,recorded,comparison 2026-09-21; script not kept (2026-09-21)
+N038,2,p.13 no vector db,plain grep found the right note in the top four twice,data/recorded/search-grep-vs-semantic.md#L11,recorded,paper: 'twice' (2 of 3); comparison 2026-09-21
+N039,1,p.13 no vector db,the best meaning-based model only once,data/recorded/search-grep-vs-semantic.md#L10,recorded,paper: 'only once' (1 of 3); comparison 2026-09-21
+N040,165,p.14 details,165 index lines became 45,data/reviews/claims-ledger.csv#L4,literal,"index before the rebuild, 2026-09-21"
+N041,45,p.14 details,165 index lines became 45,data/reviews/claims-ledger.csv#L5,literal,"index after the rebuild, 2026-09-21"
+N042,"3,541",p.14 first use,"The full run over all 3,541 note pairs took 40 seconds",data/dedup-run/jev-dublettenlauf-2026-09-21.json,script:scripts/numbers/dedup_counts.py,"pair file pseudonymized (shared mapping, slugs n001...)"
+N043,40 seconds,p.14 first use,"The full run over all 3,541 note pairs took 40 seconds",data/recorded/dedup-run-timing.md#L8,recorded,full run 2026-09-21; timing only in the log
+N044,137,p.14 first use,137 related pairs that didn't link to each other yet,data/dedup-run/jev-unverlinkte-paare-2026-09-21.json,script:scripts/numbers/dedup_counts.py,unlinked related pairs of the 2026-09-21 run
+N045,98 %,p.14 first use,The judgment was 98 % repeatable,data/recorded/dedup-run-timing.md#L12,recorded,repeat comparison 2026-09-21; pre-run raw data not kept
+N046,5,p.15 measuring,"five real tasks, a reference judgment from two blind Sonnet judges",data/u4-jev/auftraege.json,script:scripts/numbers/u4_metrics.py,paper: 'five real tasks'
+N047,93 %,p.15 measuring,they agreed 93 % of the time,data/u4-jev/referenz.json,script:scripts/numbers/u4_metrics.py,140 of 150 candidates agreed
+N048,10,p.15 measuring,the orchestrator decided the ten disputed cases,data/u4-jev/referenz/entscheid.json,script:scripts/numbers/u4_metrics.py,paper: 'ten disputed cases'; script cross-checks the decision list against the disputed marks
+N049,5,p.15 measuring,a decision rule with five conditions,data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,paper: 'five conditions'
+N050,10 cents,p.15 measuring,and a spending cap of 10 cents,scripts/measurements/u4_jev_messung.py,script:scripts/numbers/u4_metrics.py,cap read from the obergrenze_usd constant of the measurement tool
+N051,5,p.15 table,relevant sections in the top 5,data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,"keyword search, sum of the five tasks"
+N052,18,p.15 table,relevant sections in the top 5 5 18,data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,"Jev ranking, sum of the five tasks"
+N053,10 of 10,p.15 table,control passed — 10 of 10 runs,data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,control item passed in every run
+N054,98.7 %,p.15 table,same judgment on a repeat run — 98.7 %,data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,pooled stability 0.9869 of the two runs
+N055,0.003,p.15 table,"about $0.003, about 9 s",data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,paper: 'about $0.003' per task; measured 0.0027-0.0031 usd
+N056,9 s,p.15 table,"about $0.003, about 9 s",data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,paper: 'about 9 s' per task; measured 8.3-9.0 s
+N057,55,p.15 limits,55 of 94 irrelevant sections still got a high score,data/u4-jev/ergebnis.json,script:scripts/numbers/u4_metrics.py,false alarms of the five tasks
+N058,94,p.15 limits,55 of 94 irrelevant sections still got a high score,data/u4-jev/referenz.json,script:scripts/numbers/u4_metrics.py,150 candidates - 56 relevant
+N059,117 of 117,p.17 table,Memory checker 117 of 117,data/reviews/findings-counts.json#/memory_checker_tests,literal,gate run of 2026-09-21; the JSON object carries both counts
+N060,63,p.17 table,a warning that flagged 63 of 154 notes,data/recorded/merkzettel-check-first-run.md#L8,recorded,archive warning 2026-09-21
+N061,154,p.17 table,63 of 154 notes,data/dedup-run/jev-dublettenlauf-2026-09-21.json,script:scripts/numbers/dedup_counts.py,note base of 2026-09-21 (distinct slugs)
+N062,16,p.17 lessons,A sharper word list flagged 16 notes instead of 63,data/recorded/merkzettel-check-first-run.md#L9,recorded,sharpened list 2026-09-21
+N063,21,p.17 table,one rule change put 21 decisions in the wrong category,data/recorded/parser-rule-change.md#L8,recorded,found 2026-09-26 by comparing counts per project
+N064,67 of 67,p.17 table,Working-copy mode 67 of 67,data/reviews/findings-counts.json#/working_copy_tests,literal,gate run of 2026-09-19; the JSON object carries both counts
+N065,6,p.17 table,"Six gaps (three from the outside review, four from my own",data/recorded/working-copy-gaps.md#L12,recorded,"3 outside + 4 own findings, 1 overlap = 6 gaps, protocol 2026-09-19; paper-1.2 adds the breakdown"
+N066,0.04,p.18 real use,"messages went both ways, for $0.04",data/reviews/live-probe.json#/first_live_test/paper_rounded_usd,literal,measured 0.037 usd in the live test 2026-09-30
+N067,5 seconds,p.18 real use,a command that only waits 5 seconds,data/reviews/live-probe.json#/done_message_probe/command_wait_seconds,literal,probe of 2026-10-01 (sleep 5)
+N068,13,p.18 features,Claude wrote down 13 possible scenarios,data/team-channel/jev_teamkanal_ergebnis.json,script:scripts/numbers/team_channel_scores.py,scenario rating run 2026-10-01
+N069,0.06 cents,p.18 features,The rating cost 0.06 cents,data/team-channel/jev_teamkanal_ergebnis.json,script:scripts/numbers/team_channel_scores.py,"13,347 tokens at the vendor list price (data/team-channel/vendor-list-price.json)"
+N070,0.81,p.18 features,Handover when a session runs out 0.81,data/team-channel/jev_teamkanal_ergebnis.json,script:scripts/numbers/team_channel_scores.py,composite score of the rating run
+N071,0.79,p.18 features,Question list for me 0.79,data/team-channel/jev_teamkanal_ergebnis.json,script:scripts/numbers/team_channel_scores.py,composite score of the rating run
+N072,0.78,p.19 features,"""Done"" message 0.78",data/team-channel/jev_teamkanal_ergebnis.json,script:scripts/numbers/team_channel_scores.py,composite score of the rating run
+N073,0.41,p.19 features,check the handover notes (0.41),data/team-channel/jev_teamkanal_ergebnis.json,script:scripts/numbers/team_channel_scores.py,"last-placed scenario, deliberately not used"
+N074,10,p.19 limits,At most 10 conversations between sessions per project and day,data/reviews/code-constants.json#/team_channel/max_conversations_per_project_and_day,literal,enforced limit in the team-channel tool
+N075,6,p.19 limits,At most six messages per conversation,data/reviews/code-constants.json#/team_channel/default_max_messages_per_conversation,literal,paper: 'six messages'; tool default
+N076,20,p.19 limits,which can go up to 20,data/reviews/code-constants.json#/team_channel/max_messages_upper_bound,literal,upper bound of the per-conversation limit
+N077,2,p.19 how built,each found two gaps,data/reviews/findings-counts.json#/reviews/R12_team_channel/findings,literal,"2 gaps in the channel-part review, 2 in the watcher-part review"
+N078,3 of 4,p.20 how built,Three of the four gaps were fixed,data/reviews/findings-counts.json,script:scripts/numbers/review_counts.py,script computes 4 minus gaps_left_open_on_purpose (data field with origin: one gap left open on purpose and documented)
+N079,752,p.20 how built,"After that, 752 tests passed (1 October 2026)",data/reviews/findings-counts.json#/tests_752/passed,literal,suite state 2026-10-01; paper-1.2 adds the date
+N080,200,p.21 risks,only wanted to check the 200 most promising note pairs,data/reviews/dedup-prerun.json#/preselected_pairs,literal,pre-run proposal 2026-09-21; the full run was done instead
+N081,two,p.20 limits,On 1 Oct two Claude sessions worked in the same status file,data/recorded/team-channel-incident.md#L15,recorded,incident logged 2026-10-01; the log names both sessions; value as word because the source spells the number
+N082,100,p.21 related work,about 100 sources were opened and read,data/reviews/literature-sources.csv,script:scripts/numbers/count_sources.py,"paper: 'about 100'; 103 entries in the search report's source table; 'opened and read' = opened, at least the abstract page read (data/reviews/literature-search-note.md)"
+N083,two,p.21 related work,Two hits we couldn't find anywhere are left out,data/reviews/report-extracts.md#L93,literal,paper: 'Two hits'; the two unfindable hits of the 2026-10-01 search; value as word because the source spells the number
+N084,1,p.25 limits,Once it forgot the context package,data/reviews/orchestrator-errors.json#/forgot_context_package,literal,paper: 'Once'; incident of 2026-09-26
+N085,1,p.25 limits,once it built a package before it had finished editing the docs,data/reviews/orchestrator-errors.json#/built_package_early,literal,paper: 'once'; incident of 2026-09-27
+N086,E-001 to E-028,p.32 sources note,decisions E-001 to E-028,data/reviews/claims-ledger.csv#L8,literal,decision log as cited in the paper's sources note
+N087,3,p.17 table,three from the outside review,data/reviews/report-extracts.md#L45,literal,paper: 'three'; the three outside findings are listed one by one in the extract; added in paper 1.2
+N088,4,p.17 table,four from my own,data/recorded/working-copy-gaps.md#L6,recorded,paper: 'four'; protocol of the working-copy build 2026-09-19; added in paper 1.2
+N089,1,p.17 table,one of them found by both,data/recorded/working-copy-gaps.md#L12,recorded,paper: 'one'; protocol of the working-copy build 2026-09-19; added in paper 1.2
+N090,5,p.13 memory,plus five links between notes that led nowhere,data/recorded/merkzettel-check-first-run.md#L20,recorded,first memory-checker run 2026-09-21: 5 dead note links; added in paper 1.2
+N091,8,p.4 team table,eight in four by the end of that day,data/reviews/devin-runs.json#/runs_end_of_day,literal,paper: 'eight'; 6 runs up to U6 + 2 U7 runs on 2026-09-27; added in paper 1.2
+N092,4,p.4 team table,eight in four by the end of that day,data/reviews/devin-runs.json#/packages_end_of_day,literal,"paper: 'four'; U5, U6-1, U6-2, U7; added in paper 1.2"
+N093,10,p.3 how it grew,"In ten places, notes pointed to files that didn't exist anymore",data/recorded/merkzettel-check-first-run.md#L6,recorded,same 10 dead paths as N036 (2026-09-21); wording of paper 1.2
+N094,2,p.15 measuring,a reference judgment from two blind Sonnet judges per task,data/u4-jev/referenz/beurteiler-1.json,script:scripts/numbers/u4_metrics.py,two blind judgment files counted by the script; added in paper 1.2 (1.1 lapsed the count)
+N095,one,p.14 first use,one pair that looked like a duplicate the first time flipped on the second run,data/recorded/dedup-run-timing.md#L22,recorded,the one pre-run pair flipped level (1.51 to 1.38) in the repeat run 2026-09-21; value as word because the source spells the number
+N096,two,p.17 table,Two kinds of false alarm,data/recorded/merkzettel-check-first-run.md#L24,recorded,two false-alarm classes of the first memory-checker run 2026-09-21; value as word because the source spells the number
+N097,one,p.15 data protection,switched Jev off for the one project with confidential company data,data/recorded/jev-disabled-one-project.md#L7,recorded,"Jev off for one project with company-internal data 2026-09-27, no name; value as word because the source spells the number"
+N098,0,p.15 table,"$0, instant",data/reviews/keyword-search-cost.json#/keyword_search_vendor_fee_usd,literal,keyword search runs locally: no external vendor fee
+N099,3,p.18 features,I picked the top three,data/team-channel/ausgewaehlt.json,script:scripts/numbers/team_channel_scores.py,three scenarios selected for implementation after the rating run 2026-10-01; added in paper 1.2
+N100,2,p.10 example,restart check by two fresh agents,data/reviews/restart-check.json#/agents_per_check,literal,"two fresh agents per restart check (one reads, one runs); standing rule, recorded as a fact with origin; own completeness pass of paper 1.1"

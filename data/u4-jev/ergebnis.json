@@ -1,0 +1,372 @@
+{
+  "format": 1,
+  "auftraege": {
+    "A1": {
+      "L1": {
+        "lokal_top5": 0,
+        "lokal_top10": 3,
+        "jev_top5": 3,
+        "jev_top10": 3,
+        "uebersehen": 1,
+        "fehlalarm": 3,
+        "grenzfaelle": 12,
+        "nicht_bewertet": 0,
+        "gegenprobe": null,
+        "kontrolle": {
+          "noul": 0.06,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.346565382089466,
+        "kosten_usd": 0.0031389540000000002,
+        "kosten_geschaetzt_usd": 0.002819334
+      },
+      "L2": {
+        "lokal_top5": 0,
+        "lokal_top10": 3,
+        "jev_top5": 3,
+        "jev_top10": 3,
+        "uebersehen": 1,
+        "fehlalarm": 3,
+        "grenzfaelle": 10,
+        "nicht_bewertet": 0,
+        "gegenprobe": null,
+        "kontrolle": {
+          "noul": 0.06,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.392404539044946,
+        "kosten_usd": 0.0031389540000000002,
+        "kosten_geschaetzt_usd": 0.002819334
+      },
+      "stabilitaet": {
+        "paarzahl": 30,
+        "gleiche_seite": 1.0,
+        "mittlere_delta": 0.026000000000000002
+      }
+    },
+    "A2": {
+      "L1": {
+        "lokal_top5": 1,
+        "lokal_top10": 3,
+        "jev_top5": 2,
+        "jev_top10": 6,
+        "uebersehen": 0,
+        "fehlalarm": 14,
+        "grenzfaelle": 6,
+        "nicht_bewertet": 0,
+        "gegenprobe": null,
+        "kontrolle": {
+          "noul": 0.07,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.396540873218328,
+        "kosten_usd": 0.002966922,
+        "kosten_geschaetzt_usd": 0.002699424
+      },
+      "L2": {
+        "lokal_top5": 1,
+        "lokal_top10": 3,
+        "jev_top5": 3,
+        "jev_top10": 6,
+        "uebersehen": 0,
+        "fehlalarm": 14,
+        "grenzfaelle": 5,
+        "nicht_bewertet": 0,
+        "gegenprobe": null,
+        "kontrolle": {
+          "noul": 0.07,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.432014399208128,
+        "kosten_usd": 0.002966922,
+        "kosten_geschaetzt_usd": 0.002699424
+      },
+      "stabilitaet": {
+        "paarzahl": 30,
+        "gleiche_seite": 1.0,
+        "mittlere_delta": 0.02299999999999999
+      }
+    },
+    "A3": {
+      "L1": {
+        "lokal_top5": 2,
+        "lokal_top10": 4,
+        "jev_top5": 5,
+        "jev_top10": 8,
+        "uebersehen": 0,
+        "fehlalarm": 16,
+        "grenzfaelle": 4,
+        "nicht_bewertet": 0,
+        "gegenprobe": {
+          "noul": 0.9,
+          "rang": 5
+        },
+        "kontrolle": {
+          "noul": 0.06,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.612402106169611,
+        "kosten_usd": 0.002842434,
+        "kosten_geschaetzt_usd": 0.002565822
+      },
+      "L2": {
+        "lokal_top5": 2,
+        "lokal_top10": 4,
+        "jev_top5": 4,
+        "jev_top10": 9,
+        "uebersehen": 0,
+        "fehlalarm": 17,
+        "grenzfaelle": 4,
+        "nicht_bewertet": 0,
+        "gegenprobe": {
+          "noul": 0.89,
+          "rang": 5
+        },
+        "kontrolle": {
+          "noul": 0.07,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 9.011084554716945,
+        "kosten_usd": 0.002842434,
+        "kosten_geschaetzt_usd": 0.002565822
+      },
+      "stabilitaet": {
+        "paarzahl": 31,
+        "gleiche_seite": 0.967741935483871,
+        "mittlere_delta": 0.014516129032258067
+      }
+    },
+    "A4": {
+      "L1": {
+        "lokal_top5": 2,
+        "lokal_top10": 7,
+        "jev_top5": 5,
+        "jev_top10": 10,
+        "uebersehen": 0,
+        "fehlalarm": 7,
+        "grenzfaelle": 7,
+        "nicht_bewertet": 0,
+        "gegenprobe": {
+          "noul": 0.77,
+          "rang": 11
+        },
+        "kontrolle": {
+          "noul": 0.03,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.92204325972125,
+        "kosten_usd": 0.0026759039999999998,
+        "kosten_geschaetzt_usd": 0.002305548
+      },
+      "L2": {
+        "lokal_top5": 2,
+        "lokal_top10": 7,
+        "jev_top5": 5,
+        "jev_top10": 10,
+        "uebersehen": 0,
+        "fehlalarm": 6,
+        "grenzfaelle": 10,
+        "nicht_bewertet": 0,
+        "gegenprobe": {
+          "noul": 0.74,
+          "rang": 12
+        },
+        "kontrolle": {
+          "noul": 0.04,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.379585432820022,
+        "kosten_usd": 0.0026759039999999998,
+        "kosten_geschaetzt_usd": 0.002305548
+      },
+      "stabilitaet": {
+        "paarzahl": 31,
+        "gleiche_seite": 0.967741935483871,
+        "mittlere_delta": 0.024838709677419364
+      }
+    },
+    "A5": {
+      "L1": {
+        "lokal_top5": 0,
+        "lokal_top10": 3,
+        "jev_top5": 3,
+        "jev_top10": 7,
+        "uebersehen": 0,
+        "fehlalarm": 15,
+        "grenzfaelle": 6,
+        "nicht_bewertet": 0,
+        "gegenprobe": {
+          "noul": 0.81,
+          "rang": 7
+        },
+        "kontrolle": {
+          "noul": 0.05,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.757909729145467,
+        "kosten_usd": 0.0030444120000000002,
+        "kosten_geschaetzt_usd": 0.00272811
+      },
+      "L2": {
+        "lokal_top5": 0,
+        "lokal_top10": 3,
+        "jev_top5": 3,
+        "jev_top10": 6,
+        "uebersehen": 0,
+        "fehlalarm": 15,
+        "grenzfaelle": 7,
+        "nicht_bewertet": 0,
+        "gegenprobe": {
+          "noul": 0.8,
+          "rang": 8
+        },
+        "kontrolle": {
+          "noul": 0.05,
+          "bestanden": true
+        },
+        "status_gesamt": "bewertet",
+        "modell": "jev-1.13.0",
+        "laufzeit_s": 8.700827972963452,
+        "kosten_usd": 0.0030444120000000002,
+        "kosten_geschaetzt_usd": 0.00272811
+      },
+      "stabilitaet": {
+        "paarzahl": 31,
+        "gleiche_seite": 1.0,
+        "mittlere_delta": 0.016129032258064512
+      }
+    }
+  },
+  "summe": {
+    "lokal_top10": 20,
+    "jev_top10": 34,
+    "lokal_top5": 5,
+    "jev_top5": 18,
+    "uebersehen": 1,
+    "fehlalarm": 55,
+    "grenzfaelle": 35,
+    "nicht_bewertet": 0
+  },
+  "stabilitaet_gesamt": {
+    "paarzahl": 153,
+    "gleiche_seite": 0.9869281045751634,
+    "mittlere_delta": 0.02084967320261438
+  },
+  "l3": {
+    "vorhanden": true,
+    "wie_erwartet": true
+  },
+  "entscheidungsregel": {
+    "1_jev_summe_top10_hoeher": {
+      "erfuellt": true,
+      "jev": 34,
+      "lokal": 20
+    },
+    "2_je_auftrag_maximal_einer_weniger": {
+      "erfuellt": true,
+      "auftraege": {
+        "A1": {
+          "erfuellt": true,
+          "jev_top10": 3,
+          "lokal_top10": 3
+        },
+        "A2": {
+          "erfuellt": true,
+          "jev_top10": 6,
+          "lokal_top10": 3
+        },
+        "A3": {
+          "erfuellt": true,
+          "jev_top10": 8,
+          "lokal_top10": 4
+        },
+        "A4": {
+          "erfuellt": true,
+          "jev_top10": 10,
+          "lokal_top10": 7
+        },
+        "A5": {
+          "erfuellt": true,
+          "jev_top10": 7,
+          "lokal_top10": 3
+        }
+      }
+    },
+    "3_kontrolle_alle_laeufe_bestanden": {
+      "erfuellt": true,
+      "laeufe": {
+        "L1/A1": {
+          "noul": 0.06,
+          "bestanden": true
+        },
+        "L2/A1": {
+          "noul": 0.06,
+          "bestanden": true
+        },
+        "L1/A2": {
+          "noul": 0.07,
+          "bestanden": true
+        },
+        "L2/A2": {
+          "noul": 0.07,
+          "bestanden": true
+        },
+        "L1/A3": {
+          "noul": 0.06,
+          "bestanden": true
+        },
+        "L2/A3": {
+          "noul": 0.07,
+          "bestanden": true
+        },
+        "L1/A4": {
+          "noul": 0.03,
+          "bestanden": true
+        },
+        "L2/A4": {
+          "noul": 0.04,
+          "bestanden": true
+        },
+        "L1/A5": {
+          "noul": 0.05,
+          "bestanden": true
+        },
+        "L2/A5": {
+          "noul": 0.05,
+          "bestanden": true
+        }
+      }
+    },
+    "4_stabilitaet_mindestens_0_90": {
+      "erfuellt": true,
+      "wert": 0.9869281045751634
+    },
+    "5_l3_wie_erwartet": {
+      "erfuellt": true,
+      "anzahl": 30,
+      "status_gesamt": "nicht_bewertet",
+      "gruende_http_401": 30
+    },
+    "alle_erfuellt": true
+  },
+  "entscheidung": "Fatih",
+  "referenz_commit": "567aa0c3dc5a16b192e0af937571e5b323d3dd17"
+}

@@ -1,0 +1,235 @@
+{
+  "lauf": "L2",
+  "auftrag": "A3",
+  "zeitpunkt": "2026-09-27T06:54:49.087207+00:00",
+  "laufzeit_s": 9.011084554716945,
+  "ordnung": {
+    "eintraege": [
+      {
+        "id": "Z-b27cd23bed11",
+        "lokal_rang": 3,
+        "noul": 0.94,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-58071f2b37bc",
+        "lokal_rang": 18,
+        "noul": 0.92,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-45bedf8429c2",
+        "lokal_rang": 15,
+        "noul": 0.91,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-5edc9708df97",
+        "lokal_rang": 4,
+        "noul": 0.89,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-f79b2d19fdde",
+        "lokal_rang": 30,
+        "noul": 0.89,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-b6310507408e",
+        "lokal_rang": 9,
+        "noul": 0.87,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-51b399078e7a",
+        "lokal_rang": 10,
+        "noul": 0.87,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-7f3520435dde",
+        "lokal_rang": 14,
+        "noul": 0.87,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-d000158221f9",
+        "lokal_rang": 7,
+        "noul": 0.86,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-e37d81026460",
+        "lokal_rang": 6,
+        "noul": 0.85,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-f4b5648d829d",
+        "lokal_rang": 17,
+        "noul": 0.83,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-bb96b207b6a6",
+        "lokal_rang": 1,
+        "noul": 0.82,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-7d8d97f48e8e",
+        "lokal_rang": 13,
+        "noul": 0.79,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-38569c9e759b",
+        "lokal_rang": 19,
+        "noul": 0.79,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-4e1e8731ef37",
+        "lokal_rang": 5,
+        "noul": 0.78,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-6d8a7e63f824",
+        "lokal_rang": 16,
+        "noul": 0.78,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-7bf6ace49226",
+        "lokal_rang": 20,
+        "noul": 0.78,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-fcd5e061fdb2",
+        "lokal_rang": 12,
+        "noul": 0.76,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-8c5d26425ea6",
+        "lokal_rang": 28,
+        "noul": 0.76,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-7e89f2b6388e",
+        "lokal_rang": 2,
+        "noul": 0.75,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-bb2894de86a2",
+        "lokal_rang": 24,
+        "noul": 0.75,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-bdb57a26550b",
+        "lokal_rang": 29,
+        "noul": 0.75,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-11258f3b9bbc",
+        "lokal_rang": 11,
+        "noul": 0.71,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-5ab64aab4cdf",
+        "lokal_rang": 22,
+        "noul": 0.66,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-310b37e033b8",
+        "lokal_rang": 25,
+        "noul": 0.66,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-0b53c018c148",
+        "lokal_rang": 26,
+        "noul": 0.64,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-197eeec8a3bf",
+        "lokal_rang": 27,
+        "noul": 0.62,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-0c6a9836896a",
+        "lokal_rang": 21,
+        "noul": 0.56,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-df81eb4152e8",
+        "lokal_rang": 8,
+        "noul": 0.52,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-40083432513d",
+        "lokal_rang": 0,
+        "noul": 0.47,
+        "status": "bewertet",
+        "grund": null
+      },
+      {
+        "id": "Z-49c30b637ac0",
+        "lokal_rang": 23,
+        "noul": 0.45,
+        "status": "bewertet",
+        "grund": null
+      }
+    ],
+    "status_gesamt": "bewertet",
+    "modell": "jev-1.13.0",
+    "eingabe_token": 67677,
+    "kontrolle": {
+      "noul": 0.07,
+      "bestanden": true
+    }
+  },
+  "gegenprobe_id": "Z-f79b2d19fdde"
+}

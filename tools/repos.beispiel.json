@@ -1,0 +1,14 @@
+{
+ "_quelle": "Beispiel - die echte Liste tools/repos.json bleibt lokal (nicht versioniert)",
+ "repos": [
+  {
+   "pfad": "/srv/projects",
+   "remote_erwartet": true,
+   "elternrepo": true
+  },
+  {
+   "pfad": "/srv/projects/beispielprojekt",
+   "remote_erwartet": false
+  }
+ ]
+}

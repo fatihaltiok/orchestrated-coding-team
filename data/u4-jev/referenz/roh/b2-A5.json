@@ -1,0 +1,124 @@
+{
+  "A5": {
+    "B01": {
+      "relevant": false,
+      "grund": "Behandelt eine Filmproduktion (Look, Soul-ID, Budget) und hat keinerlei Bezug zu Abschluss-Check oder Arbeitskopien."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Beschreibt, dass Prüfagenten einen veralteten CLAUDE.md/MEMORY.md-Schnappschuss sehen und deshalb falsche Befunde melden — betrifft die Wiedereinstiegsprüfung, nicht die Arbeitskopien-Meldung im Abschluss-Check."
+    },
+    "B03": {
+      "relevant": false,
+      "grund": "Zeigt nur die allgemeine Ablauf-Tabelle mit bloßer Nennung von Abschluss-Check als Stichwort, ohne konkrete Regel zur Arbeitskopien-Meldung nach dem Übernehmen."
+    },
+    "B04": {
+      "relevant": true,
+      "grund": "Hält fest, dass der Abschluss-Check bereits 'vergessene Arbeitskopien' meldet und beim ersten Lauf zwei alte fand — das ist der genaue Bestand, den der Auftrag erweitern soll."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Handelt vom Messen des Push-Stands (git status/abschluss-check zu offenen Commits), nicht von der Arbeitskopien-Prüfung."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Listet Doku-Abweichungen zwischen CLAUDE.md und AGENTS.md zu allgemeinen Laufwächter-/Abschluss-Check-Bedienregeln, ohne konkrete Vorgabe zur Erkennung liegen gebliebener Arbeitskopien nach dem Übernehmen."
+    },
+    "B07": {
+      "relevant": false,
+      "grund": "Beschreibt den allgemeinen Rahmen des U0–U4-Upgrades (Jev, Kontextschutz), ohne konkrete Vorgabe für die Abschluss-Check-Erweiterung."
+    },
+    "B08": {
+      "relevant": true,
+      "grund": "Nennt in der Inhaltstabelle ausdrücklich, dass abschluss_check.py bereits 'vergessene Arbeitskopien' meldet — wichtiger Hinweis auf den bestehenden Funktionsumfang der zu ändernden Datei."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Wiederholt nur das allgemeine Ablauf-Beispiel (stopmotion-Phase), ohne Bezug zur Arbeitskopien-Erkennung im Abschluss-Check."
+    },
+    "B10": {
+      "relevant": false,
+      "grund": "Beschreibt einen Datenverlust durch einen Symlink beim Entfernen von Arbeitskopien (git worktree remove --force) — ein anderer, bereits behobener Fehlerfall, keine Regel zur Erkennung liegen gebliebener Kopien nach dem Übernehmen."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Ist die Beschreibung des Messaufbaus U4 selbst (Auftragsliste A1–A5, Kandidaten, Kosten) und enthält keine Umsetzungsvorgabe für die abschluss_check.py-Erweiterung."
+    },
+    "B12": {
+      "relevant": true,
+      "grund": "Enthält den vollständigen Vertragstext von §8.2 (Kürzel-Tabelle, Aufrufform, Exit-Codes) von abschluss_check.py — genau die Spezifikation, die bei der Erweiterung eingehalten werden muss."
+    },
+    "B13": {
+      "relevant": false,
+      "grund": "Listet Doku-Abweichungen (Erhalt-Matrix) zu allgemeinen Coding-Agenten- und Werkzeugregeln, ohne konkrete Vorgabe zur Arbeitskopien-Erkennung nach dem Übernehmen."
+    },
+    "B14": {
+      "relevant": true,
+      "grund": "Ist der bestehende Vertragstext §9.3, der bereits ein Kürzel OFFENE_ARBEITSKOPIE über git worktree list definiert — die Umsetzung muss diesen Mechanismus kennen, um ihn zu erweitern statt doppelt zu bauen."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Beschreibt allgemein die Schutzschichten des Wissens (Tests, Entscheidungsliste, CLAUDE.md …), ohne konkrete Regel zur Arbeitskopien-Meldung."
+    },
+    "B16": {
+      "relevant": false,
+      "grund": "Handelt von einer Lehre zur Ehrlichkeit von Gate-Aussagen in Übergaben, nicht von der Arbeitskopien-Erkennung im Abschluss-Check."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Ist die Projekthistorie eines anderen Projekts (Video-Produktion) und hat keinen inhaltlichen Bezug zum Auftrag."
+    },
+    "B18": {
+      "relevant": false,
+      "grund": "Ist die Projekthistorie eines anderen Projekts und hat keinen Bezug zur Abschluss-Check-Funktion."
+    },
+    "B19": {
+      "relevant": true,
+      "grund": "Enthält die Testkonvention §8.3 sowie den Vertragstext §9/§9.1 zum Arbeitskopie-Modus (Zweige, Merge, Aufräumen) — nötiges Hintergrundwissen, um zu verstehen, wann Arbeitskopien nach dem Übernehmen liegen bleiben können, und wie neue Prüfungen zu testen sind."
+    },
+    "B20": {
+      "relevant": true,
+      "grund": "Enthält denselben Vertragstext §8 mit der Kürzel-Tabelle und den Aufrufformen von abschluss_check.py, die bei der Erweiterung eingehalten werden müssen."
+    },
+    "B21": {
+      "relevant": false,
+      "grund": "Setzt die Beschreibung des Messaufbaus U4 fort (Referenzurteil, Gegenprobe-Methodik) und betrifft die Messung selbst, nicht die Umsetzung der Arbeitskopien-Meldung."
+    },
+    "B22": {
+      "relevant": true,
+      "grund": "Nennt die Testkonvention §8.3 (jeder Exit-Code/jedes Kürzel braucht einen auslösenden Test, Wegwerf-Repos unter tmp_path) — verbindlich auch für die neue Prüfung."
+    },
+    "B23": {
+      "relevant": true,
+      "grund": "Bestätigt erneut, dass 'vergessene Arbeitskopien' schon vom Abschluss-Check gemeldet werden und beim ersten Lauf zwei alte gefunden wurden — relevanter Bestand für die Erweiterung."
+    },
+    "B24": {
+      "relevant": true,
+      "grund": "Wiederholt denselben Befund (Abschluss-Check meldet bereits vergessene Arbeitskopien, fand beim ersten Lauf zwei alte) — wichtig, um den vorhandenen Mechanismus nicht doppelt zu bauen."
+    },
+    "B25": {
+      "relevant": true,
+      "grund": "Beschreibt die Merge-/Aufräum-Schritte von abschliessen --uebernehmen: Scheitert das Aufräumen (worktree remove/branch -d), bleibt Exit trotzdem 0 — genau dieser Fall erklärt, wie Arbeitskopien nach dem Übernehmen liegen bleiben können, und ist damit der Kernmechanismus des Auftrags."
+    },
+    "B26": {
+      "relevant": true,
+      "grund": "Enthält erneut §9.3 (Kürzel OFFENE_ARBEITSKOPIE über git worktree list) und die Testkonvention §9.4 — direkt einschlägig für die geforderte Erweiterung."
+    },
+    "B27": {
+      "relevant": false,
+      "grund": "Vermischt eine Testbeschreibung zur Regelquelle (§13) mit dem Messaufbau U4 (A1–A5-Liste) — beides ohne konkrete Umsetzungsvorgabe für die Arbeitskopien-Meldung."
+    },
+    "B28": {
+      "relevant": false,
+      "grund": "Zeigt nur das allgemeine Architektur-Diagramm mit den sieben Schichten, ohne konkrete Regel zur Arbeitskopien-Erkennung nach dem Übernehmen."
+    },
+    "B29": {
+      "relevant": true,
+      "grund": "Enthält erneut die Kürzel-Tabelle und Testkonvention §8.3 von abschluss_check.py — verbindliche Vorgaben für die Erweiterung."
+    },
+    "B30": {
+      "relevant": true,
+      "grund": "Nennt in der README-Inhaltstabelle, dass abschluss_check.py bereits 'vergessene Arbeitskopien' meldet — wichtiger Hinweis auf den bestehenden Stand der zu ändernden Datei."
+    }
+  }
+}

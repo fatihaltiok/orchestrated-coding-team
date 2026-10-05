@@ -1,0 +1,612 @@
+{
+  "A1": {
+    "B01": {
+      "relevant": false,
+      "grund": "Beschreibt nur die allgemeine CLI und Exit-Codes von kontextpaket.py, ohne die Namenskonvention der Datei zu nennen, auf die der Laufwächter prüfen soll."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Betrifft die Regelprüfung im Abschluss-Check (REGELN_DRIFT) und den Messaufbau von U4 selbst, nicht die Warnfunktion des Laufwächters."
+    },
+    "B03": {
+      "relevant": false,
+      "grund": "Behandelt interne Prüfregeln von kontextpaket pruefe (Blockzuordnung, UNKLAR-Einheiten), nicht das Verhalten des Laufwächters beim Start."
+    },
+    "B04": {
+      "relevant": false,
+      "grund": "Wiederholt dieselben internen pruefe-Regeln von kontextpaket.py, ohne Bezug zum Laufwächter oder zur Dateikonvention neben einem Auftrag."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Regelt Formatierungsdetails von kontextpaket.py (Codeblöcke, Status-Erkennung, Stoppwortliste), die für die geplante Warnung ohne Belang sind."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Ist der Projektstand eines völlig anderen Kundenprojekts ohne jeden Bezug zu Laufwächter oder Kontextpaket."
+    },
+    "B07": {
+      "relevant": true,
+      "grund": "Beschreibt den Vertrag von laufwaechter.py selbst (start/warte/status, Marke, Exit-Codes) und damit genau die Stelle, an der die neue Warnung eingebaut werden muss."
+    },
+    "B08": {
+      "relevant": true,
+      "grund": "Zeigt, dass start auch im --arbeitskopie-Modus existiert und sich sonst wie §8.1 verhält, was für eine vollständige, konsistente Warnfunktion in beiden Startpfaden wichtig ist."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Enthält Manifest- und Statusregeln des Kontextpakets (B12/B13/B17 etc.), die die Struktur des Pakets betreffen, nicht die Laufwächter-Warnung."
+    },
+    "B10": {
+      "relevant": false,
+      "grund": "Zeigt Datenklassen und Signaturen des Jev-Bausteins (ordne_kandidaten, transport), was mit der Kontextpaket-Prüfung durch den Laufwächter nichts zu tun hat."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Wiederholt erneut die R1-Gegenprüfungsregeln für kontextpaket pruefe, ohne Bezug zum Laufwächter."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Betrifft die Regelquelle für Codex/Claude, Kurzbefehle und KONTEXT.json-Anlage dieses Repos, nicht die Existenzprüfung einer Kontextpaket-Datei neben einem Auftrag."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Enthält denselben §8-Vertragstext wie B07 (Laufwächter-Verhalten, Aufrufe, Exit-Codes), auf dem die neue Warnung direkt aufbaut."
+    },
+    "B14": {
+      "relevant": false,
+      "grund": "Erklärt Anlass und KONTEXT.json-Format des Kontextpakets allgemein, aber nicht die Konvention, wie eine Kontextpaket-Datei neben einem Auftrag heißt oder erkannt wird."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Wiederholt Testdetails zu §13 und den gesamten Messaufbau U4, der die Durchführung dieser Messung beschreibt, nicht die Bauaufgabe A1 selbst."
+    },
+    "B16": {
+      "relevant": false,
+      "grund": "Allgemeine Erklärung, was Kontext ist und warum ein Team ihn schont – Hintergrundwissen ohne konkrete Regel für die Laufwächter-Warnung."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Beschreibt Kandidatenformat, Größengrenzen und pruefe/protokoll-Befunde von kontextpaket.py, nicht die Prüfung durch den Laufwächter selbst."
+    },
+    "B18": {
+      "relevant": false,
+      "grund": "Wiederholt dieselben B12-B28-Regeln zu Statusfeldern und Manifest des Kontextpakets, ohne Bezug zum Laufwächter."
+    },
+    "B19": {
+      "relevant": false,
+      "grund": "Ist die allgemeine README-Übersicht der Werkzeuge, die nur zur Orientierung dient und keine spezifische Regel für diesen Auftrag enthält."
+    },
+    "B20": {
+      "relevant": false,
+      "grund": "Wiederholt Anlass und KONTEXT.json-Format aus B14, ohne die konkrete Dateikonvention zu nennen, die der Laufwächter prüfen müsste."
+    },
+    "B21": {
+      "relevant": true,
+      "grund": "Formuliert genau die vorgeschlagene Regel „Kontextpaket bei Delegation“, wonach vor einem Agentenauftrag ein Kontextpaket erzeugt und dem Auftrag beigelegt wird — das ist die inhaltliche Grundlage von A1."
+    },
+    "B22": {
+      "relevant": false,
+      "grund": "Ist ein Auszug aus dem Paper über Kontextschutz im Team, allgemeines Hintergrundwissen ohne konkrete Regel für die Warnfunktion."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Beschreibt Paketaufbau, Manifestformat und Zusatzmaterial-Regeln von kontextpaket.py, nicht das Prüfverhalten des Laufwächters."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Wiederholt den Paper-Abschnitt zu Kontext und Kontextschutz, ohne spezifische Regel für diesen Auftrag."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Beschreibt den vollständigen Messaufbau von U4 (Daten, Referenzurteil, Läufe L1-L3), der die Durchführung der Messung selbst betrifft, nicht den Bau der Laufwächter-Funktion."
+    },
+    "B26": {
+      "relevant": false,
+      "grund": "Ist der Projektstand eines völlig anderen Projekts (Video-Regie-Server) ohne Bezug zu Laufwächter oder Kontextpaket."
+    },
+    "B27": {
+      "relevant": false,
+      "grund": "Behandelt Detailregeln von ergebnis/abschliessen im Arbeitskopie-Modus (Gate-Prüfung, fremde Verweise), nicht die Prüfung beim Start auf eine fehlende Kontextpaket-Datei."
+    },
+    "B28": {
+      "relevant": false,
+      "grund": "Beschreibt den allgemeinen Team-Ablauf mit Beispielaufruf von laufwaechter start, nennt aber keine Regel zur Kontextpaket-Datei neben einem Auftrag."
+    },
+    "B29": {
+      "relevant": false,
+      "grund": "Ist dieselbe README-Inhaltsübersicht wie B19, dient nur der Orientierung ohne konkrete Regel für diesen Auftrag."
+    },
+    "B30": {
+      "relevant": false,
+      "grund": "Beschreibt Regeln und Kommandozeile des Jev-Bausteins ordne_kandidaten, was mit der Existenzprüfung einer Kontextpaket-Datei durch den Laufwächter nichts zu tun hat."
+    }
+  },
+  "A2": {
+    "B01": {
+      "relevant": true,
+      "grund": "Erklärt, dass eine Indexzeile bereits legitim mehrere Verweise bündeln kann und dass Jevs Inhaltsvergleich ein anderes Verfahren als die geplante mechanische Prüfung ist — wichtig, um Bündel-Zeilen beim Bau nicht fälschlich als Duplikat zu werten und die Aufgabe nicht mit der Jev-Inhaltsprüfung zu verwechseln."
+    },
+    "B02": {
+      "relevant": true,
+      "grund": "§10.1 legt fest, dass der Merkzettel-Check rein lesend arbeitet und auch für Ausnahmeprojekte gilt, sobald ein Check darauf angesetzt wird — das gilt unverändert auch für die neue Duplikat-Prüfung."
+    },
+    "B03": {
+      "relevant": true,
+      "grund": "Enthält §10.7, das exakt vorschreibt, wie jede neue Befundart im Merkzettel-Check getestet werden muss (auslösender und sauberer Test, Negativtest gegen Grünfärben, Nur-Lesen-Test) — bindend auch für die neue Duplikat-Prüfung."
+    },
+    "B04": {
+      "relevant": false,
+      "grund": "Reine Projektnotiz zu einem anderen Kundenprojekt ohne jeden Bezug zum Merkzettel-Check oder zu Index-Duplikaten."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Reine Projektnotiz zu einem anderen Projekt, behandelt kein Merkzettel-Werkzeug und keine Index-Duplikate."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Betrifft den Arbeitskopie-Vertrag (§9) für Agentenläufe allgemein, nicht die inhaltliche Erweiterung des Merkzettel-Checks."
+    },
+    "B07": {
+      "relevant": false,
+      "grund": "Enthält nur die Entstehungsgeschichte von §10 und allgemeine Notiz-Kopf-Regeln, keine Regel zu Index-Duplikaten."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Beschreibt die REGELN_DRIFT-Prüfung im Abschluss-Check sowie die Messmethodik von U4 selbst, nicht die Umsetzung der Duplikat-Prüfung im Merkzettel-Check."
+    },
+    "B09": {
+      "relevant": true,
+      "grund": "Dokumentiert die konkrete Erfahrung beim ersten Bau des Merkzettel-Checks (117/117 Tests grün, aber Fehlalarme am echten Bestand) und leitet die Regel ab, jede neue Prüfung an echtem Material zu eichen — unmittelbar auf die Erweiterung anwendbar."
+    },
+    "B10": {
+      "relevant": true,
+      "grund": "Enthält erneut die vollständigen Testanforderungen (§10.7) für den Merkzettel-Check, die auch die neue Duplikat-Prüfung erfüllen muss."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Betrifft §11 Kontextpaket, ein anderes Werkzeug (kontextpaket.py), nicht den Merkzettel-Check."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Betrifft die Regelquelle für Codex/Claude (§13) und die Messaufbau-Beschreibung von U4, nicht die Duplikat-Prüfung im Merkzettel-Check."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Nennt in der Werkzeugtabelle genau, was der Merkzettel-Check heute schon prüft (und was nicht), dass er rein lesend ist und archiv/ überspringt — Ausgangspunkt für die Erweiterung."
+    },
+    "B14": {
+      "relevant": true,
+      "grund": "Wiederholt die vollständigen Testpflichten (§10.7) für den Merkzettel-Check, die für jede neue Befundart wie die Duplikat-Prüfung gelten."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Behandelt allgemein Kontextschutz und Schutzschichten sowie die Ablehnung einer Vektordatenbank, nicht die konkrete Duplikat-Prüfung im Index."
+    },
+    "B16": {
+      "relevant": false,
+      "grund": "Identischer Text wie B15 zu Kontextschutz/Schutzschichten, ohne Bezug zu Index-Duplikaten."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Beschreibt die Kopf- und Notiz-Formatregeln (§10.2) für einzelne Merkzettel-Dateien, nicht die Struktur oder Prüfung des Index auf Duplikate."
+    },
+    "B18": {
+      "relevant": true,
+      "grund": "Enthält dieselbe Werkzeugtabelle wie B13 plus den Gate-Befehl pytest werkzeuge/tests -q, mit dem die neue Prüfung samt ihren Tests verifiziert werden muss."
+    },
+    "B19": {
+      "relevant": true,
+      "grund": "Enthält §10.1 (nur lesend, Geltungsbereich mit Ausnahmeprojekten) — grundlegende Rahmenbedingung, die auch für die neue Duplikat-Prüfung gilt."
+    },
+    "B20": {
+      "relevant": true,
+      "grund": "§10.5 grenzt ausdrücklich ab, dass inhaltliche Dopplung zwischen Notizen kein Check feststellen kann, und legt damit fest, dass die neue Prüfung nur formale Index-Duplikate betreffen darf."
+    },
+    "B21": {
+      "relevant": true,
+      "grund": "Dieselbe dokumentierte Bau-Erfahrung wie B09 (Fehlalarme am echten Bestand, Eichung an echtem Material) plus die Nutzer-Entscheidung gegen Zusammenlegen von Notizen — direkt lehrreich für die Erweiterung desselben Werkzeugs."
+    },
+    "B22": {
+      "relevant": true,
+      "grund": "Enthält §10.3 (Indexregeln, u. a. dass eine Indexzeile mehrere Verweise tragen darf) und den Anfang der bestehenden harten Befundliste (§10.4) — die zentrale Grundlage, um doppelte Index-Einträge korrekt von legitimen Mehrfach-Verweisen zu unterscheiden und den neuen Befund im gleichen Stil einzufügen."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Behandelt das Markieren veralteter Absätze in Dokumentationsdateien, kein Bezug zum Merkzettel-Check-Code oder zu Index-Duplikaten."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Ist eine Erhalt-Matrix zum Abgleich globaler CLAUDE.md/AGENTS.md-Regeltexte zwischen Claude und Codex, ohne inhaltlichen Bezug zur Duplikat-Prüfung im Merkzettel-Check."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Wiederholt die allgemeine Schutzschichten-Diskussion, nicht die konkrete Index-Struktur oder Duplikat-Prüfung."
+    },
+    "B26": {
+      "relevant": true,
+      "grund": "§10.6 legt fest, dass der Check den Ordner archiv/ nicht zum Bestand zählt und dort weder Index noch Verweise prüft — dieselbe Ausnahme muss die neue Duplikat-Prüfung befolgen."
+    },
+    "B27": {
+      "relevant": true,
+      "grund": "Identischer Text wie B22: §10.3 Indexregeln (mehrere Verweise je Zeile erlaubt) und Beginn der harten Befundliste — Kernregel für die neue Prüfung."
+    },
+    "B28": {
+      "relevant": false,
+      "grund": "Beschreibt vor allem Arbeitskopie-Praxis, das Agenten-Team und die Architektur-Schichten; der einzige merkzettel-check-Satz wiederholt nur bereits bekannte, bestehende Prüfarten ohne Bezug zu Duplikaten."
+    },
+    "B29": {
+      "relevant": false,
+      "grund": "Beschreibt den Messaufbau U4 (Referenzurteil, Live-Läufe) dieser laufenden Messung selbst, nicht die Umsetzung der Duplikat-Prüfung im Merkzettel-Check."
+    },
+    "B30": {
+      "relevant": false,
+      "grund": "Allgemeine Prüfstand-Lehren zu Testmethodik (Sabotage-Tests, blinde Flecken) ohne spezifischen Bezug zum Merkzettel-Check oder zu Index-Duplikaten."
+    }
+  },
+  "A3": {
+    "B01": {
+      "relevant": true,
+      "grund": "Enthält Test-Gate 3, das für fehlerhafte/timeoutende Jev-Urteile einen sichtbaren Rückfall statt stillem Verschwinden verlangt – genau die Vorgabe, die eine Absicherung gegen zu große Kandidaten erfüllen muss."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Behandelt die U3-Regelquelle für Codex/Claude und die Aufträge/Läufe der U4-Messung, nicht die Größenprüfung oder Kostenschätzung im Jev-Modul selbst."
+    },
+    "B03": {
+      "relevant": false,
+      "grund": "Erklärt allgemein das Konzept von Kontext und Kontextschutz im Team, ohne konkrete Regel zur Jev-Größenprüfung oder Kostenschätzung."
+    },
+    "B04": {
+      "relevant": true,
+      "grund": "Enthält die bestehende Größe-Regel (Kandidat über 100 000 Zeichen → zu_gross, bleibt in der Ausgabe) – die zu prüfende und mit §12.3 abzugleichende Kernregel dieses Auftrags."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Beschreibt nur, welche Daten für die U4-Live-Erprobung das Haus verlassen dürfen und wie der Stand eingefroren wird – keine Regel zur Größen- oder Kostenprüfung im Code."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Behandelt Maskierung von Schlüsseln, das Verhalten bei ausgefallener Negativkontrolle und die Prüfung von Wahrscheinlichkeiten – andere Teile des Jev-Vertrags ohne Bezug zu Größe oder Kostenschätzung."
+    },
+    "B07": {
+      "relevant": true,
+      "grund": "Wiederholt die Größe-Regel (100 000 Zeichen → zu_gross) aus §12, die für die Absicherung gegen zu große Kandidaten der Bezugspunkt ist."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Listet nur die Rollen der verschiedenen Agenten im Team auf, ohne Bezug zur Jev-Größenprüfung oder Kostenschätzung."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Reiner Projektstand eines anderen Projekts, hat mit dem Jev-Baustein oder diesem Auftrag nichts zu tun."
+    },
+    "B10": {
+      "relevant": false,
+      "grund": "Beschreibt die Methodik der U4-Messung (Auftragsliste, Kandidatenauswahl, Referenzurteil), nicht eine Regel für die Umsetzung von A3 selbst."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Beschreibt allgemein die Einführung eigener Arbeitskopien je Agentenlauf, ohne Bezug zur konkreten Jev-Größen- oder Kostenprüfung."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Beschreibt Übernahmekriterien für Arbeitskopien, den Merkzettel-Check und die Teamrollen – allgemeine Arbeitsweise, nicht die Jev-Größen-/Kostenlogik."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Enthält die vollständige öffentliche Schnittstelle von jev.py inklusive der Größe-Regel und der Funktion schaetze_kosten – direkte Arbeitsgrundlage für diesen Auftrag."
+    },
+    "B14": {
+      "relevant": true,
+      "grund": "Zeigt dieselbe öffentliche Schnittstelle (Antwort, frage, Ordnung, ordne_kandidaten, schaetze_kosten) – unverzichtbar, um Größenprüfung und Kostenschätzung korrekt zu ändern."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Behandelt Aufruf und Exit-Codes des Kontextpaket-Werkzeugs (§11), nicht die Größenprüfung oder Kostenschätzung des Jev-Moduls (§12)."
+    },
+    "B16": {
+      "relevant": true,
+      "grund": "Enthält die Regeln für ordne_kandidaten, die Kommandozeile schaetze mit der Kostenformel und Freigabepflicht sowie die zugehörigen Pflichttests – zentral für diesen Auftrag."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Vermischt Testdetails zur Codex-Regelquelle (§13) mit dem Zweck der U4-Messung – keine konkrete Regel zur Jev-Größenprüfung oder Kostenschätzung."
+    },
+    "B18": {
+      "relevant": false,
+      "grund": "Allgemeine Erläuterung der Schutzschichten für Kontext und Wissen im Team, ohne Bezug zu diesem Auftrag."
+    },
+    "B19": {
+      "relevant": true,
+      "grund": "Enthält Negativkontrolle, Ausgaberegeln von ordne_kandidaten, die Kommandozeile schaetze mit Kostenformel und die Pflichttests – direkt einschlägig."
+    },
+    "B20": {
+      "relevant": false,
+      "grund": "Beschreibt Messgrößen, Entscheidungsregel und Kostenrahmen der U4-Messung selbst (ein separates Werkzeug/Vorhaben), nicht die Härtung von jev.py."
+    },
+    "B21": {
+      "relevant": true,
+      "grund": "Enthält §12.3 vollständig, insbesondere die Größe-Regel (90 000/180 000 Zeichen → zu_gross) – die zentrale bestehende Regel, die dieser Auftrag absichert."
+    },
+    "B22": {
+      "relevant": false,
+      "grund": "Beschreibt Ziel, Architektur und Paketreihenfolge des Gesamt-Upgrades allgemein, keine konkrete Jev-Größen- oder Kostenregel."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Reiner Projektstand eines anderen Projekts, ohne jeden Bezug zum Jev-Baustein oder diesem Auftrag."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Beschreibt die frühere Arbeitsweise (Stufe 1/2) allgemein, ohne Bezug zur Jev-Größen- oder Kostenprüfung."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Behandelt das Kontextpaket-Werkzeug (§11) und dessen Exit-Codes, nicht die Größenprüfung oder Kostenschätzung des Jev-Moduls."
+    },
+    "B26": {
+      "relevant": true,
+      "grund": "Vollständige Regeln für ordne_kandidaten (Eingabeformat, eine Anfrage je Kandidat, Negativkontrolle, Vollständigkeit der Ausgabe, Rate-Limit) – der Mechanismus, über den zu große Kandidaten überhaupt in Anfragen münden."
+    },
+    "B27": {
+      "relevant": false,
+      "grund": "Behandelt Symlink-Schutz und Testdetails für regeln.py sowie ein Stdin-Feature von jev.py ordne – nicht die Größenprüfung oder Kostenschätzung."
+    },
+    "B28": {
+      "relevant": true,
+      "grund": "Testgate 3 verlangt für fehlerhafte oder timeoutende Jev-Urteile einen sichtbaren Rückfall statt stillem Verschwinden – direkte Vorgabe für die Absicherung gegen zu große oder sonst problematische Kandidaten."
+    },
+    "B29": {
+      "relevant": true,
+      "grund": "Enthält die schaetze_kosten-Signatur, die Größe-Regel und Teile von ordne_kandidaten – unmittelbare Arbeitsgrundlage für Größenprüfung und Kostenschätzung."
+    },
+    "B30": {
+      "relevant": false,
+      "grund": "Behandelt Nachbesserungen an regeln.py (Symlinks, atomares Schreiben, Sicherungsnamen) und ein Jev-Stdin-Feature – nicht die Größen- oder Kostenprüfung selbst."
+    }
+  },
+  "A4": {
+    "B01": {
+      "relevant": false,
+      "grund": "Behandelt nur den Vergleich CLAUDE.md/AGENTS.md zu Wiedereinstiegsprüfung, Kommunikation, Design und Prinzipien — nichts davon betrifft die Ersetzungstabelle oder das Installieren von Codex-Regeln."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Zählt nur die Gesamtabweichungen der Erhalt-Matrix (137 Regeln, GLM-Versionsangabe, falscher Pfad ~/.Codex/) und ist reine Prüfmethodik, ohne Anleitung zum Eintragen oder Installieren einer Ersetzung."
+    },
+    "B03": {
+      "relevant": true,
+      "grund": "Enthält die konkreten Pfade/Umgebungsvariable REGELN_HOME sowie die Exit-Code-Regeln von pruefe/erzeuge/rueckgabe und die R3-Symlink-/Eindeutigkeitsregeln, die beim Eintragen einer neuen Ersetzung direkt beachtet werden müssen."
+    },
+    "B04": {
+      "relevant": false,
+      "grund": "Wiederholt nur Erhalt-Matrix-Zeilen zu Prinzipien, Design und Kommunikation sowie die allgemeine Zählung — ohne Bezug zur Ersetzungstabelle."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Behandelt Erhalt-Matrix-Zeilen zu Merkzettel, Projektprotokoll und größeren Projekten — thematisch fern vom Auftrag, Codex-Regeln zu ändern."
+    },
+    "B06": {
+      "relevant": true,
+      "grund": "Nennt die bestehenden vier Ersetzungstabellen-Einträge (R17/R69/R82/R85), die Gültigkeitsregel „neu darf 0-mal in der Quelle vorkommen“ und die Byte-Obergrenze (Gate 3) — direkt entscheidend für einen neuen Eintrag."
+    },
+    "B07": {
+      "relevant": false,
+      "grund": "Beschreibt Tests des Abschluss-Check-Regeldrifts und den Messaufbau für den Jev-Live-Versuch (U4), nicht die Vorgehensweise zum Ändern der Ersetzungstabelle selbst."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Ist die übergeordnete Paketübersicht (U0–U4) und allgemeine Kosten-/Datenregeln des Upgrade-Plans, ohne konkrete Anleitung zur Ersetzungstabelle."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Nur die kurze Feststellung, dass B keine substanziellen eigenen Regeln gegenüber A einführt — irrelevant für den Auftrag."
+    },
+    "B10": {
+      "relevant": true,
+      "grund": "Legt die Reihenfolge fest und hält ausdrücklich fest, dass inhaltliche Regeländerungen nur mit Fatihs OK zum Wortlaut installiert werden dürfen — das betrifft direkt jede neue Ersetzung."
+    },
+    "B11": {
+      "relevant": true,
+      "grund": "Beschreibt exakt die Unterbefehle erzeuge, pruefe, installiere und rueckgabe mit ihren Exit-Codes — die Werkzeuge, die zum Eintragen und Installieren gebraucht werden."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Beschreibt den Messaufbau für den Jev-Live-Versuch (Kandidaten, Läufe, Messgrößen) — ohne Bezug zur Ersetzungstabelle."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Enthält die Gates aus §13.3, insbesondere „Ersetzungstabelle: falsche anzahl → Exit 2“ und die Rückwärtsanwendungs-Prüfung — genau die Abnahmekriterien für den Auftrag."
+    },
+    "B14": {
+      "relevant": false,
+      "grund": "Listet die geplanten Test-Gates des Gesamt-Upgrades (Kontextpaket/Jev-Ausfälle) — betrifft nicht die Ersetzungstabelle."
+    },
+    "B15": {
+      "relevant": true,
+      "grund": "Wiederholt die Gates aus §13.3 inklusive der Ersetzungstabellen-Prüfung — direkt für den Auftrag relevant."
+    },
+    "B16": {
+      "relevant": true,
+      "grund": "Enthält §13.1 mit dem exakten Format von ersetzungen-codex.json sowie die Unterbefehle und Gates — Kernwissen für den Auftrag."
+    },
+    "B17": {
+      "relevant": true,
+      "grund": "Wiederholt dieselbe Kernspezifikation (§13.1–§13.3) des Dateiformats und der Gates, die für das Eintragen und Installieren nötig ist."
+    },
+    "B18": {
+      "relevant": true,
+      "grund": "Enthält ebenfalls §13.1 mit dem Format der Ersetzungstabelle und den Beginn von §13.2 — auch wenn der erste Teil (kontextpaket-Manifest) nicht zum Auftrag gehört."
+    },
+    "B19": {
+      "relevant": false,
+      "grund": "Beschreibt die Regelprüfung im Abschluss-Check (REGELN_DRIFT) — ein nachgelagertes Prüfwerkzeug, keine Anleitung zum Ändern der Ersetzungstabelle."
+    },
+    "B20": {
+      "relevant": true,
+      "grund": "Enthält die vollständigen R3-Regeln (Symlink-Sicherheit, Eindeutigkeit der Ersetzungen, Exit-Codes) — bindend für jede Änderung an regeln.py bzw. der Tabelle."
+    },
+    "B21": {
+      "relevant": false,
+      "grund": "Beschreibt Kurzbefehle, KONTEXT.json, die Jev-Pipe und Plan-Gate 7 — andere U3-Teile ohne Bezug zur Ersetzungstabelle."
+    },
+    "B22": {
+      "relevant": true,
+      "grund": "Wiederholt §13.6 mit den vier bestehenden Ersetzungen und der Gültigkeits-/Größenregel sowie den OK-zum-Wortlaut-Hinweis — zentral für den Auftrag."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Erhalt-Matrix-Zeilen zu Projektprotokoll und Wiedereinstiegsprüfung — kein Bezug zur Ersetzungstabelle."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Behandelt den Abschluss-Check-Regeldrift und den Messaufbau U4 — nicht die Vorgehensweise zum Ändern der Tabelle."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Vollständig anderes Projekt (Video), thematisch und inhaltlich ohne jeden Bezug zum Auftrag."
+    },
+    "B26": {
+      "relevant": false,
+      "grund": "Allgemeiner Zielrahmen und Architekturüberblick des Upgrade-Plans, keine konkrete Anleitung zur Ersetzungstabelle."
+    },
+    "B27": {
+      "relevant": true,
+      "grund": "Enthält vollständig die R3-Regeln (Eindeutigkeit, Symlink-Schutz, Exit-Codes) — bindend genau für das Bearbeiten der Ersetzungstabelle."
+    },
+    "B28": {
+      "relevant": true,
+      "grund": "Enthält den Rest der R3-Regeln (Sicherungsnamen, Eingabefehler, REGELN_HOME leer, rueckgabe-Sicherheit) — direkt für den Auftrag verbindlich."
+    },
+    "B29": {
+      "relevant": false,
+      "grund": "Beschreibt den Messaufbau des U4-Jev-Live-Versuchs (Daten, Läufe, Kosten) — nennt A4 nur als Beispielauftrag, ohne Anleitung zu dessen Ausführung."
+    },
+    "B30": {
+      "relevant": true,
+      "grund": "Enthält exakt §13.1 mit dem Datenformat der Ersetzungstabelle (alt/neu/anzahl) — das Kernformat, das beim Eintragen einer neuen Ersetzung zwingend gebraucht wird."
+    }
+  },
+  "A5": {
+    "B01": {
+      "relevant": false,
+      "grund": "Behandelt eine Filmproduktion (Look, Soul-ID, Budget) und hat keinerlei Bezug zu Abschluss-Check oder Arbeitskopien."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Beschreibt, dass Prüfagenten einen veralteten CLAUDE.md/MEMORY.md-Schnappschuss sehen und deshalb falsche Befunde melden — betrifft die Wiedereinstiegsprüfung, nicht die Arbeitskopien-Meldung im Abschluss-Check."
+    },
+    "B03": {
+      "relevant": false,
+      "grund": "Zeigt nur die allgemeine Ablauf-Tabelle mit bloßer Nennung von Abschluss-Check als Stichwort, ohne konkrete Regel zur Arbeitskopien-Meldung nach dem Übernehmen."
+    },
+    "B04": {
+      "relevant": true,
+      "grund": "Hält fest, dass der Abschluss-Check bereits 'vergessene Arbeitskopien' meldet und beim ersten Lauf zwei alte fand — das ist der genaue Bestand, den der Auftrag erweitern soll."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Handelt vom Messen des Push-Stands (git status/abschluss-check zu offenen Commits), nicht von der Arbeitskopien-Prüfung."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Listet Doku-Abweichungen zwischen CLAUDE.md und AGENTS.md zu allgemeinen Laufwächter-/Abschluss-Check-Bedienregeln, ohne konkrete Vorgabe zur Erkennung liegen gebliebener Arbeitskopien nach dem Übernehmen."
+    },
+    "B07": {
+      "relevant": false,
+      "grund": "Beschreibt den allgemeinen Rahmen des U0–U4-Upgrades (Jev, Kontextschutz), ohne konkrete Vorgabe für die Abschluss-Check-Erweiterung."
+    },
+    "B08": {
+      "relevant": true,
+      "grund": "Nennt in der Inhaltstabelle ausdrücklich, dass abschluss_check.py bereits 'vergessene Arbeitskopien' meldet — wichtiger Hinweis auf den bestehenden Funktionsumfang der zu ändernden Datei."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Wiederholt nur das allgemeine Ablauf-Beispiel (stopmotion-Phase), ohne Bezug zur Arbeitskopien-Erkennung im Abschluss-Check."
+    },
+    "B10": {
+      "relevant": false,
+      "grund": "Beschreibt einen Datenverlust durch einen Symlink beim Entfernen von Arbeitskopien (git worktree remove --force) — ein anderer, bereits behobener Fehlerfall, keine Regel zur Erkennung liegen gebliebener Kopien nach dem Übernehmen."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Ist die Beschreibung des Messaufbaus U4 selbst (Auftragsliste A1–A5, Kandidaten, Kosten) und enthält keine Umsetzungsvorgabe für die abschluss_check.py-Erweiterung."
+    },
+    "B12": {
+      "relevant": true,
+      "grund": "Enthält den vollständigen Vertragstext von §8.2 (Kürzel-Tabelle, Aufrufform, Exit-Codes) von abschluss_check.py — genau die Spezifikation, die bei der Erweiterung eingehalten werden muss."
+    },
+    "B13": {
+      "relevant": false,
+      "grund": "Listet Doku-Abweichungen (Erhalt-Matrix) zu allgemeinen Coding-Agenten- und Werkzeugregeln, ohne konkrete Vorgabe zur Arbeitskopien-Erkennung nach dem Übernehmen."
+    },
+    "B14": {
+      "relevant": true,
+      "grund": "Ist der bestehende Vertragstext §9.3, der bereits ein Kürzel OFFENE_ARBEITSKOPIE über git worktree list definiert — die Umsetzung muss diesen Mechanismus kennen, um ihn zu erweitern statt doppelt zu bauen."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Beschreibt allgemein die Schutzschichten des Wissens (Tests, Entscheidungsliste, CLAUDE.md …), ohne konkrete Regel zur Arbeitskopien-Meldung."
+    },
+    "B16": {
+      "relevant": false,
+      "grund": "Handelt von einer Lehre zur Ehrlichkeit von Gate-Aussagen in Übergaben, nicht von der Arbeitskopien-Erkennung im Abschluss-Check."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Ist die Projekthistorie eines anderen Projekts (Video-Produktion) und hat keinen inhaltlichen Bezug zum Auftrag."
+    },
+    "B18": {
+      "relevant": false,
+      "grund": "Ist die Projekthistorie eines anderen Projekts und hat keinen Bezug zur Abschluss-Check-Funktion."
+    },
+    "B19": {
+      "relevant": true,
+      "grund": "Enthält die Testkonvention §8.3 sowie den Vertragstext §9/§9.1 zum Arbeitskopie-Modus (Zweige, Merge, Aufräumen) — nötiges Hintergrundwissen, um zu verstehen, wann Arbeitskopien nach dem Übernehmen liegen bleiben können, und wie neue Prüfungen zu testen sind."
+    },
+    "B20": {
+      "relevant": true,
+      "grund": "Enthält denselben Vertragstext §8 mit der Kürzel-Tabelle und den Aufrufformen von abschluss_check.py, die bei der Erweiterung eingehalten werden müssen."
+    },
+    "B21": {
+      "relevant": false,
+      "grund": "Setzt die Beschreibung des Messaufbaus U4 fort (Referenzurteil, Gegenprobe-Methodik) und betrifft die Messung selbst, nicht die Umsetzung der Arbeitskopien-Meldung."
+    },
+    "B22": {
+      "relevant": true,
+      "grund": "Nennt die Testkonvention §8.3 (jeder Exit-Code/jedes Kürzel braucht einen auslösenden Test, Wegwerf-Repos unter tmp_path) — verbindlich auch für die neue Prüfung."
+    },
+    "B23": {
+      "relevant": true,
+      "grund": "Bestätigt erneut, dass 'vergessene Arbeitskopien' schon vom Abschluss-Check gemeldet werden und beim ersten Lauf zwei alte gefunden wurden — relevanter Bestand für die Erweiterung."
+    },
+    "B24": {
+      "relevant": true,
+      "grund": "Wiederholt denselben Befund (Abschluss-Check meldet bereits vergessene Arbeitskopien, fand beim ersten Lauf zwei alte) — wichtig, um den vorhandenen Mechanismus nicht doppelt zu bauen."
+    },
+    "B25": {
+      "relevant": true,
+      "grund": "Beschreibt die Merge-/Aufräum-Schritte von abschliessen --uebernehmen: Scheitert das Aufräumen (worktree remove/branch -d), bleibt Exit trotzdem 0 — genau dieser Fall erklärt, wie Arbeitskopien nach dem Übernehmen liegen bleiben können, und ist damit der Kernmechanismus des Auftrags."
+    },
+    "B26": {
+      "relevant": true,
+      "grund": "Enthält erneut §9.3 (Kürzel OFFENE_ARBEITSKOPIE über git worktree list) und die Testkonvention §9.4 — direkt einschlägig für die geforderte Erweiterung."
+    },
+    "B27": {
+      "relevant": false,
+      "grund": "Vermischt eine Testbeschreibung zur Regelquelle (§13) mit dem Messaufbau U4 (A1–A5-Liste) — beides ohne konkrete Umsetzungsvorgabe für die Arbeitskopien-Meldung."
+    },
+    "B28": {
+      "relevant": false,
+      "grund": "Zeigt nur das allgemeine Architektur-Diagramm mit den sieben Schichten, ohne konkrete Regel zur Arbeitskopien-Erkennung nach dem Übernehmen."
+    },
+    "B29": {
+      "relevant": true,
+      "grund": "Enthält erneut die Kürzel-Tabelle und Testkonvention §8.3 von abschluss_check.py — verbindliche Vorgaben für die Erweiterung."
+    },
+    "B30": {
+      "relevant": true,
+      "grund": "Nennt in der README-Inhaltstabelle, dass abschluss_check.py bereits 'vergessene Arbeitskopien' meldet — wichtiger Hinweis auf den bestehenden Stand der zu ändernden Datei."
+    }
+  }
+}

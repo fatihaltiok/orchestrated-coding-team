@@ -1,0 +1,6 @@
+{
+ "note": "The restart (re-entry) check runs with two fresh agents per check, independently: one only reads the handover docs and lists every spot where it would have to guess, the other actually runs the commands and reports deviations. This is the standing team rule for restart checks (not a one-time count); the paper's 'restart check by two fresh agents' and 'the two checkers' count those agents.",
+ "agents_per_check": 2,
+ "date": "2026-10-05",
+ "source": "team rule file, restart-check section (applied in every project since Sept 2026)"
+}

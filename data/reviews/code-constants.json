@@ -1,0 +1,19 @@
+{
+ "note": "Documented constants of the team's tools, copied from the tool sources (measurement only; the full tools live under tools/).",
+ "team_channel": {
+  "max_conversations_per_project_and_day": 10,
+  "default_max_messages_per_conversation": 6,
+  "max_messages_upper_bound": 20
+ },
+ "run_watcher": {
+  "warte_default_max_sekunden": 540,
+  "minutes": 9
+ },
+ "u4_measurement": {
+  "spending_cap_usd": 0.1
+ },
+ "codex_read_limit": {
+  "bytes": 32768,
+  "note": "documented limit: the Codex tool reads only the first 32,768 bytes of a long rules file"
+ }
+}

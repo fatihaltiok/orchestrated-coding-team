@@ -1,0 +1,28 @@
+{
+ "note": "Line-up changes of the agent team over two weeks (from the rule-file change log; no account data). One model left because its usage credit ran out, one because the flat-rate subscription was cancelled; two models joined the team.",
+ "window": "2026-09-13..2026-09-28",
+ "dropped_out": [
+  {
+   "model": "Kimi K3",
+   "reason": "usage credit ran out",
+   "date": "2026-09-27"
+  },
+  {
+   "model": "GLM 5.3",
+   "reason": "flat-rate subscription cancelled",
+   "date": "2026-09-27"
+  }
+ ],
+ "joined": [
+  {
+   "model": "Devin CLI",
+   "date": "2026-09-27"
+  },
+  {
+   "model": "MiMo v2.6",
+   "date": "2026-09-28"
+  }
+ ],
+ "dropped_count": 2,
+ "joined_count": 2
+}

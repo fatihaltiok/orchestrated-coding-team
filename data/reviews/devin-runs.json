@@ -1,0 +1,57 @@
+{
+ "note": "Devin CLI runs of the upgrade (SWE-2 High), exported from the run-watcher state files (2026-10-05). The two first attempts of U6 stopped correctly because their context package was out of date; the -2 runs are the restarts.",
+ "runs": [
+  {
+   "run": "U5-1b",
+   "package": "U5",
+   "started": "2026-09-27T09:44:55+02:00",
+   "model": "swe-2-high",
+   "stopped_early": false
+  },
+  {
+   "run": "U5-1c",
+   "package": "U5",
+   "started": "2026-09-27T10:48:12+02:00",
+   "model": "swe-2-high",
+   "stopped_early": false
+  },
+  {
+   "run": "U6-1",
+   "package": "U6-1",
+   "started": "2026-09-27T11:37:10+02:00",
+   "model": "swe-2-high",
+   "stopped_early": true
+  },
+  {
+   "run": "U6-1-restart",
+   "package": "U6-1",
+   "started": "2026-09-27T11:41:22+02:00",
+   "model": "swe-2-high",
+   "stopped_early": false
+  },
+  {
+   "run": "U6-2",
+   "package": "U6-2",
+   "started": "2026-09-27T11:37:11+02:00",
+   "model": "swe-2-high",
+   "stopped_early": true
+  },
+  {
+   "run": "U6-2-restart",
+   "package": "U6-2",
+   "started": "2026-09-27T11:41:22+02:00",
+   "model": "swe-2-high",
+   "stopped_early": false
+  }
+ ],
+ "runs_up_to_u6": 6,
+ "packages_up_to_u6": 3,
+ "stopped_correctly": 2,
+ "later_runs_same_day": {
+  "note": "two further Devin runs built package U7 the same day (13:31 and 13:54); the paper's team table counts the runs up to U6",
+  "runs": 2
+ },
+ "runs_end_of_day": 8,
+ "packages_end_of_day": 4,
+ "end_of_day_note": "by the end of 27 Sept 2026: the six runs up to U6 plus the two U7 runs, in U5, U6-1, U6-2 and U7"
+}

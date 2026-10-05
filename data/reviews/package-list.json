@@ -1,0 +1,65 @@
+{
+ "note": "The 26-27 Sept 2026 upgrade was built as 8 packages with contracts, working copies, reviews and restart checks.",
+ "packages": [
+  {
+   "id": "U0",
+   "title": "contracts",
+   "built_by": "Claude",
+   "reviewed_by": "Kimi",
+   "findings": 28
+  },
+  {
+   "id": "U1",
+   "title": "context package",
+   "built_by": "GLM",
+   "reviewed_by": "Codex",
+   "findings": 12
+  },
+  {
+   "id": "U2",
+   "title": "Jev module",
+   "built_by": "Muse",
+   "reviewed_by": "Codex",
+   "findings": 6
+  },
+  {
+   "id": "U3",
+   "title": "one rule file",
+   "built_by": "GLM",
+   "reviewed_by": "Kimi, Muse",
+   "findings": [
+    7,
+    3
+   ]
+  },
+  {
+   "id": "U4",
+   "title": "Jev measurement",
+   "built_by": "Codex",
+   "reviewed_by": "-",
+   "findings": null
+  },
+  {
+   "id": "U5",
+   "title": "Jev in the context package",
+   "built_by": "Codex, Devin",
+   "reviewed_by": "Kimi",
+   "findings": 8
+  },
+  {
+   "id": "U6",
+   "title": "small fixes",
+   "built_by": "Devin",
+   "reviewed_by": "Kimi",
+   "findings": 0
+  },
+  {
+   "id": "U7",
+   "title": "memory into the context package",
+   "built_by": "Devin",
+   "reviewed_by": "Muse",
+   "findings": 2
+  }
+ ],
+ "count": 8
+}

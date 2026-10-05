@@ -1,0 +1,5 @@
+{
+ "note": "The U7 contract section required 11 test cases, labelled (a) to (k). Only the count and the labels are exported; the contract text stays private.",
+ "test_cases": 11,
+ "labels": "a-k"
+}

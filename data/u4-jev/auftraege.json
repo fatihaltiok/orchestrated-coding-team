@@ -1,0 +1,10 @@
+{
+  "format": 1,
+  "auftraege": [
+    {"id": "A1", "text": "Laufwächter soll warnen, wenn neben dem Auftrag keine Kontextpaket-Datei liegt"},
+    {"id": "A2", "text": "Merkzettel-Check um eine Prüfung auf doppelte Index-Einträge erweitern"},
+    {"id": "A3", "text": "Jev-Anfragen gegen zu große Kandidaten absichern und die Kostenschätzung prüfen"},
+    {"id": "A4", "text": "Regeln für Codex ändern: neue Ersetzung in der Ersetzungstabelle eintragen und installieren"},
+    {"id": "A5", "text": "Abschluss-Check soll Arbeitskopien melden, die nach dem Übernehmen liegen geblieben sind"}
+  ]
+}

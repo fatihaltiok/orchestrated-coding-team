@@ -1,0 +1,17 @@
+{
+ "note": "Two self-observed orchestrator mistakes, each caught by a check (from the project log).",
+ "incidents": [
+  {
+   "date": "2026-09-26",
+   "what": "an agent broke a build rule it had never been shown (the orchestrator had forgotten the context package in the task)",
+   "caught_by": "task/context-package checks"
+  },
+  {
+   "date": "2026-09-27",
+   "what": "the orchestrator built a context package before it had finished editing the docs; the package was outdated on arrival",
+   "caught_by": "context package check (run stopped correctly)"
+  }
+ ],
+ "forgot_context_package": 1,
+ "built_package_early": 1
+}

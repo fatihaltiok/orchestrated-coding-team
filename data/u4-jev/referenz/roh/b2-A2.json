@@ -1,0 +1,124 @@
+{
+  "A2": {
+    "B01": {
+      "relevant": true,
+      "grund": "Erklärt, dass eine Indexzeile bereits legitim mehrere Verweise bündeln kann und dass Jevs Inhaltsvergleich ein anderes Verfahren als die geplante mechanische Prüfung ist — wichtig, um Bündel-Zeilen beim Bau nicht fälschlich als Duplikat zu werten und die Aufgabe nicht mit der Jev-Inhaltsprüfung zu verwechseln."
+    },
+    "B02": {
+      "relevant": true,
+      "grund": "§10.1 legt fest, dass der Merkzettel-Check rein lesend arbeitet und auch für Ausnahmeprojekte gilt, sobald ein Check darauf angesetzt wird — das gilt unverändert auch für die neue Duplikat-Prüfung."
+    },
+    "B03": {
+      "relevant": true,
+      "grund": "Enthält §10.7, das exakt vorschreibt, wie jede neue Befundart im Merkzettel-Check getestet werden muss (auslösender und sauberer Test, Negativtest gegen Grünfärben, Nur-Lesen-Test) — bindend auch für die neue Duplikat-Prüfung."
+    },
+    "B04": {
+      "relevant": false,
+      "grund": "Reine Projektnotiz zu einem anderen Kundenprojekt ohne jeden Bezug zum Merkzettel-Check oder zu Index-Duplikaten."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Reine Projektnotiz zu einem anderen Projekt, behandelt kein Merkzettel-Werkzeug und keine Index-Duplikate."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Betrifft den Arbeitskopie-Vertrag (§9) für Agentenläufe allgemein, nicht die inhaltliche Erweiterung des Merkzettel-Checks."
+    },
+    "B07": {
+      "relevant": false,
+      "grund": "Enthält nur die Entstehungsgeschichte von §10 und allgemeine Notiz-Kopf-Regeln, keine Regel zu Index-Duplikaten."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Beschreibt die REGELN_DRIFT-Prüfung im Abschluss-Check sowie die Messmethodik von U4 selbst, nicht die Umsetzung der Duplikat-Prüfung im Merkzettel-Check."
+    },
+    "B09": {
+      "relevant": true,
+      "grund": "Dokumentiert die konkrete Erfahrung beim ersten Bau des Merkzettel-Checks (117/117 Tests grün, aber Fehlalarme am echten Bestand) und leitet die Regel ab, jede neue Prüfung an echtem Material zu eichen — unmittelbar auf die Erweiterung anwendbar."
+    },
+    "B10": {
+      "relevant": true,
+      "grund": "Enthält erneut die vollständigen Testanforderungen (§10.7) für den Merkzettel-Check, die auch die neue Duplikat-Prüfung erfüllen muss."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Betrifft §11 Kontextpaket, ein anderes Werkzeug (kontextpaket.py), nicht den Merkzettel-Check."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Betrifft die Regelquelle für Codex/Claude (§13) und die Messaufbau-Beschreibung von U4, nicht die Duplikat-Prüfung im Merkzettel-Check."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Nennt in der Werkzeugtabelle genau, was der Merkzettel-Check heute schon prüft (und was nicht), dass er rein lesend ist und archiv/ überspringt — Ausgangspunkt für die Erweiterung."
+    },
+    "B14": {
+      "relevant": true,
+      "grund": "Wiederholt die vollständigen Testpflichten (§10.7) für den Merkzettel-Check, die für jede neue Befundart wie die Duplikat-Prüfung gelten."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Behandelt allgemein Kontextschutz und Schutzschichten sowie die Ablehnung einer Vektordatenbank, nicht die konkrete Duplikat-Prüfung im Index."
+    },
+    "B16": {
+      "relevant": false,
+      "grund": "Identischer Text wie B15 zu Kontextschutz/Schutzschichten, ohne Bezug zu Index-Duplikaten."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Beschreibt die Kopf- und Notiz-Formatregeln (§10.2) für einzelne Merkzettel-Dateien, nicht die Struktur oder Prüfung des Index auf Duplikate."
+    },
+    "B18": {
+      "relevant": true,
+      "grund": "Enthält dieselbe Werkzeugtabelle wie B13 plus den Gate-Befehl pytest werkzeuge/tests -q, mit dem die neue Prüfung samt ihren Tests verifiziert werden muss."
+    },
+    "B19": {
+      "relevant": true,
+      "grund": "Enthält §10.1 (nur lesend, Geltungsbereich mit Ausnahmeprojekten) — grundlegende Rahmenbedingung, die auch für die neue Duplikat-Prüfung gilt."
+    },
+    "B20": {
+      "relevant": true,
+      "grund": "§10.5 grenzt ausdrücklich ab, dass inhaltliche Dopplung zwischen Notizen kein Check feststellen kann, und legt damit fest, dass die neue Prüfung nur formale Index-Duplikate betreffen darf."
+    },
+    "B21": {
+      "relevant": true,
+      "grund": "Dieselbe dokumentierte Bau-Erfahrung wie B09 (Fehlalarme am echten Bestand, Eichung an echtem Material) plus die Nutzer-Entscheidung gegen Zusammenlegen von Notizen — direkt lehrreich für die Erweiterung desselben Werkzeugs."
+    },
+    "B22": {
+      "relevant": true,
+      "grund": "Enthält §10.3 (Indexregeln, u. a. dass eine Indexzeile mehrere Verweise tragen darf) und den Anfang der bestehenden harten Befundliste (§10.4) — die zentrale Grundlage, um doppelte Index-Einträge korrekt von legitimen Mehrfach-Verweisen zu unterscheiden und den neuen Befund im gleichen Stil einzufügen."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Behandelt das Markieren veralteter Absätze in Dokumentationsdateien, kein Bezug zum Merkzettel-Check-Code oder zu Index-Duplikaten."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Ist eine Erhalt-Matrix zum Abgleich globaler CLAUDE.md/AGENTS.md-Regeltexte zwischen Claude und Codex, ohne inhaltlichen Bezug zur Duplikat-Prüfung im Merkzettel-Check."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Wiederholt die allgemeine Schutzschichten-Diskussion, nicht die konkrete Index-Struktur oder Duplikat-Prüfung."
+    },
+    "B26": {
+      "relevant": true,
+      "grund": "§10.6 legt fest, dass der Check den Ordner archiv/ nicht zum Bestand zählt und dort weder Index noch Verweise prüft — dieselbe Ausnahme muss die neue Duplikat-Prüfung befolgen."
+    },
+    "B27": {
+      "relevant": true,
+      "grund": "Identischer Text wie B22: §10.3 Indexregeln (mehrere Verweise je Zeile erlaubt) und Beginn der harten Befundliste — Kernregel für die neue Prüfung."
+    },
+    "B28": {
+      "relevant": false,
+      "grund": "Beschreibt vor allem Arbeitskopie-Praxis, das Agenten-Team und die Architektur-Schichten; der einzige merkzettel-check-Satz wiederholt nur bereits bekannte, bestehende Prüfarten ohne Bezug zu Duplikaten."
+    },
+    "B29": {
+      "relevant": false,
+      "grund": "Beschreibt den Messaufbau U4 (Referenzurteil, Live-Läufe) dieser laufenden Messung selbst, nicht die Umsetzung der Duplikat-Prüfung im Merkzettel-Check."
+    },
+    "B30": {
+      "relevant": false,
+      "grund": "Allgemeine Prüfstand-Lehren zu Testmethodik (Sabotage-Tests, blinde Flecken) ohne spezifischen Bezug zum Merkzettel-Check oder zu Index-Duplikaten."
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "A5": {
+    "B01": {
+      "relevant": false,
+      "grund": "Vorgeschichte einer Filmproduktion betrifft weder Abschluss-Check noch Arbeitskopien, reines Themenfremd."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Behandelt die Schnappschuss-Falle bei CLAUDE.md/MEMORY.md in Prüfagenten, nicht die Erkennung liegen gebliebener Arbeitskopien."
+    },
+    "B03": {
+      "relevant": false,
+      "grund": "Allgemeine Architektur-Übersicht des Teams (sieben Schichten) ohne konkrete Regel zur Arbeitskopien-Meldung."
+    },
+    "B04": {
+      "relevant": false,
+      "grund": "Erzählt nur nacherzählend, dass der Abschluss-Check bereits vergessene Arbeitskopien findet, ohne neue, auftragsspezifische Regel oder Bedingung."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Push-Stand-Messregel (git status/abschluss-check allgemein messen statt merken), nicht spezifisch zur Arbeitskopien-Meldung nach Übernahme."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Erhalt-Matrix zur CLAUDE.md-Abdeckung der Prüfstand-Werkzeuge ist eine Auditliste ohne Implementierungsregel für diesen Auftrag."
+    },
+    "B07": {
+      "relevant": false,
+      "grund": "Genereller Upgrade-Plan U0–U4 ohne konkreten Bezug zur Arbeitskopien-Erkennung im Abschluss-Check."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Nur die Inhaltstabelle des README (Dateiübersicht) ohne eigene Regel, Bedingung oder Erfahrung zu diesem Auftrag."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Allgemeiner Schritt-für-Schritt-Ablauf des Teams, nichts Auftragsspezifisches zur Arbeitskopien-Meldung."
+    },
+    "B10": {
+      "relevant": false,
+      "grund": "Behandelt eine andere Fehlerklasse (Symlink löscht Daten in der Arbeitskopie), nicht die Meldung liegen gebliebener Arbeitskopien nach Übernahme."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Beschreibt den Messaufbau U4 selbst (Kandidaten, Referenzurteile, Kostenrahmen), also die Metaebene der Übung, nicht den Inhalt des Auftrags A5."
+    },
+    "B12": {
+      "relevant": true,
+      "grund": "Enthält den verbindlichen Vertrag §8.2 für abschluss_check.py mit Kürzel-Tabelle, Exit-Codes und Testkonvention, an den sich eine neue Meldung halten muss."
+    },
+    "B13": {
+      "relevant": false,
+      "grund": "Erhalt-Matrix zu anderen CLAUDE.md-Abschnitten (Coding-Agenten, Prüfstand-Werkzeuge allgemein) ohne Bezug zur Arbeitskopien-Meldung."
+    },
+    "B14": {
+      "relevant": true,
+      "grund": "Definiert exakt §9.3 OFFENE_ARBEITSKOPIE (git worktree list --porcelain, Einordnung in KUERZEL_ORDNUNG) — die bestehende Grundlage, die der Auftrag um den Übernahme-Fall erweitern soll."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Allgemeine Reflexion über Wissens-Schutzschichten, keine konkrete Regel für diesen Auftrag."
+    },
+    "B16": {
+      "relevant": false,
+      "grund": "Lehren zu Wiedereinstiegsprüfungen und falschen Gate-Behauptungen, nicht zur Arbeitskopien-Meldung."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Umfangreiche Projektnotiz eines anderen Projekts zu Filmproduktion, thematisch fremd zum Auftrag."
+    },
+    "B18": {
+      "relevant": false,
+      "grund": "Thematisch fremd zum Auftrag: ein anderes Projekt."
+    },
+    "B19": {
+      "relevant": true,
+      "grund": "Enthält die §9-Einführung und §9.1-Aufrufe (u. a. zeigt `status` zusätzlich Arbeitskopie/Zweig/Basis-Commit/„abgeschlossen?“) — den bestehenden Lebenszyklus, auf dem die neue Meldung aufsetzen muss."
+    },
+    "B20": {
+      "relevant": true,
+      "grund": "Wiederholt denselben verbindlichen §8-Vertrag für abschluss_check.py (Kürzel-Tabelle, Exit-Codes), also die normsetzende Grundlage für die neue Meldung."
+    },
+    "B21": {
+      "relevant": false,
+      "grund": "Betrifft den Messaufbau U4 (Kandidaten, Referenzurteile, Kostenrahmen, Messwerkzeug), nicht den A5-Auftragsinhalt selbst."
+    },
+    "B22": {
+      "relevant": true,
+      "grund": "Enthält §8.3 Testkonvention: jeder Exit-Code/jedes Kürzel braucht mindestens einen auslösenden Test plus einen sauberen Fall — direkt anzuwenden auf den neuen Befund-Kürzel."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Wiederholt Team-Tabelle und dieselbe Aussage „Abschluss-Check meldet vergessene Arbeitskopien“ ohne neue, auftragsspezifische Regel."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Dieselbe Wiederholung wie B04/B23 ohne neuen, für den Auftrag verändernden Inhalt."
+    },
+    "B25": {
+      "relevant": true,
+      "grund": "Enthält §9.1 Schritt 7/8 (Aufräumen kann scheitern, Exit bleibt trotzdem 0, Zustand „abgeschlossen=uebernommen“) sowie §9.2 Exit-Codes und §9.3 OFFENE_ARBEITSKOPIE — genau der Fall „nach dem Übernehmen liegen geblieben“, den der Auftrag adressiert."
+    },
+    "B26": {
+      "relevant": true,
+      "grund": "Wiederholt §9.3 OFFENE_ARBEITSKOPIE, §9.4 Tests und §9.5-Nachbesserungen — dieselbe unmittelbar einschlägige Vertragsgrundlage für die geforderte Meldung."
+    },
+    "B27": {
+      "relevant": false,
+      "grund": "Betrifft §13 Regelquelle (U3) und den U4-Messaufbau, nicht die von A5 geforderte Arbeitskopien-Meldung."
+    },
+    "B28": {
+      "relevant": false,
+      "grund": "Rein illustratives Architektur-Diagramm der sieben Schichten ohne spezifische Regel zu diesem Auftrag."
+    },
+    "B29": {
+      "relevant": true,
+      "grund": "Enthält denselben §8-Vertrag (Kürzel-Tabelle, Exit-Codes) und §8.3-Tests wie B12/B20 — die verbindliche Formatvorgabe, an die sich die neue Meldung halten muss."
+    },
+    "B30": {
+      "relevant": true,
+      "grund": "Enthält den Gate-Befehl `PYTHONDONTWRITEBYTECODE=1 python3 -m pytest werkzeuge/tests -q` als Abnahmekriterium für jede Änderung an abschluss_check.py sowie den Verweis auf VERTRAG.md als Vertragsquelle."
+    }
+  }
+}

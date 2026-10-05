@@ -1,0 +1,5 @@
+{
+ "note": "Pre-run of the duplicate search on 21 Sept 2026: the orchestrator proposed to look at only the 200 most promising note pairs; the human overruled and the full run over all pairs was done instead (see data/dedup-run/).",
+ "preselected_pairs": 200,
+ "date": "2026-09-21"
+}

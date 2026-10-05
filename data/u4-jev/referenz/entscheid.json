@@ -1,0 +1,42 @@
+{
+  "Z-74e736313910": {
+    "relevant": true,
+    "grund": "A2/B01: sagt, dass eine Indexzeile absichtlich mehrere Verweise bündelt (E-008) — wer doppelte Einträge prüft, darf Bündelzeilen nicht als Dublette werten; verhindert einen Fehler."
+  },
+  "Z-5cbc432c8316": {
+    "relevant": false,
+    "grund": "A2/B17: Formregeln für eine einzelne Notiz (Kopf, name, Verweise); über Index-Einträge und ihre Doppelung sagt der Abschnitt nichts — nur Themennähe."
+  },
+  "Z-a748d2fddf2b": {
+    "relevant": true,
+    "grund": "A2/B26: legt fest, dass der Check archiv/ nicht zum Bestand zählt und dort den Index nicht prüft — die neue Prüfung muss diese Ausnahme einhalten."
+  },
+  "Z-51b399078e7a": {
+    "relevant": true,
+    "grund": "A3/B01: enthält Plan-Gate 3 (sichtbarer Rückfall, keine still verschwundene Quelle) und Gate 5 (große Datenmengen begrenzt, keine unbemerkte Kürzung) — genau die Vorgabe, wie die Größenabsicherung sich verhalten muss."
+  },
+  "Z-bdb57a26550b": {
+    "relevant": true,
+    "grund": "A3/B28: dieselben Gates 3 und 5 wie B01, als eigener Abschnitt — gleiche Begründung, gleich entschieden."
+  },
+  "Z-38569c9e759b": {
+    "relevant": false,
+    "grund": "A3/B06: §12.7 regelt Transport ohne live, Maskieren, ausgefallene Kontrolle und Wahrscheinlichkeiten — nichts davon betrifft Größe der Kandidaten oder die Kostenschätzung."
+  },
+  "Z-771aeccb4660": {
+    "relevant": true,
+    "grund": "A5/B04: hält fest, dass der Abschluss-Check vergessene Arbeitskopien schon meldet (und zwei fand) — ohne das Wissen baut man die Meldung doppelt statt zu erweitern."
+  },
+  "Z-60c9cdf6db0c": {
+    "relevant": true,
+    "grund": "A5/B08: die Inhaltstabelle nennt denselben vorhandenen Befund des Abschluss-Checks — gleiche Begründung wie B04, für Einheitlichkeit gleich entschieden."
+  },
+  "Z-bb2894de86a2": {
+    "relevant": true,
+    "grund": "A5/B23: wiederholt den vorhandenen Befund „vergessene Arbeitskopien“ samt Erfahrung vom ersten Lauf — wie B04."
+  },
+  "Z-92bf57615a9b": {
+    "relevant": true,
+    "grund": "A5/B24: dieselbe Aussage wie B04/B23 — wie B04."
+  }
+}

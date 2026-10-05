@@ -1,0 +1,16 @@
+{
+ "note": "Size of the shared project index file ('Wegweiser') in the private projects repo, measured 2026-10-05 with 'git show <commit>:<file> | wc -c'. Only the byte numbers are exported; the file content is private.",
+ "before": {
+  "commit": "70be269",
+  "bytes": 76983,
+  "when": "before the 2026-09-27 rewrite"
+ },
+ "after": {
+  "commit": "751fc49",
+  "bytes": 16542,
+  "when": "after the 2026-09-27 rewrite"
+ },
+ "codex_read_bytes": 32768,
+ "codex_share_percent": 42.6,
+ "paper_rounded_percent": 43
+}

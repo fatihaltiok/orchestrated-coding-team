@@ -1,0 +1,1073 @@
+{
+  "format": 1,
+  "auftraege": {
+    "A1": {
+      "Z-5dcaddfb930d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-2915ffabb1ac": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-279b8e7f1b5f": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-6fc4d17545a0": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-addc3796a30f": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-d03a45dd8efb": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-a08b2e065a11": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4edadfb543f4": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-be09573fe414": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-5edc9708df97": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8ca13f0fc45d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-c924afc2b1ca": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-65e1067217b1": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-fcd5e061fdb2": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-40083432513d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-197eeec8a3bf": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-00db5b20f23d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-255d840afb24": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-1434916adbcb": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7d8d97f48e8e": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-71f410520aa6": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-258cfbbb6c55": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-0eb61d80ab79": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-0b53c018c148": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bb96b207b6a6": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4e1e8731ef37": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-83ebfb439965": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4c9f9f05fa4c": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-60c9cdf6db0c": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-f4b5648d829d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      }
+    },
+    "A2": {
+      "Z-74e736313910": {
+        "relevant": true,
+        "b1": false,
+        "b2": true,
+        "strittig": true,
+        "entscheid_grund": "A2/B01: sagt, dass eine Indexzeile absichtlich mehrere Verweise bündelt (E-008) — wer doppelte Einträge prüft, darf Bündelzeilen nicht als Dublette werten; verhindert einen Fehler."
+      },
+      "Z-a4c2c3dfb619": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7945c92ff783": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-d03a45dd8efb": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4e1e8731ef37": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-26a5b24adfb8": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-902926a5c434": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-2915ffabb1ac": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-5ecdee43ef2d": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-b9acb81f80f3": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-0eb61d80ab79": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-40083432513d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-60c9cdf6db0c": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-179380004e00": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-0b53c018c148": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-197eeec8a3bf": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-5cbc432c8316": {
+        "relevant": false,
+        "b1": true,
+        "b2": false,
+        "strittig": true,
+        "entscheid_grund": "A2/B17: Formregeln für eine einzelne Notiz (Kopf, name, Verweise); über Index-Einträge und ihre Doppelung sagt der Abschnitt nichts — nur Themennähe."
+      },
+      "Z-1434916adbcb": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-fb382ee747b4": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-d72738983af8": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-a1a47fb06f3d": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-dc1e250cf328": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-5763323b55b0": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-22d5eb0254d3": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-ddaac98e9707": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-a748d2fddf2b": {
+        "relevant": true,
+        "b1": false,
+        "b2": true,
+        "strittig": true,
+        "entscheid_grund": "A2/B26: legt fest, dass der Check archiv/ nicht zum Bestand zählt und dort den Index nicht prüft — die neue Prüfung muss diese Ausnahme einhalten."
+      },
+      "Z-16a4976a8119": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bb2894de86a2": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bb96b207b6a6": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-e3f4eae342af": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      }
+    },
+    "A3": {
+      "Z-51b399078e7a": {
+        "relevant": true,
+        "b1": false,
+        "b2": true,
+        "strittig": true,
+        "entscheid_grund": "A3/B01: enthält Plan-Gate 3 (sichtbarer Rückfall, keine still verschwundene Quelle) und Gate 5 (große Datenmengen begrenzt, keine unbemerkte Kürzung) — genau die Vorgabe, wie die Größenabsicherung sich verhalten muss."
+      },
+      "Z-df81eb4152e8": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-0b53c018c148": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-d000158221f9": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bb96b207b6a6": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-38569c9e759b": {
+        "relevant": false,
+        "b1": true,
+        "b2": false,
+        "strittig": true,
+        "entscheid_grund": "A3/B06: §12.7 regelt Transport ohne live, Maskieren, ausgefallene Kontrolle und Wahrscheinlichkeiten — nichts davon betrifft Größe der Kandidaten oder die Kostenschätzung."
+      },
+      "Z-e37d81026460": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-310b37e033b8": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-11258f3b9bbc": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7e89f2b6388e": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-5ab64aab4cdf": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bb2894de86a2": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-b27cd23bed11": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7f3520435dde": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7d8d97f48e8e": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-f4b5648d829d": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-40083432513d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-197eeec8a3bf": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-58071f2b37bc": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-b6310507408e": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-45bedf8429c2": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8c5d26425ea6": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4e1e8731ef37": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-49c30b637ac0": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-fcd5e061fdb2": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-6d8a7e63f824": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7bf6ace49226": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bdb57a26550b": {
+        "relevant": true,
+        "b1": false,
+        "b2": true,
+        "strittig": true,
+        "entscheid_grund": "A3/B28: dieselben Gates 3 und 5 wie B01, als eigener Abschnitt — gleiche Begründung, gleich entschieden."
+      },
+      "Z-5edc9708df97": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-0c6a9836896a": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      }
+    },
+    "A4": {
+      "Z-bfd69e608ddb": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7727e3fd4dda": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7bf6ace49226": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-70e947466753": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-22d5eb0254d3": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-fe7f57cd531f": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-40083432513d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-9a4fa2948039": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-14094c3b6871": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-a81d60401f77": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-be0449853fbb": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7e89f2b6388e": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-b5802eb86812": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-51b399078e7a": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8763a860e153": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-71f410520aa6": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8c71f27230c4": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-b0f523e5010d": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-34b2fc594043": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-0c6a9836896a": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4907ad616c41": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-c924afc2b1ca": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-71c7f543661d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-2915ffabb1ac": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4e1e8731ef37": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8c5d26425ea6": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8679c6b31bc2": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-a9ce1c57e293": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bb96b207b6a6": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8df5e11c2b63": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      }
+    },
+    "A5": {
+      "Z-db4e2a7c824f": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-70b65932302b": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4c9f9f05fa4c": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-771aeccb4660": {
+        "relevant": true,
+        "b1": false,
+        "b2": true,
+        "strittig": true,
+        "entscheid_grund": "A5/B04: hält fest, dass der Abschluss-Check vergessene Arbeitskopien schon meldet (und zwei fand) — ohne das Wissen baut man die Meldung doppelt statt zu erweitern."
+      },
+      "Z-33d1bd58a506": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-18034be51ae4": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8c5d26425ea6": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-60c9cdf6db0c": {
+        "relevant": true,
+        "b1": false,
+        "b2": true,
+        "strittig": true,
+        "entscheid_grund": "A5/B08: die Inhaltstabelle nennt denselben vorhandenen Befund des Abschluss-Checks — gleiche Begründung wie B04, für Einheitlichkeit gleich entschieden."
+      },
+      "Z-faf799d23f9c": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-82d4ca299780": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bb96b207b6a6": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-a08b2e065a11": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-fc5404b7ea41": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-8ffe62189c0b": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-ddaac98e9707": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-dd78e9b1ca8d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-4e1e8731ef37": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-d03a45dd8efb": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-ae2b234e53c1": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-65e1067217b1": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-7e89f2b6388e": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-e69474498314": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-bb2894de86a2": {
+        "relevant": true,
+        "b1": false,
+        "b2": true,
+        "strittig": true,
+        "entscheid_grund": "A5/B23: wiederholt den vorhandenen Befund „vergessene Arbeitskopien“ samt Erfahrung vom ersten Lauf — wie B04."
+      },
+      "Z-92bf57615a9b": {
+        "relevant": true,
+        "b1": false,
+        "b2": true,
+        "strittig": true,
+        "entscheid_grund": "A5/B24: dieselbe Aussage wie B04/B23 — wie B04."
+      },
+      "Z-f559f043e08e": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-26a5b24adfb8": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-40083432513d": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-58411ec8aad0": {
+        "relevant": false,
+        "b1": false,
+        "b2": false,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-57a4bab66d7b": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      },
+      "Z-1434916adbcb": {
+        "relevant": true,
+        "b1": true,
+        "b2": true,
+        "strittig": false,
+        "entscheid_grund": null
+      }
+    }
+  },
+  "uebereinstimmung": {
+    "A1": 1.0,
+    "A2": 0.9,
+    "A3": 0.9,
+    "A4": 1.0,
+    "A5": 0.8666666666666667,
+    "gesamt": 0.9333333333333333
+  }
+}

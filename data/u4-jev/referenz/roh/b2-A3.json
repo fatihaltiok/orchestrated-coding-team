@@ -1,0 +1,124 @@
+{
+  "A3": {
+    "B01": {
+      "relevant": true,
+      "grund": "Enthält Test-Gate 3, das für fehlerhafte/timeoutende Jev-Urteile einen sichtbaren Rückfall statt stillem Verschwinden verlangt – genau die Vorgabe, die eine Absicherung gegen zu große Kandidaten erfüllen muss."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Behandelt die U3-Regelquelle für Codex/Claude und die Aufträge/Läufe der U4-Messung, nicht die Größenprüfung oder Kostenschätzung im Jev-Modul selbst."
+    },
+    "B03": {
+      "relevant": false,
+      "grund": "Erklärt allgemein das Konzept von Kontext und Kontextschutz im Team, ohne konkrete Regel zur Jev-Größenprüfung oder Kostenschätzung."
+    },
+    "B04": {
+      "relevant": true,
+      "grund": "Enthält die bestehende Größe-Regel (Kandidat über 100 000 Zeichen → zu_gross, bleibt in der Ausgabe) – die zu prüfende und mit §12.3 abzugleichende Kernregel dieses Auftrags."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Beschreibt nur, welche Daten für die U4-Live-Erprobung das Haus verlassen dürfen und wie der Stand eingefroren wird – keine Regel zur Größen- oder Kostenprüfung im Code."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Behandelt Maskierung von Schlüsseln, das Verhalten bei ausgefallener Negativkontrolle und die Prüfung von Wahrscheinlichkeiten – andere Teile des Jev-Vertrags ohne Bezug zu Größe oder Kostenschätzung."
+    },
+    "B07": {
+      "relevant": true,
+      "grund": "Wiederholt die Größe-Regel (100 000 Zeichen → zu_gross) aus §12, die für die Absicherung gegen zu große Kandidaten der Bezugspunkt ist."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Listet nur die Rollen der verschiedenen Agenten im Team auf, ohne Bezug zur Jev-Größenprüfung oder Kostenschätzung."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Reiner Projektstand eines anderen Projekts, hat mit dem Jev-Baustein oder diesem Auftrag nichts zu tun."
+    },
+    "B10": {
+      "relevant": false,
+      "grund": "Beschreibt die Methodik der U4-Messung (Auftragsliste, Kandidatenauswahl, Referenzurteil), nicht eine Regel für die Umsetzung von A3 selbst."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Beschreibt allgemein die Einführung eigener Arbeitskopien je Agentenlauf, ohne Bezug zur konkreten Jev-Größen- oder Kostenprüfung."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Beschreibt Übernahmekriterien für Arbeitskopien, den Merkzettel-Check und die Teamrollen – allgemeine Arbeitsweise, nicht die Jev-Größen-/Kostenlogik."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Enthält die vollständige öffentliche Schnittstelle von jev.py inklusive der Größe-Regel und der Funktion schaetze_kosten – direkte Arbeitsgrundlage für diesen Auftrag."
+    },
+    "B14": {
+      "relevant": true,
+      "grund": "Zeigt dieselbe öffentliche Schnittstelle (Antwort, frage, Ordnung, ordne_kandidaten, schaetze_kosten) – unverzichtbar, um Größenprüfung und Kostenschätzung korrekt zu ändern."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Behandelt Aufruf und Exit-Codes des Kontextpaket-Werkzeugs (§11), nicht die Größenprüfung oder Kostenschätzung des Jev-Moduls (§12)."
+    },
+    "B16": {
+      "relevant": true,
+      "grund": "Enthält die Regeln für ordne_kandidaten, die Kommandozeile schaetze mit der Kostenformel und Freigabepflicht sowie die zugehörigen Pflichttests – zentral für diesen Auftrag."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Vermischt Testdetails zur Codex-Regelquelle (§13) mit dem Zweck der U4-Messung – keine konkrete Regel zur Jev-Größenprüfung oder Kostenschätzung."
+    },
+    "B18": {
+      "relevant": false,
+      "grund": "Allgemeine Erläuterung der Schutzschichten für Kontext und Wissen im Team, ohne Bezug zu diesem Auftrag."
+    },
+    "B19": {
+      "relevant": true,
+      "grund": "Enthält Negativkontrolle, Ausgaberegeln von ordne_kandidaten, die Kommandozeile schaetze mit Kostenformel und die Pflichttests – direkt einschlägig."
+    },
+    "B20": {
+      "relevant": false,
+      "grund": "Beschreibt Messgrößen, Entscheidungsregel und Kostenrahmen der U4-Messung selbst (ein separates Werkzeug/Vorhaben), nicht die Härtung von jev.py."
+    },
+    "B21": {
+      "relevant": true,
+      "grund": "Enthält §12.3 vollständig, insbesondere die Größe-Regel (90 000/180 000 Zeichen → zu_gross) – die zentrale bestehende Regel, die dieser Auftrag absichert."
+    },
+    "B22": {
+      "relevant": false,
+      "grund": "Beschreibt Ziel, Architektur und Paketreihenfolge des Gesamt-Upgrades allgemein, keine konkrete Jev-Größen- oder Kostenregel."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Reiner Projektstand eines anderen Projekts, ohne jeden Bezug zum Jev-Baustein oder diesem Auftrag."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Beschreibt die frühere Arbeitsweise (Stufe 1/2) allgemein, ohne Bezug zur Jev-Größen- oder Kostenprüfung."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Behandelt das Kontextpaket-Werkzeug (§11) und dessen Exit-Codes, nicht die Größenprüfung oder Kostenschätzung des Jev-Moduls."
+    },
+    "B26": {
+      "relevant": true,
+      "grund": "Vollständige Regeln für ordne_kandidaten (Eingabeformat, eine Anfrage je Kandidat, Negativkontrolle, Vollständigkeit der Ausgabe, Rate-Limit) – der Mechanismus, über den zu große Kandidaten überhaupt in Anfragen münden."
+    },
+    "B27": {
+      "relevant": false,
+      "grund": "Behandelt Symlink-Schutz und Testdetails für regeln.py sowie ein Stdin-Feature von jev.py ordne – nicht die Größenprüfung oder Kostenschätzung."
+    },
+    "B28": {
+      "relevant": true,
+      "grund": "Testgate 3 verlangt für fehlerhafte oder timeoutende Jev-Urteile einen sichtbaren Rückfall statt stillem Verschwinden – direkte Vorgabe für die Absicherung gegen zu große oder sonst problematische Kandidaten."
+    },
+    "B29": {
+      "relevant": true,
+      "grund": "Enthält die schaetze_kosten-Signatur, die Größe-Regel und Teile von ordne_kandidaten – unmittelbare Arbeitsgrundlage für Größenprüfung und Kostenschätzung."
+    },
+    "B30": {
+      "relevant": false,
+      "grund": "Behandelt Nachbesserungen an regeln.py (Symlinks, atomares Schreiben, Sicherungsnamen) und ein Jev-Stdin-Feature – nicht die Größen- oder Kostenprüfung selbst."
+    }
+  }
+}

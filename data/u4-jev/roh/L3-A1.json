@@ -1,0 +1,229 @@
+{
+  "lauf": "L3",
+  "auftrag": "A1",
+  "zeitpunkt": "2026-09-27T06:55:12.606324+00:00",
+  "laufzeit_s": 6.437432266771793,
+  "ordnung": {
+    "eintraege": [
+      {
+        "id": "Z-40083432513d",
+        "lokal_rang": 0,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-bb96b207b6a6",
+        "lokal_rang": 1,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-2915ffabb1ac",
+        "lokal_rang": 2,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-c924afc2b1ca",
+        "lokal_rang": 3,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-4e1e8731ef37",
+        "lokal_rang": 4,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-65e1067217b1",
+        "lokal_rang": 5,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-a08b2e065a11",
+        "lokal_rang": 6,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-71f410520aa6",
+        "lokal_rang": 7,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-4c9f9f05fa4c",
+        "lokal_rang": 8,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-0b53c018c148",
+        "lokal_rang": 9,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-197eeec8a3bf",
+        "lokal_rang": 10,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-258cfbbb6c55",
+        "lokal_rang": 11,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-d03a45dd8efb",
+        "lokal_rang": 12,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-1434916adbcb",
+        "lokal_rang": 13,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-60c9cdf6db0c",
+        "lokal_rang": 14,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-4edadfb543f4",
+        "lokal_rang": 15,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-83ebfb439965",
+        "lokal_rang": 16,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-fcd5e061fdb2",
+        "lokal_rang": 17,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-7d8d97f48e8e",
+        "lokal_rang": 18,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-5dcaddfb930d",
+        "lokal_rang": 19,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-0eb61d80ab79",
+        "lokal_rang": 20,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-00db5b20f23d",
+        "lokal_rang": 21,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-5edc9708df97",
+        "lokal_rang": 22,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-f4b5648d829d",
+        "lokal_rang": 23,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-be09573fe414",
+        "lokal_rang": 24,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-addc3796a30f",
+        "lokal_rang": 25,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-255d840afb24",
+        "lokal_rang": 26,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-6fc4d17545a0",
+        "lokal_rang": 27,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-279b8e7f1b5f",
+        "lokal_rang": 28,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      },
+      {
+        "id": "Z-8ca13f0fc45d",
+        "lokal_rang": 29,
+        "noul": null,
+        "status": "nicht_bewertet",
+        "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+      }
+    ],
+    "status_gesamt": "nicht_bewertet",
+    "modell": null,
+    "eingabe_token": 0,
+    "kontrolle": {
+      "noul": null,
+      "bestanden": null,
+      "grund": "http_401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+    }
+  },
+  "gegenprobe_id": null
+}

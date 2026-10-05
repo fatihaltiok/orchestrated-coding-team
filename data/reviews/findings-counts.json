@@ -1,0 +1,93 @@
+{
+ "note": "Findings per outside review, counted from the review report headings (see report-extracts.md for the evidence lines). 'memo' = kept as a memo item, not counted as a confirmed finding.",
+ "reviews": {
+  "R1_context_package": {
+   "reviewer": "Codex",
+   "findings": 12,
+   "ids": "R1-01..R1-12"
+  },
+  "R2_jev_module": {
+   "reviewer": "Codex",
+   "findings": 6,
+   "of_which_leaks": 3,
+   "ids": "1..6"
+  },
+  "R3_rule_tool": {
+   "reviewer": "Kimi",
+   "findings": 7,
+   "ids": "R3-1..R3-7"
+  },
+  "R4_small_parts": {
+   "reviewer": "Muse",
+   "findings": 3,
+   "ids": "R4-1..R4-3"
+  },
+  "R5_u5": {
+   "reviewer": "Kimi",
+   "findings": 8,
+   "of_which_medium": 1,
+   "ids": "B1..B8"
+  },
+  "R6_u6": {
+   "reviewer": "Kimi",
+   "findings": 0
+  },
+  "R7_u7": {
+   "reviewer": "Muse",
+   "findings": 2,
+   "memo": 1,
+   "ids": "B1,B2 confirmed; B3 memo"
+  },
+  "V1_contract_check": {
+   "reviewer": "Kimi",
+   "findings": 28,
+   "ids": "Befund 1..28",
+   "all_taken_on_board": true
+  },
+  "R12_team_channel": {
+   "reviewer": "MiMo Pro",
+   "findings": 2,
+   "ids": "B1,B2"
+  },
+  "R13_run_watcher": {
+   "reviewer": "Devin",
+   "findings": 2,
+   "remarks_only": 2,
+   "ids": "B1,B2 gaps; B3,B4 remarks without defect"
+  }
+ },
+ "memory_checker_tests": {
+  "green": 117,
+  "of": 117,
+  "date": "2026-09-21"
+ },
+ "working_copy_tests": {
+  "green": 67,
+  "of": 67,
+  "date": "2026-09-19"
+ },
+ "working_copy_gaps": {
+  "outside_review_findings": 3,
+  "orchestrator_review_findings": 4,
+  "overlap_found_by_both": 1,
+  "distinct_gaps": 6,
+  "note": "counts as stated in the project log of 19 Sept 2026 (see data/recorded/working-copy-gaps.md); one symlink gap was found by both reviewers (outside report finding 3), so 3+4-1 = 6 distinct gaps. The three outside findings are listed one by one in report-extracts.md; the 4 own findings and the overlap stand only in the protocol."
+ },
+ "tests_499": {
+  "passed": 499,
+  "date": "2026-09-27",
+  "commit": "2ca90d4",
+  "log_line": "499 passed in 32.81s"
+ },
+ "gaps_left_open_on_purpose": {
+  "count": 1,
+  "origin": "follow-up record of the team-channel reviews (data/reviews/report-extracts.md): B1 of R12 was documented as a deliberate boundary; the other three gaps were fixed"
+ },
+ "tests_752": {
+  "passed": 752,
+  "date": "2026-10-01"
+ },
+ "tool_suite_2026_09_26": {
+  "passed": 483
+ }
+}

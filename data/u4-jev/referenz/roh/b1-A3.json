@@ -1,0 +1,124 @@
+{
+  "A3": {
+    "B01": {
+      "relevant": false,
+      "grund": "Der Abschnitt beschreibt den allgemeinen Upgrade-Plan und generische Test-Gates für alle Pakete, ohne konkrete Regel zur Größenprüfung oder Kostenschätzung von Jev-Anfragen."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Der Abschnitt beschreibt den Messaufbau des U4-Experiments (Läufe, Messgrößen, Kostenrahmen der Messung selbst), nicht die Härtung von jev.py gegen zu große Kandidaten oder die Prüfung von schaetze_kosten."
+    },
+    "B03": {
+      "relevant": false,
+      "grund": "Der Abschnitt erklärt allgemein Kontextschutz und Schutzschichten, ohne jeden Bezug zur Größenprüfung oder Kostenschätzung in jev.py."
+    },
+    "B04": {
+      "relevant": true,
+      "grund": "Enthält die verbindliche Regel (Kandidat mit 100 000 Zeichen → zu_gross, kein Transportaufruf, Kandidat bleibt in der Ausgabe) sowie die §12.7-Nachbesserungen, die beim Ändern von jev.py direkt zu beachten sind."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Beschreibt den Messaufbau des U4-Live-Laufs (Daten, Aufträge, Referenzurteile, Gegenprobe), nicht die konkrete Härtung von jev.py gegen große Kandidaten oder die Kostenschätzung."
+    },
+    "B06": {
+      "relevant": true,
+      "grund": "Enthält §12.7-Nachbesserungen (u. a. Maskieren vor dem Kürzen, Gegenprobe darf nicht still wegfallen), die beim Härten von jev.py beachtet werden müssen, um bestehende Korrekturen nicht zu brechen."
+    },
+    "B07": {
+      "relevant": true,
+      "grund": "Enthält die Größen-Regel (100 000-Zeichen-Kandidat → zu_gross) und die §12.7-Nachbesserungen, auch wenn zusätzlich unabhängiger §11.12-Text zu kontextpaket.py beigemischt ist."
+    },
+    "B08": {
+      "relevant": false,
+      "grund": "Zeigt nur die Rollentabelle des Teams, ohne Bezug zur konkreten Größenprüfung oder Kostenschätzung von Jev-Anfragen."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Betrifft ein völlig anderes Projekt und hat keinerlei Bezug zu Jev, Kandidatengröße oder Kostenschätzung."
+    },
+    "B10": {
+      "relevant": false,
+      "grund": "Wiederholt die Aufträge und den Messaufbau des U4-Experiments, nicht die eigentliche Implementierungsregel für Größenschutz oder Kostenschätzung."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Erzählt die Entstehungsgeschichte des Teams (Stufe 1/2), ohne konkrete Regel zu Jev-Kandidatengröße oder Kosten."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Beschreibt allgemein Arbeitskopien, das Team und die Architekturschichten, nichts Spezifisches zur Größenprüfung oder Kostenschätzung von Jev."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Enthält die öffentliche Schnittstelle inklusive schaetze_kosten-Signatur und die §12.3-Regeln zur frage-Funktion samt der Größenschranke (90 000/180 000 Zeichen → zu_gross)."
+    },
+    "B14": {
+      "relevant": true,
+      "grund": "Enthält die vollständige öffentliche Schnittstelle mit schaetze_kosten-Signatur, die für die Prüfung der Kostenschätzung direkt gebraucht wird."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Betrifft ausschließlich kontextpaket.py (Pflichtkontext, KONTEXT.json), nicht die Größenprüfung oder Kostenschätzung von Jev-Anfragen."
+    },
+    "B16": {
+      "relevant": true,
+      "grund": "Enthält die vollständigen Regeln §12.4–§12.6 inklusive der CLI mit schaetze-Befehl und dem kompletten Testvertrag für jev.py, direkt relevant für diesen Auftrag."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Behandelt Tests für regeln.py und den Messaufbau von U4, nicht die Größenprüfung oder Kostenschätzung in jev.py."
+    },
+    "B18": {
+      "relevant": false,
+      "grund": "Wiederholt die allgemeine Erklärung von Kontext und Schutzschichten ohne Bezug zu Jev-Größenprüfung oder Kostenschätzung."
+    },
+    "B19": {
+      "relevant": true,
+      "grund": "Enthält die CLI mit dem schaetze-Kommando und dem Kostenschätzungs-Hinweis sowie den vollständigen Testvertrag §12.6, der bei dieser Härtung eingehalten werden muss."
+    },
+    "B20": {
+      "relevant": false,
+      "grund": "Wiederholt Messgrößen und Kostenrahmen des U4-Experiments, nicht die konkrete Implementierungsregel für Größenschutz oder schaetze_kosten."
+    },
+    "B21": {
+      "relevant": true,
+      "grund": "Enthält wörtlich die zentrale Regel §12.3, insbesondere die Größenschranke (zu_gross bei über 90 000/180 000 Zeichen), die genau der Kern dieses Auftrags ist."
+    },
+    "B22": {
+      "relevant": false,
+      "grund": "Beschreibt Ziel, Architektur und Paketreihenfolge des Gesamt-Upgrades allgemein, ohne konkrete Regel zu Kandidatengröße oder Kostenschätzung."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Betrifft ein komplett anderes Projekt und hat keinen Bezug zu Jev, Kandidatengröße oder Kostenschätzung."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Erzählt die frühere Arbeitsweise des Teams (Stufe 1/2), ohne Bezug zur Größenprüfung oder Kostenschätzung von Jev."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Betrifft ausschließlich kontextpaket.py (§11, Pflichtkontext), nicht jev.py oder dessen Größen-/Kostenregeln."
+    },
+    "B26": {
+      "relevant": true,
+      "grund": "Enthält die Vollständigkeits-Invariante (jeder Kandidat genau einmal, auch bei zu_gross) und die Parallelitätsgrenze, die beim Härten der Größenprüfung nicht gebrochen werden dürfen."
+    },
+    "B27": {
+      "relevant": false,
+      "grund": "Behandelt hauptsächlich regeln.py sowie eine unabhängige stdin-Erweiterung von jev.py ordne, nicht die Größenprüfung oder Kostenschätzung."
+    },
+    "B28": {
+      "relevant": false,
+      "grund": "Wiederholt die allgemeinen Test-Gates des Upgrade-Plans ohne konkrete Regel zur Jev-Größenprüfung oder Kostenschätzung."
+    },
+    "B29": {
+      "relevant": true,
+      "grund": "Enthält die schaetze_kosten-Signatur und die vollständige Größenregel §12.3 Punkt 3, die genau den Kern dieses Auftrags betrifft."
+    },
+    "B30": {
+      "relevant": false,
+      "grund": "Behandelt die Härtung von regeln.py gegen Symlinks und Ersetzungsfehler, ohne Bezug zur Größenprüfung oder Kostenschätzung von Jev."
+    }
+  }
+}

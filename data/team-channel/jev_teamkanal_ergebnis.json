@@ -1,0 +1,155 @@
+{
+ "modell": "jev-1.13.0",
+ "gewichte": {
+  "nutzen": 0.3,
+  "haeufigkeit": 0.25,
+  "risiko": 0.25,
+  "ersatz": 0.2
+ },
+ "token": 13347,
+ "ergebnis": [
+  {
+   "id": "uebergabe_limit",
+   "gesamt": 3.36,
+   "gesamt_conf": 0.56,
+   "komposit": 0.81,
+   "nutzen": 2.36,
+   "haeufigkeit": 2.67,
+   "risiko": 2.51,
+   "ersatz": 0.81,
+   "passt": 0.77
+  },
+  {
+   "id": "fatih_unterwegs",
+   "gesamt": 3.25,
+   "gesamt_conf": 0.6,
+   "komposit": 0.79,
+   "nutzen": 2.67,
+   "haeufigkeit": 2.69,
+   "risiko": 2.05,
+   "ersatz": 1.02,
+   "passt": 0.83
+  },
+  {
+   "id": "fertigmeldung",
+   "gesamt": 3.56,
+   "gesamt_conf": 0.63,
+   "komposit": 0.78,
+   "nutzen": 2.43,
+   "haeufigkeit": 2.7,
+   "risiko": 2.25,
+   "ersatz": 1.2,
+   "passt": 0.54
+  },
+  {
+   "id": "zweitmeinung",
+   "gesamt": 3.33,
+   "gesamt_conf": 0.44,
+   "komposit": 0.77,
+   "nutzen": 2.47,
+   "haeufigkeit": 2.76,
+   "risiko": 2.05,
+   "ersatz": 1.14,
+   "passt": 0.48
+  },
+  {
+   "id": "wiedereinstieg",
+   "gesamt": 3.12,
+   "gesamt_conf": 0.57,
+   "komposit": 0.76,
+   "nutzen": 2.04,
+   "haeufigkeit": 2.5,
+   "risiko": 2.24,
+   "ersatz": 0.6,
+   "passt": 0.75
+  },
+  {
+   "id": "live_gegenprobe",
+   "gesamt": 3.17,
+   "gesamt_conf": 0.6,
+   "komposit": 0.73,
+   "nutzen": 2.25,
+   "haeufigkeit": 2.6,
+   "risiko": 2.35,
+   "ersatz": 1.55,
+   "passt": 0.6
+  },
+  {
+   "id": "faktencheck",
+   "gesamt": 2.81,
+   "gesamt_conf": 0.57,
+   "komposit": 0.72,
+   "nutzen": 2.22,
+   "haeufigkeit": 2.34,
+   "risiko": 2.46,
+   "ersatz": 1.6,
+   "passt": 0.63
+  },
+  {
+   "id": "projektwissen",
+   "gesamt": 3.2,
+   "gesamt_conf": 0.6,
+   "komposit": 0.7,
+   "nutzen": 2.02,
+   "haeufigkeit": 2.51,
+   "risiko": 1.47,
+   "ersatz": 0.55,
+   "passt": 0.79
+  },
+  {
+   "id": "ueberwachung",
+   "gesamt": 2.84,
+   "gesamt_conf": 0.56,
+   "komposit": 0.69,
+   "nutzen": 2.34,
+   "haeufigkeit": 2.14,
+   "risiko": 2.0,
+   "ersatz": 1.34,
+   "passt": 0.8
+  },
+  {
+   "id": "uneinigkeit",
+   "gesamt": 2.95,
+   "gesamt_conf": 0.61,
+   "komposit": 0.68,
+   "nutzen": 2.01,
+   "haeufigkeit": 1.96,
+   "risiko": 1.97,
+   "ersatz": 0.8,
+   "passt": 0.84
+  },
+  {
+   "id": "fehlersuche",
+   "gesamt": 2.96,
+   "gesamt_conf": 0.68,
+   "komposit": 0.67,
+   "nutzen": 2.06,
+   "haeufigkeit": 2.4,
+   "risiko": 1.69,
+   "ersatz": 1.12,
+   "passt": 0.81
+  },
+  {
+   "id": "revier_absprache",
+   "gesamt": 2.63,
+   "gesamt_conf": 0.48,
+   "komposit": 0.64,
+   "nutzen": 1.6,
+   "haeufigkeit": 1.57,
+   "risiko": 2.11,
+   "ersatz": 0.44,
+   "passt": 0.82
+  },
+  {
+   "id": "uebergabe_pruefen",
+   "gesamt": 1.61,
+   "gesamt_conf": 0.31,
+   "komposit": 0.41,
+   "nutzen": 1.12,
+   "haeufigkeit": 2.0,
+   "risiko": 0.35,
+   "ersatz": 1.4,
+   "passt": 0.25
+  }
+ ]
+}

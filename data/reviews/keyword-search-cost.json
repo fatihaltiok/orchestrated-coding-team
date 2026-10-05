@@ -1,0 +1,6 @@
+{
+ "note": "Keyword-search baseline of the U4 measurement (paper table 'cost and time per task': '$0, instant'). The keyword search is a local term-matching algorithm in the measurement tool; no external vendor was called for it, so the vendor fee is 0 USD. The cost claim is about vendor fees only, not about machine time.",
+ "keyword_search_vendor_fee_usd": 0,
+ "date": "2026-09-27",
+ "source": "U4 measurement run of 27 Sept 2026: local algorithm, no vendor call"
+}

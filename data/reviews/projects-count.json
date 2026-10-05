@@ -1,0 +1,7 @@
+{
+ "note": "Number of parallel projects. Paper 1.1 said 'about twenty'; paper 1.2 says 'about 25 projects'. At measurement time the shared project index listed 25 project rows (counted 2026-10-05). A soft approximation, not a fixed count.",
+ "paper_claim": "about 25 projects",
+ "paper_claim_number": 25,
+ "measured_project_rows": 25,
+ "measured": "2026-10-05"
+}

@@ -1,0 +1,124 @@
+{
+  "A1": {
+    "B01": {
+      "relevant": false,
+      "grund": "Beschreibt nur CLI und Exit-Codes von kontextpaket.py selbst, nicht die für den Laufwächter nötige Warnregel bei fehlender Kontextpaket-Datei neben dem Auftrag."
+    },
+    "B02": {
+      "relevant": false,
+      "grund": "Betrifft die REGELN_DRIFT-Prüfung im Abschluss-Check und den Messaufbau von U4, nicht die Laufwächter-Warnung aus A1."
+    },
+    "B03": {
+      "relevant": false,
+      "grund": "Enthält Gegenprüfungs-Befunde R1 zu kontextpaket.py (Blockprüfung, UNKLAR-Zeilen etc.), keine Regel für den Laufwächter."
+    },
+    "B04": {
+      "relevant": false,
+      "grund": "Wiederholt dieselben R1-Korrekturen an kontextpaket.py wie B03, ohne Bezug zum Laufwächter."
+    },
+    "B05": {
+      "relevant": false,
+      "grund": "Listet Parsing-Detailregeln von kontextpaket.py (Status, Stoppwörter, Manifest), die für die Laufwächter-Warnung ohne Belang sind."
+    },
+    "B06": {
+      "relevant": false,
+      "grund": "Merkzettel-Notiz zu einem völlig anderen Kundenprojekt, ohne jeden Bezug zu Laufwächter oder Kontextpaket."
+    },
+    "B07": {
+      "relevant": true,
+      "grund": "Ist der verbindliche Vertragstext für laufwaechter.py selbst (start/warte/status, Marke, Exit-Codes) und damit die Grundlage, in die die neue Warnung eingebaut werden muss."
+    },
+    "B08": {
+      "relevant": true,
+      "grund": "Beschreibt den Arbeitskopie-Modus von laufwaechter.py (Aufrufe, Exit-Codes, relative Pfade), den die neue Warnung konsistent mit unterstützen muss, ohne bestehende Exit-Codes zu kollidieren."
+    },
+    "B09": {
+      "relevant": false,
+      "grund": "Wiederholt Parsing-Regeln zu Status/Stoppwortliste/Manifest von kontextpaket.py, ohne Bezug zum Laufwächter."
+    },
+    "B10": {
+      "relevant": false,
+      "grund": "Definiert Datenklassen und Transport-Schnittstelle des Jev-Bausteins, betrifft nicht den Laufwächter."
+    },
+    "B11": {
+      "relevant": false,
+      "grund": "Erneute Wiederholung der R1-Korrekturen an kontextpaket.py, ohne Bezug zur Laufwächter-Warnung."
+    },
+    "B12": {
+      "relevant": false,
+      "grund": "Beschreibt Installation der Kurzbefehle und KONTEXT.json dieses Repos, aber keine Regel zur geforderten Laufwächter-Warnung."
+    },
+    "B13": {
+      "relevant": true,
+      "grund": "Enthält denselben §8-Vertragstext zu laufwaechter.py (Aufrufe, Marke, Exit-Codes) wie B07 und ist damit die Kernspezifikation des zu ändernden Werkzeugs."
+    },
+    "B14": {
+      "relevant": false,
+      "grund": "Erläutert nur das Schema der KONTEXT.json-Deklaration für kontextpaket.py, nicht die Prüfung, ob neben dem Auftrag eine Kontextpaket-Datei liegt."
+    },
+    "B15": {
+      "relevant": false,
+      "grund": "Wiederholt Titel von §13 und den Messaufbau-Zweck von U4, ohne konkrete Vorgabe für die Laufwächter-Warnung."
+    },
+    "B16": {
+      "relevant": false,
+      "grund": "Allgemeine Philosophie zu Kontext und Schutzschichten aus dem Paper, keine konkrete Regel für diesen Auftrag."
+    },
+    "B17": {
+      "relevant": false,
+      "grund": "Beschreibt Zusatzmaterial-Kandidaten und Größengrenzen von kontextpaket.py, nicht die Laufwächter-Warnung."
+    },
+    "B18": {
+      "relevant": false,
+      "grund": "Wiederholt dieselben kontextpaket-Parsingregeln wie B05, ohne Bezug zum Laufwächter."
+    },
+    "B19": {
+      "relevant": false,
+      "grund": "Nur eine allgemeine Übersichtstabelle der Werkzeuge im README, ohne konkrete Regel für die neue Warnung."
+    },
+    "B20": {
+      "relevant": false,
+      "grund": "Wiederholt Einleitung und KONTEXT.json-Format von §11, wie B14, ohne Bezug zur Laufwächter-Warnung."
+    },
+    "B21": {
+      "relevant": true,
+      "grund": "Nennt ausdrücklich die vorgeschlagene Regel 'Kontextpaket bei Delegation', dass vor einem Agentenauftrag eine Kontextpaket-Datei erzeugt und beigelegt wird — genau das Prinzip, das A1 als Laufwächter-Warnung durchsetzen soll."
+    },
+    "B22": {
+      "relevant": false,
+      "grund": "Wiederholt die allgemeine Begründung, warum ein Team den Kontext schont, ohne konkrete Vorgabe für A1."
+    },
+    "B23": {
+      "relevant": false,
+      "grund": "Beschreibt den Aufbau des Kontextpakets (Blöcke, Manifest, Zusatzmaterial) im Detail, nicht die Laufwächter-Warnung."
+    },
+    "B24": {
+      "relevant": false,
+      "grund": "Wiederholt den Abschnitt Kontext und Kontextschutz aus dem Paper wie B16, ohne konkrete Regel für A1."
+    },
+    "B25": {
+      "relevant": false,
+      "grund": "Beschreibt die Messmethodik von U4 (Referenzurteil, Gegenprobe, Läufe L1-L3), nicht die Umsetzung der Laufwächter-Warnung."
+    },
+    "B26": {
+      "relevant": false,
+      "grund": "Merkzettel-Notiz zu einem völlig anderen Projekt (Videoerzeugung), ohne Bezug zu Laufwächter oder Kontextpaket."
+    },
+    "B27": {
+      "relevant": false,
+      "grund": "Betrifft spätere Arbeitskopie-Schritte (ergebnis, abschliessen, Symlink-Datenverlust), nicht die Prüfung beim Start auf eine fehlende Kontextpaket-Datei."
+    },
+    "B28": {
+      "relevant": false,
+      "grund": "Allgemeines Ablaufbeispiel des Teams mit Laufwächter-Befehlen, aber ohne die konkrete Regel zur Kontextpaket-Warnung aus A1."
+    },
+    "B29": {
+      "relevant": false,
+      "grund": "Wiederholt die README-Übersichtstabelle der Werkzeuge wie B19, ohne konkrete Regel für diesen Auftrag."
+    },
+    "B30": {
+      "relevant": false,
+      "grund": "Beschreibt Regeln, CLI und Tests für den Jev-Baustein ordne_kandidaten, ohne Bezug zur Laufwächter-Warnung."
+    }
+  }
+}

@@ -1,0 +1,104 @@
+block,title,year,url
+1,MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework,2023,https://arxiv.org/abs/2308.00352
+1,ChatDev: Communicative Agents for Software Development,2023,https://arxiv.org/abs/2307.07924
+1,AgentCoder,2023,https://arxiv.org/abs/2312.13010
+1,The Code Agent Orchestra – what makes multi-agent coding work,26.03.2026,https://addyosmani.com/blog/code-agent-orchestra/
+1,Glite ARF,2026,https://arxiv.org/abs/2606.27416
+1,CORAL,2026,https://arxiv.org/html/2604.01658v2
+1,SPOQ,2026,https://arxiv.org/abs/2606.03115
+1,Harness Engineering: A Source-Code Study of Eleven Systems,2026,https://arxiv.org/abs/2609.00006
+1,When Do Agent Loops Mistake Stagnation for Progress?,2026,https://arxiv.org/abs/2607.25152
+1,Effective harnesses for long-running agents,2025,https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+1,Claude Code Docs: Worktrees; Agent Teams,abgerufen 2026,https://code.claude.com/docs/en/worktrees · https://code.claude.com/docs/en/agent-teams
+1,Codex: Git worktrees,abgerufen 2026,https://learn.chatgpt.com/docs/environments/git-worktrees
+1,Agent Orchestrator,abgerufen 2026,https://github.com/ComposioHQ/agent-orchestrator
+1,Gas Town,abgerufen 2026,https://github.com/steveyegge/gastown
+1,Claim Plane,2026,https://arxiv.org/abs/2607.21909
+1,AI Agent Pull Requests on GitHub: … Merge Conflict Rates,2026,https://arxiv.org/html/2607.04697v2
+1,Multi-agent Collaboration with State Management (STORM),2026,https://arxiv.org/abs/2605.20563
+1,OpenAI Harness Engineering (Codex),2026,https://www.infoq.com/news/2026/02/openai-harness-engineering-codex
+2,LLM Evaluators Recognize and Favor Their Own Generations,2024,https://arxiv.org/abs/2404.13076
+2,Do LLM Evaluators Prefer Themselves for a Reason?,2025,https://arxiv.org/abs/2504.03846
+2,Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena,2023,https://arxiv.org/abs/2306.05685
+2,Correlated Errors in Large Language Models,2025,https://arxiv.org/abs/2506.07962
+2,Large Language Models Cannot Self-Correct Reasoning Yet,2023,https://arxiv.org/abs/2310.01798
+2,When Can LLMs Actually Correct Their Own Mistakes?,2024,https://arxiv.org/abs/2406.01297
+2,Cross-Model LLM Code Review,2026,https://arxiv.org/abs/2607.21656
+2,Uncovering Systematic Failures of LLMs in Verifying Code Against NL Specifications,2025,https://arxiv.org/abs/2508.12358
+2,Best practices for Claude Code,abgerufen 2026,https://code.claude.com/docs/en/best-practices
+2,Using Codex as a second opinion from Claude,2026,https://stevekinney.com/writing/codex-as-a-second-opinion
+2,Code Review in the Age of AI,2026,https://addyo.substack.com/p/code-review-in-the-age-of-ai
+2,Agentic Code Review,2026,https://addyosmani.com/blog/agentic-code-review/
+2,An Experimental Evaluation of the Assumption of Independence in Multiversion Programming,1986,https://dl.acm.org/doi/10.1109/TSE.1986.6312924
+2,N-Version Programming with Coding Agents,2026,https://arxiv.org/html/2606.20158
+2,Wisdom and Delusion of LLM Ensembles for Code Generation and Repair,2025,https://arxiv.org/abs/2510.21513
+2,When Agents Disagree: The Selection Bottleneck,2026,https://arxiv.org/html/2603.20324v1
+2,"Are ""Solved Issues"" in SWE-bench Really Solved Correctly?",2025,https://arxiv.org/abs/2503.15223
+3,Lost in Compaction,2026,https://arxiv.org/abs/2608.11242
+3,Dead text or binding clause? (Contract Ledger),2026,https://arxiv.org/abs/2608.12599
+3,When Stale Constraints Go Unchecked,2026,https://arxiv.org/abs/2608.25553
+3,Models Recall What They Violate (DriftBench),2026,https://arxiv.org/abs/2604.28031
+3,SEQUOR,2026,https://arxiv.org/abs/2605.06353
+3,Documenting Architecture Decisions,2011,https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+3,MADR 4.0.0,2024,https://adr.github.io/madr/
+3,Building Evolutionary Architectures,2017,https://evolutionaryarchitecture.com/
+3,Technology Radar: Architectural fitness function,2017/2018,https://www.thoughtworks.com/radar/techniques/architectural-fitness-function
+3,Context Matters: … Automated ADR Generation Using LLMs,2026,https://arxiv.org/abs/2604.03826
+3,The Spec Growth Engine,2026,https://arxiv.org/abs/2606.27045
+3,The Specification as Quality Gate,2026,https://arxiv.org/abs/2603.25773
+3,Codified Context: Infrastructure for AI Agents in a Complex Codebase,2026,https://arxiv.org/abs/2602.20478
+3,Effective context engineering for AI agents,2025,https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+3,Claude Code Docs: Memory; Context window,abgerufen 2026,https://code.claude.com/docs/en/memory · https://code.claude.com/docs/en/context-window
+3,Spec Kit (spec-driven.md),abgerufen 2026,https://github.com/github/spec-kit/blob/main/spec-driven.md
+3,Steering,abgerufen 2026,https://kiro.dev/docs/steering/
+3,I made stale coding agent context fail CI,2026,https://dev.to/agentskit/i-made-stale-coding-agent-context-fail-ci-instead-of-failing-silently-3434
+3,Agent decision records,2026,https://supermemory.ai/blog/agent-decision-records/
+3,Context layer,2026,https://www.mattnoth.com/articles/context-layer/
+3,MemGPT,2023,https://arxiv.org/abs/2310.08560
+3,Mem0,2025,https://arxiv.org/abs/2504.19413
+3,A-MEM,2025,https://arxiv.org/abs/2502.12110
+4,AGENTS.md,abgerufen 2026,https://agents.md/
+4,Claude Code Adds AGENTS.md Fallback,21.09.2026,https://devops.com/claude-code-adds-agents-md-fallback-cutting-instruction-file-sprawl/
+4,Ruler,abgerufen 2026,https://github.com/intellectronica/ruler
+4,rulesync,abgerufen 2026,https://github.com/dyoshikawa/rulesync
+4,Generating your agent rules from one file does not stop them drifting,2026,https://dev.to/untactit/generating-your-agent-rules-from-one-file-does-not-stop-them-drifting-3gpb
+4,Ending the CLAUDE.md / AGENTS.md / copilot-instructions.md Sprawl,2026,https://dev.to/takashimatsuyama/ending-the-claudemd-agentsmd-copilot-instructionsmd-sprawl-declare-one-source-verify-the-1gbb
+4,Agent READMEs: An Empirical Study of Context Files for Agentic Coding,2025,https://arxiv.org/abs/2511.12884
+4,Instruction Adherence in Coding Agent Configuration Files,2026,https://arxiv.org/abs/2605.10039
+4,Evaluating AGENTS.md,2026,https://arxiv.org/abs/2602.11988
+5,Is ChatGPT Good at Search? (RankGPT),2023,https://arxiv.org/abs/2304.09542
+5,Large Language Models are Effective Text Rankers with Pairwise Ranking Prompting,2023,https://arxiv.org/abs/2306.17563
+5,Lost in the Middle,2023,https://arxiv.org/abs/2307.03172
+5,"Equal Ranking Quality, Different Decisions",2026,https://arxiv.org/abs/2608.26762
+5,Can LLM Rerankers Predict Their Own Ranking Performance?,2026,https://arxiv.org/abs/2606.03535
+5,"Doku, Re-Rank- und Entity-Alignment-Rezept, Confidence",abgerufen 2026,https://docs.typesafe.ai/llms.txt
+5,Introducing System One models and Jev,15.09.2026,https://typesafe.ai/blog/introducing-system-one-models-and-jev
+5,System One models / Jev,16.09.2026,https://www.datacamp.com/blog/system-one-models-jev
+5,Preregistering NLP research,2021,https://aclanthology.org/2021.naacl-main.51/
+5,AI Agents That Matter,2024,https://arxiv.org/abs/2407.01502
+5,Entity Matching using Large Language Models,2023,https://arxiv.org/abs/2310.11244
+5,"Match, Compare, or Select?",2024,https://arxiv.org/abs/2405.16884
+6,Docs as Tests,2024,https://www.docsastests.com/
+6,Docs as tests: How to prove documentation still works,2026,https://www.cherryleaf.com/2026/08/docs-as-tests/
+6,Detecting outdated code element references in software repository documentation,2022,https://arxiv.org/abs/2212.01479
+6,READU,2026,https://arxiv.org/html/2607.15780
+6,OSS-UAgent,2025,https://arxiv.org/abs/2505.23239
+7,Non-programmers Assessing AI-Generated Code,2025,https://arxiv.org/abs/2508.06484
+7,From Prompting to Verification,2026,https://arxiv.org/abs/2605.24521
+7,"Professional Software Developers Don't Vibe, They Control",2025,https://arxiv.org/abs/2512.14012
+7,How Coding Agents Fail Their Users,2026,https://arxiv.org/abs/2605.29442
+7,SWE-chat,2026,https://arxiv.org/abs/2604.20779
+7,Building Software by Rolling the Dice,2025,https://arxiv.org/abs/2512.22418
+7,Vibe coding: programming through conversation with AI,2025,https://arxiv.org/abs/2506.23253
+7,ZORO: Active Rules for Reliable Vibe Coding,2026,https://arxiv.org/abs/2604.15625
+7,Agentic coding and persistent returns to expertise,2026,https://www.anthropic.com/research/claude-code-expertise
+7,2026 Agentic Coding Trends Report,2026,https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf
+7,The State of the Art in End-User Software Engineering,2011,https://dl.acm.org/doi/10.1145/1922649.1922658
+7,Human oversight of agentic systems in practice,2026,https://arxiv.org/abs/2606.05391
+7,Magentic-UI,2025,https://arxiv.org/abs/2507.22358
+7,Separating Capability from Permission,2026,https://arxiv.org/abs/2607.23438
+7,Governed AI-Assisted Engineering,2026,https://arxiv.org/abs/2606.22484
+7,Hedwig,2026,https://arxiv.org/abs/2605.11495
+7,Humans are Missing from AI Coding Agent Research,2026,https://arxiv.org/abs/2608.12355
+7,"My ""Vibe Coding"" process atm",2025,https://dbmcco.substack.com/p/my-vibe-coding-process-atm
+7,agent-governance,2026,https://github.com/HagiesteanuValentin/agent-governance
