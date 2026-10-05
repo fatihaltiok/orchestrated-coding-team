@@ -7,12 +7,14 @@ Fatih Altiok · 5 October 2026
 Adapted from the German original, which is published alongside this version. I wrote
 this together with Claude, the AI model that leads the team as its orchestrator. That's
 a bias, and I come back to it under "Limits".
-Version 1.2, 5 October 2026. Every empirical number in this paper is listed, with the file it
+Version 1.3, 5 October 2026. Every empirical number in this paper is listed, with the file it
 comes from and a script that checks it, in the public companion repository
-github.com/fatihaltiok/orchestrated-coding-team (file numbers.csv, check with one
-command). For that, a few passages got a date, a recount or a short clarification; no result
-changed. Version 1.1 (1 October 2026) extended "Related work" after a second literature
-search; version 1.0: doi:10.5281/zenodo.23086547.
+github.com/fatihaltiok/orchestrated-coding-team, fixed release v1.3 (file numbers.csv;
+what can be recomputed and what comes only from the project log is set out under "Data
+and reproducibility"). Version 1.3 completes the list of sources, adds that section, recounts
+the memory and corrects one sentence about leaks. Version 1.2 (5 October 2026) tied
+every number to a file; version 1.1 (1 October 2026) extended "Related work" after a second
+literature search; version 1.0: doi:10.5281/zenodo.23086547.
 
 The short version
 I don't write code, and honestly I can't really read it either. Still, I run about 25 projects at
@@ -25,18 +27,19 @@ work and checks every result. Several coding agents from different companies bui
 parts, each one in its own copy of the project.
 Everything rests on one idea: if it matters, it lives in a file and a tool checks it. Nobody
 has to remember it. AI models forget. When their working memory fills up, they
-summarize the conversation so far, and a 2026 study found that on average only 17 % of
-the instructions a user gave survive that step. So every instruction I give, every decision
-and every task is a file, and wherever we can, a small program checks the rule instead of
-hoping someone remembers it.
+summarize the conversation so far, and a 2026 study planted standing instructions such
+as "do not delete any emails until I confirm" in test sessions and found that the
+summarizers it tested kept only 17 % of them on average (Wang et al. 2026). So every
+instruction I give, every decision and every task is a file, and wherever we can, a small
+program checks the rule instead of hoping someone remembers it.
 Since the first version of this report (19 September 2026), five things were added:
-A shared memory of lessons learned, 181 notes by now, with an automatic check for
-dead links and orphaned entries.
 
-Page 1 of 32
+Page 1 of 34
 
 The Orchestrated Coding Team
 
+A shared memory of lessons learned, 209 notes on 5 October 2026, with an automatic
+check for dead links and orphaned entries.
 The "context package". Before an agent starts, it gets all my rules word for word and
 every decision that's still valid. A checksum file lets a tool notice if anything is missing
 or out of date.
@@ -68,7 +71,7 @@ How it grew
 None of this was planned on a whiteboard. Each stage came out of something that went
 wrong.
 
-Page 2 of 32
+Page 2 of 34
 
 The Orchestrated Coding Team
 
@@ -175,7 +178,7 @@ checked; all agents' rules
 come from one file; Jev
 sorts the extra material.
 
-Page 3 of 32
+Page 3 of 34
 
 The Orchestrated Coding Team
 
@@ -188,11 +191,11 @@ putting in place.
 The team
 The agents come from different companies on purpose. Every model has blind spots, and
 a mistake one of them misses, another one often catches. Not always, though. Strong
-models from different vendors often make the same mistakes, and in one study an
-outside reviewer who rewrote the code actually made the results worse. That's why our
-reviewer never changes anything, and a finding only counts once the orchestrator has
-reproduced it. The main staffing rule: whoever reviews never comes from the same
-company as whoever built it.
+models from different vendors often make the same mistakes (Kim et al. 2025), and in one
+study a review by another vendor's model lowered the share of passing solutions instead
+of raising it (Xiang et al. 2026). That's why our reviewer never changes anything, and a
+finding only counts once the orchestrator has reproduced it. The main staffing rule:
+whoever reviews never comes from the same company as whoever built it.
 Role
 
 Who (as of 27
@@ -258,7 +261,7 @@ sometimes quits on big
 jobs or right before the
 final report
 
-Page 4 of 32
+Page 4 of 34
 
 The Orchestrated Coding Team
 
@@ -387,8 +390,9 @@ Muse
 
 Codex
 
-6, including 3 leaks through which
-a secret key could have gone out
+6, including 3 leaks: two through
+which the access key could have
+gone out, one of a full file path
 
 U1 Context package
 
@@ -398,7 +402,7 @@ Codex
 
 12
 
-Page 5 of 32
+Page 5 of 34
 
 The Orchestrated Coding Team
 
@@ -425,7 +429,7 @@ restart. On the right is the path every single task takes. Each step leaves a fi
 There's only one way back: if the review finds something, the task gets reworked and built
 again.
 
-Page 6 of 32
+Page 6 of 34
 
 The Orchestrated Coding Team
 
@@ -448,7 +452,7 @@ generated file by hand.
 
 regeln (generate, install, check)
 
-Page 7 of 32
+Page 7 of 34
 
 The Orchestrated Coding Team
 
@@ -539,7 +543,7 @@ work stays on its branch.
 
 laufwaechter abschliessen
 
-Page 8 of 32
+Page 8 of 34
 
 The Orchestrated Coding Team
 
@@ -596,7 +600,7 @@ right call.
 orchestrator read the diff against the contract, and the tests ran in the copy. Only then
 was it merged.
 
-Page 9 of 32
+Page 9 of 34
 
 The Orchestrated Coding Team
 
@@ -627,21 +631,21 @@ gets back in a session takes up space. When it's full, the conversation so far g
 summarized. What gets lost is whatever seems unimportant to the summary: details,
 reasons, and above all instructions like "ask me first". The study "Lost in Compaction"
 (2026) measured that such instructions survive summarizing only 17 % of the time on
-average. Better-worded prompts didn't help much. The authors show a way out: a small
-extra model runs alongside, collects the instructions in its own list and adds them back
-after summarizing, which keeps over 90 %. We follow the same idea with different means:
-the instructions sit word for word in files, and tools check that they reach the agent. We
+average. The rate varied with the summarizing model, its prompt and the wording of the
+instruction, but no setting fixed the loss. The authors show a way out: a small extra model
+runs alongside, collects the instructions in its own list and adds them back after
+summarizing, which keeps over 90 %. We follow the same idea with different means: the
+instructions sit word for word in files, and tools check that they reach the agent. We
 haven't tested our approach on their benchmark.
+
+Page 10 of 34
+
+The Orchestrated Coding Team
 
 Why a team helps
 The orchestrator doesn't read piles of files. The agents read the code; what comes
 back is a report and a diff. Its context stays free for architecture, review and the big
 picture.
-
-Page 10 of 32
-
-The Orchestrated Coding Team
-
 Each agent only needs its own area. With its own copy, a clear task and a context
 package, an agent doesn't have to understand the whole project. Models with smaller
 memory only get small, tightly scoped tasks.
@@ -674,17 +678,17 @@ every summary. But Claude and Codex read different files, and we used to maintai
 by hand. A comparison on 26 September found that the Codex copy was missing 31 of 137
 rules, and 7 more said something different. It also mentioned a tool that had been gone
 for days.
+
+Page 11 of 34
+
+The Orchestrated Coding Team
+
 Since 27 September there's one source, and both files are generated from it. When we
 switched, the generated Claude file had to match the old one byte for byte, so we knew
 for sure no rule got lost. Since then, the final check reports any installed file that drifts
 from its source. A quick test showed the difference: afterwards Codex named the right
 second-opinion model, the right command for fix-up rounds, and the tool rules it had been
 missing.
-
-Page 11 of 32
-
-The Orchestrated Coding Team
-
 We did the same with the project index every session loads. It had grown to 76,983 bytes,
 because each new status got written above the old one. Codex only read the first 32,768
 bytes of it, so 43 %. Now it's 16,542 bytes: per project just the entry file and one status
@@ -743,6 +747,11 @@ a package with a checksum.
 Two habits back up the tools:
 Tasks are files. An agent never gets just one sentence in a command, it gets a task file
 in the repository. If the context is lost, the task is still there.
+
+Page 12 of 34
+
+The Orchestrated Coding Team
+
 The restart check: before every restart and after every finished package, two fresh
 agents with no background knowledge go through the handover notes. One only reads
 and lists every spot where it would have to guess. The other actually runs the
@@ -750,19 +759,15 @@ commands and reports what doesn't match. Both read the original files, never jus
 context package. Otherwise one mistake in the selection would hide the same gap
 from both, and them agreeing would just be an echo.
 
-Page 12 of 32
-
-The Orchestrated Coding Team
-
 The memory
-The team's memory is a folder with a short index and 181 single notes by now. Most of
-them are lessons from mistakes: which model gets what wrong, which check doesn't
-actually measure anything, which command has a trap in it. The index-plus-notes setup
-comes with Claude Code: the index is loaded in every session without asking, and notes
-are read when needed. What we added is a form check, a lossless restructuring instead of
-trimming, and putting the memory into the context package. It's the only layer that works
-across projects. Something learned on a film project is there when a client project needs
-it.
+The team's memory is a folder with a short index and 209 single notes (counted on 5
+October 2026). Most of them are lessons from mistakes: which model gets what wrong,
+which check doesn't actually measure anything, which command has a trap in it. The
+index-plus-notes setup comes with Claude Code: the index is loaded in every session
+without asking, and notes are read when needed. What we added is a form check, a
+lossless restructuring instead of trimming, and putting the memory into the context
+package. It's the only layer that works across projects. Something learned on a film project
+is there when a client project needs it.
 
 A wrong note gets believed
 Until 21 September 2026, this biggest store of knowledge had not a single written rule,
@@ -783,6 +788,11 @@ The obvious move would have been a vector database that finds notes by meaning
 instead of words. Our own test on the real notes said otherwise. For three search
 questions, plain grep found the right note in the top four twice, the best meaning-based
 model only once. The study "Is Grep All You Need?" (2026) reaches a similar result in
+
+Page 13 of 34
+
+The Orchestrated Coding Team
+
 some of its comparisons. It looked at conversation memory, not code, though, and
 stresses that the result depends a lot on the agent tool. Three questions are a hint, not
 proof, and we can change our minds.
@@ -790,10 +800,6 @@ The deeper reason is something else. A database improves how well things are fou
 whether anyone looks. A model doesn't look something up if it has no idea there's
 something to know. What helps is a short index that's loaded without asking, not a better
 search engine.
-
-Page 13 of 32
-
-The Orchestrated Coding Team
 
 Keeping details instead of trimming
 When the index hit its loading limit, the easy fix would have been to merge similar notes. I
@@ -824,17 +830,17 @@ First use: ask about the action, not a number
 On 21 September we wanted to know if the memory had duplicate notes. A similarity
 score didn't help: the values for all pairs were spread out evenly, with no clear gap
 between "similar" and "different". Any cut-off would have been arbitrary. Jev's own
+
+Page 14 of 34
+
+The Orchestrated Coding Team
+
 documentation suggests something else: ask directly about the action, with three levels
 matching the three things you can do: keep them apart, show them to a human, merge
 them. Then there's no threshold to tune to your data.
 The full run over all 3,541 note pairs took 40 seconds. Result: not a single duplicate, but 137
 related pairs that didn't link to each other yet. The judgment was 98 % repeatable. The
 one pair that looked like a duplicate the first time flipped on the second run, because it
-
-Page 14 of 32
-
-The Orchestrated Coding Team
-
 sat exactly on the border between two levels. Near a border, you read it yourself, you
 don't round. And the strongest matches had almost no words in common. A keyword prefilter would have missed all of them.
 
@@ -890,6 +896,10 @@ cut-offs, the ranking works well. The vendor talks about "calibrated probabiliti
 what they measure is agreement with large models, not relevance against a reference like
 ours, and they say themselves that thresholds have to be set per use case.
 
+Page 15 of 34
+
+The Orchestrated Coding Team
+
 Data protection
 Jev runs on the vendor's servers, so task texts and notes leave our hands. Reading the
 privacy policy word for word: TypeSafe promises in writing not to train on the data, but
@@ -897,10 +907,6 @@ keeps it with no fixed deletion date in the US. Zero retention is only for big c
 we switched Jev off for the one project with confidential company data. For the others I
 accepted the transfer on purpose. The decision is in the log with both sides, and it can be
 reversed per project with one line.
-
-Page 15 of 32
-
-The Orchestrated Coding Team
 
 Quality checks
 An agent saying "done" has only made a claim. Code is done when it passes objective
@@ -947,6 +953,21 @@ too
 
 Muse
 
+Page 16 of 34
+
+The Orchestrated Coding Team
+
+Date
+
+What was built
+
+Builder's
+tests
+
+Found anyway
+
+By
+
 27
 Sept
 
@@ -977,21 +998,6 @@ an access key or a full file
 path could have gone out
 
 Codex
-
-Page 16 of 32
-
-The Orchestrated Coding Team
-
-Date
-
-What was built
-
-Builder's
-tests
-
-Found anyway
-
-By
 
 26
 Sept
@@ -1052,16 +1058,17 @@ What we learned
 The worst bugs were found by outside eyes and real material, not by tests.
 2. Every new check gets run once against the real thing. Test cases only contain what
 somebody thought of.
+
+Page 17 of 34
+
+The Orchestrated Coding Team
+
 3. Thresholds get tuned on real data. A sharper word list flagged 16 notes instead of 63.
 Same check, useful instead of useless.
 4. The gap is usually in the contract, not in the builder's work. So we fix the contract
 first and then rebuild, never the other way round.
 5. Whoever builds can't sign off their own work. That goes for the agents and for the
 orchestrator: its own contracts go to an outside reviewer too.
-
-Page 17 of 32
-
-The Orchestrated Coding Team
 
 The team channel
 Since 1 October 2026, two lead sessions, Claude and Codex, can work together as equal
@@ -1087,6 +1094,11 @@ Which uses are worth it? Claude wrote down 13 possible scenarios, and Jev rated 
 one on time saved, how often it happens, mistakes avoided, and whether something else
 already covers it. The rating cost 0.06 cents. I picked the top three, and the team built
 them the same day. The script and its results are in the team's repository.
+
+Page 18 of 34
+
+The Orchestrated Coding Team
+
 Feature
 
 Jev score
@@ -1114,17 +1126,6 @@ answer in the terminal or in any window,
 and the answer wakes up the session that
 asked.
 
-Page 18 of 32
-
-The Orchestrated Coding Team
-
-Feature
-
-Jev score
-(0–1)
-
-What it does
-
 "Done" message
 
 0.78
@@ -1142,6 +1143,11 @@ Conversations without me starting them, but with limits
 At first only I could open a conversation. On 1 Oct I decided: "make them do it
 automatically, without a switch". Since then the sessions open conversations themselves.
 Some limits are enforced by the program, some are rules:
+
+Page 19 of 34
+
+The Orchestrated Coding Team
+
 Limit
 
 Enforced by the program?
@@ -1178,11 +1184,6 @@ parallel, each in its own working copy. Codex with GPT-6.1 Sol built the team ch
 MiMo Flash the run watcher part. Reviews went crosswise, each from a different vendor:
 MiMo Pro checked the Codex part, Devin the MiMo part. Neither found anything blocking,
 but each found two gaps. For example, the answer to a very long question could never fit
-
-Page 19 of 32
-
-The Orchestrated Coding Team
-
 into one message. And a "done" message didn't arrive if a run was repeated under the
 same name. Three of the four gaps were fixed. One was left open on purpose and is only
 described: if the program dies exactly between saving an answer and handing it to Codex,
@@ -1198,6 +1199,11 @@ A sudden limit prevents the handover. If the Codex plan cuts off abruptly, the s
 can't write anything anymore. So before I leave, I say: "write a handover."
 Codex isn't woken by handovers, only Claude is. Codex sees them only when it
 checks itself.
+
+Page 20 of 34
+
+The Orchestrated Coding Team
+
 Two lead sessions can change the same file. Their agents have working copies, but for
 the sessions themselves there's only the rule "one area, one owner". On 1 Oct two
 Claude sessions worked in the same status file on the same day, and I had to decide
@@ -1219,11 +1225,6 @@ An OK is good for one thing only. Anything that costs money, goes public (upload
 emails, publishing) or changes the shared rules needs an explicit OK, every single time.
 An OK to build a tool isn't an OK to install it. Every approval goes into the log word for
 word, with the date.
-
-Page 20 of 32
-
-The Orchestrated Coding Team
-
 I always know where things stand. Before and after every bigger step, the orchestrator
 tells me without being asked who's doing what, what's done, what's in progress and
 what's still open.
@@ -1241,6 +1242,10 @@ The other way round, the orchestrator never quietly takes a different path from 
 decided. Anyone who wants to change a valid decision first has to name the existing entry
 and give a reason, and I have to agree.
 
+Page 21 of 34
+
+The Orchestrated Coding Team
+
 Related work
 Almost every building block here has been done before. What's new is mostly the
 combination and the role of the human. That's the result of a search on 27 September
@@ -1249,11 +1254,6 @@ October 2026 with the literature agents of Edison Scientific, whose hits we look
 by one. Two hits we couldn't find anywhere are left out. "Not found" only means not found
 in what we searched. We didn't go through the proceedings of the big software
 engineering conferences systematically.
-
-Page 21 of 32
-
-The Orchestrated Coding Team
-
 Block
 
 Already out there
@@ -1294,6 +1294,16 @@ been saved; testing the
 merged state locally in the
 copy.
 
+Page 22 of 34
+
+The Orchestrated Coding Team
+
+Block
+
+Already out there
+
+Not found like this
+
 Review by another
 company, double build
 
@@ -1321,26 +1331,17 @@ reviewer, every finding
 reproduced by the
 orchestrator.
 
-Page 22 of 32
-
-The Orchestrated Coding Team
-
-Block
-
-Already out there
-
-Not found like this
-
 Instructions and decisions
 
 An extra model against losing
 instructions (Wang et al.
 2026); measuring whether
-instructions keep working in
-long chats (Zhu 2026);
-decision logs as Architecture
-Decision Records (Nygard
-2011, MADR).
+withdrawn instructions keep
+acting in multi-turn chats
+(Zhu 2026); decision logs as
+Architecture Decision
+Records (Nygard 2011,
+MADR).
 
 Instructions word for word
 in a file only the human can
@@ -1374,6 +1375,16 @@ memory (Claude Code docs).
 An automatic form check of
 that memory.
 
+Page 23 of 34
+
+The Orchestrated Coding Team
+
+Block
+
+Already out there
+
+Not found like this
+
 One rule file
 
 Ready-made tools that
@@ -1395,7 +1406,7 @@ language models (Sun et al.
 2023); models use the start
 and end of a text best, so
 order matters (Liu et al.
-2023). The "sort" recipe and
+2024). The "sort" recipe and
 asking about the action come
 from Jev's own docs.
 
@@ -1414,16 +1425,6 @@ Two independent fresh
 checkers, one only reads,
 one runs things, both on the
 original files.
-
-Page 23 of 32
-
-The Orchestrated Coding Team
-
-Block
-
-Already out there
-
-Not found like this
 
 Non-developer in charge
 
@@ -1456,11 +1457,109 @@ mechanism. It describes a combination, a few small tool rules we haven't seen el
 and field data that, as far as we can tell, nobody has published yet: which check found
 which bug, how many rules got lost between two tools, and how a judging model was
 measured before rollout. Above all it shows the flip side of the existing studies: someone
+
+Page 24 of 34
+
+The Orchestrated Coding Team
+
 with no coding skills staying in control, because checking is handed over completely to
 tools and outside reviewers. The second search found closer relatives (a manager agent
 with isolated worktrees, gates that accept only fresh evidence, a build-and-review loop
 split between two vendors), but no report of a non-developer steering such a team. That
 holds as of 1 October 2026. It doesn't show that this way of working beats others.
+
+Data and reproducibility
+Every number in this report is listed in the public companion repository (release v1.3):
+numbers.csv names the source file for each of the 103, and one command, make check ,
+
+compares each number with that file. 39 of them a script computes: 38 from the raw data,
+which make results writes word for word to the folder results/ , and one, the spending
+cap, from a setting of the measurement tool. 46 stand word for word in a data file, and 18
+come only from the dated project log, because their raw data was not kept. make test
+runs the 782 tests of the published tools.
+Measurement
+
+What is public
+
+Recomputed by
+
+Judging model before
+rollout (27 Sept 2026)
+
+task list, blind reference
+judgments, every raw run
+
+make results → results/u4-
+
+Duplicate run over the
+memory (21 Sept 2026)
+
+all 3,541 rated note pairs,
+note names replaced by
+neutral ids
+
+make results →
+
+Team channel scenarios (1
+Oct 2026)
+
+Jev's scores, token count,
+list price
+
+make results →
+
+jev-ranking.csv
+
+results/dedup-run.csv
+
+results/team-channelratings.csv
+
+Rule files of two tools (31
+of 137 lost)
+
+the rule-by-rule
+comparison
+
+make results →
+results/rule-filecomparison.csv
+
+Reviews and agent runs
+
+one line per finding and per
+run
+
+make results →
+results/reviewfindings.csv , reviewgaps.csv , devin-runs.csv
+
+Memory size (5 Oct 2026)
+
+a snapshot with one entry
+per note, no names, no
+content
+
+make results →
+results/memory-notes.csv
+
+(counted from data/memorysnapshot/notes-2026-1005.json )
+
+Page 25 of 34
+
+The Orchestrated Coding Team
+
+Recorded in the dated project log only. These numbers were written down at the time,
+but their raw data was not kept, so they cannot be recomputed: the ten dead file paths
+and five dead note links of the first memory check, and its 63 and later 16 flagged notes
+(21 Sept 2026); the three search questions comparing grep with meaning-based search
+(grep found the right note in the top four twice, the best meaning-based model once); the
+40 seconds and the 98 % repeat rate of the first duplicate run; the 21 decisions put in the
+wrong category by one rule change; the six working-copy gaps (four from my own review,
+one found by both); the two Claude sessions on one status file; the one project with Jev
+switched off; the one pair that flipped; the two kinds of false alarm. Each of them sits in
+the repository as a dated excerpt from the log (folder data/recorded/ ), marked as such
+in numbers.csv .
+Not public. The private repositories of the projects (client work, a company project, my
+instructions word for word) stay private. The tools that run the process are public, with
+their tests, so the process itself can be run and checked.
 
 Limits
 This is experience, not a study. The measurements are small (three search questions,
@@ -1470,11 +1569,6 @@ Tried by one person, not a team of people. Whether it holds up when several peop
 give approvals is an open question.
 More admin. Every run has a branch, a copy, a context package, a result, a merge and
 often a review. That's on purpose, because it swaps trust for proof, but it takes time.
-
-Page 24 of 32
-
-The Orchestrated Coding Team
-
 Depending on vendors. In two weeks two models dropped out. The "other company
 reviews" rule always needs at least two available vendors, and several vendors means
 several bills.
@@ -1487,6 +1581,11 @@ Data leaves our hands. The coding agents and Jev run at vendors, some in the US.
 client data and confidential company data that has to be decided per project.
 Git only. The working copies need version control. Media projects without Git, and
 runs that only read or report, go without them.
+
+Page 26 of 34
+
+The Orchestrated Coding Team
+
 Badly split areas lead to conflicts. The working copy prevents damage, but not two
 agents changing the same spot. Then nothing gets merged and the orchestrator has to
 redo it. Good planning is still half the battle.
@@ -1498,10 +1597,10 @@ merge time (Liu et al. 2026). Changes from different agents clash twice as often
 changes from the same agent, 41.7 % vs 19.8 % (Xu et al. 2026). Context files like
 AGENTS.md don't generally raise success rates and cost over 20 % more (Gloaguen et
 al. 2026). Strong models from different vendors often make the same mistakes (Kim et
-al. 2025), and an outside reviewer can even make things worse, depending on who
-reviews whom (Xiang et al. 2026). Our precautions (split areas, contracts, merging one
-at a time, read-only reviewers) respond to that, but we haven't measured whether they
-help.
+al. 2025), and a review by another vendor's model can even lower the pass rate,
+depending on who reviews whom (Xiang et al. 2026). Our precautions (split areas,
+contracts, merging one at a time, read-only reviewers) respond to that, but we haven't
+measured whether they help.
 The team channel is new. It has been running since 1 October 2026. Delivery and
 waking up are proven. Handover and question list have only been tested. Whether two
 lead sessions work better together than one hasn't been measured.
@@ -1512,11 +1611,6 @@ sole author and responsible for all of its content.
 What's next
 A big program doesn't come out of one long agent run for us. It comes out of a series of
 small, finished packages, each one small enough to plan, build, test and check on its own:
-
-Page 25 of 32
-
-The Orchestrated Coding Team
-
 1. Skeleton and contracts first. Modules, data flows and interfaces are fixed before any
 agent writes code.
 2. Areas in parallel. Independent parts run at the same time in their own copies, each
@@ -1529,6 +1623,11 @@ already there. So there's no big risky assembly at the end.
 starts.
 6. Every important rule becomes a check. If it can be checked by a program, it becomes
 a test or a lock instead of a sentence in the docs.
+
+Page 27 of 34
+
+The Orchestrated Coding Team
+
 The upgrade on 26 and 27 September was built that way itself: eight packages, each with a
 contract, a working copy, a review and a restart check.
 Still open: By 10 October 2026 we'll decide if Devin stays once its free period ends. The
@@ -1566,18 +1665,6 @@ only at the end of the file.
 That tells you the file isn't
 being cut off, not whether the
 rules are followed.
-
-Page 26 of 32
-
-The Orchestrated Coding Team
-
-No.
-
-Block
-
-Minimum version
-
-Does it work?
 
 2
 
@@ -1619,6 +1706,18 @@ process state.
 A run you kill on purpose
 shows up as aborted, not as
 done.
+
+Page 28 of 34
+
+The Orchestrated Coding Team
+
+No.
+
+Block
+
+Minimum version
+
+Does it work?
 
 5
 
@@ -1676,18 +1775,6 @@ the package as its first step.
 Deleting an instruction makes
 the check fail.
 
-Page 27 of 32
-
-The Orchestrated Coding Team
-
-No.
-
-Block
-
-Minimum version
-
-Does it work?
-
 9
 
 Final check
@@ -1719,6 +1806,11 @@ Example task file
 You are the coding agent that DOES the work, not the orchestrator.
 You have approval. Don't ask back.
 ## First step
+
+Page 29 of 34
+
+The Orchestrated Coding Team
+
 Check the context package docs/auftraege/U7-1-kontext.md.
 If the check reports anything: report it, stop working.
 ## Your area (only change these files)
@@ -1732,10 +1824,6 @@ VERTRAG.md §16 — binding. If something contradicts it: report, don't guess.
 ## Last step
 Create the file docs/auftraege/U7-1-FERTIG.
 Don't stop before that file exists.
-
-Page 28 of 32
-
-The Orchestrated Coding Team
 
 Example decision entry
 ### E-022 | 2026-09-27 | valid
@@ -1759,6 +1847,11 @@ Ten rules to take away
 6. "Done" is a claim; checks decide if it's true, not the report.
 7. Nobody reviews their own work; review comes from another company.
 8. Every check gets run once on real material.
+
+Page 30 of 34
+
+The Orchestrated Coding Team
+
 9. A judging model sorts. It doesn't filter and it doesn't approve.
 10. Costs, anything public, and rule changes get approved by the human, every single time.
 
@@ -1785,14 +1878,6 @@ Contract
 
 The written agreement on what a part delivers and
 how parts talk to each other
-
-Page 29 of 32
-
-The Orchestrated Coding Team
-
-Term
-
-Meaning here
 
 Working copy
 
@@ -1843,84 +1928,128 @@ Restart check
 Two fresh agents testing whether the handover is
 enough to restart
 
+Page 31 of 34
+
+The Orchestrated Coding Team
+
 Sources
-Arif Aditto: Eyla: Toward an Identity-Anchored LLM Architecture with Integrated
+Every entry below was looked up on its original page on 5 October 2026. Research papers
+first, then practice sources and documentation; both in alphabetical order.
+Research
+Aditto, A. (2026). Eyla: Toward an Identity-Anchored LLM Architecture with Integrated
 Biological Priors – Vision, Implementation Attempt, and Lessons from AI-Assisted
-Development. arXiv 2604.00009, 2026.
-Nghi D. Q. Bui: Building Effective AI Coding Agents for the Terminal: Scaffolding,
-Harness, Context Engineering, and Lessons Learned. arXiv 2603.05344, 2026.
-Ahmed Fawzy, Amjed Tahir, Kelly Blincoe: From Prompting to Verification: How
-Experience Shapes Vibe Coding Practices. arXiv 2605.24521, 2026.
-Jiayi Geng, Graham Neubig: Effective Strategies for Asynchronous Software
-Engineering Agents. arXiv 2603.21489, 2026.
-Thibaud Gloaguen, Niels Mündler, Mark Müller, Veselin Raychev, Martin Vechev:
+Development. arXiv:2604.00009. doi:10.48550/arXiv.2604.00009
+Bui, N. D. Q. (2026). Building Effective AI Coding Agents for the Terminal: Scaffolding,
+Harness, Context Engineering, and Lessons Learned. arXiv:2603.05344.
+doi:10.48550/arXiv.2603.05344
+Fawzy, A., Tahir, A., Blincoe, K. (2026). From Prompting to Verification: How Experience
+Shapes Vibe Coding Practices. arXiv:2605.24521. doi:10.48550/arXiv.2605.24521
+Geng, J., Neubig, G. (2026). Effective Strategies for Asynchronous Software
+Engineering Agents. arXiv:2603.21489. doi:10.48550/arXiv.2603.21489
+Gloaguen, T., Mündler-Sasahara, N., Müller, M. N., Raychev, V., Vechev, M. (2026).
 Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding
-Agents? arXiv 2602.11988, 2026.
-
-Page 30 of 32
-
-The Orchestrated Coding Team
-
-Sirui Hong et al.: MetaGPT: Meta Programming for A Multi-Agent Collaborative
-Framework. arXiv 2308.00352, 2023.
-Jek Huang, Jeffery Hsia, Jiayi Sun, Freddie Shi, Wei Huang, Ian H. White: Proof-or-Stop:
-Don't Trust the Agent, Trust the Evidence – Loop Engineering for Verifiable EvidenceGated Lifecycle Control. arXiv 2607.14890, 2026.
-Jie Huang et al.: Large Language Models Cannot Self-Correct Reasoning Yet. arXiv
-2310.01798, 2023.
-Ruanqianqian Huang et al.: Professional Software Developers Don't Vibe, They Control:
-AI Agent Use for Coding in 2025. arXiv 2512.14012, 2025.
-Elliot Kim, Avi Garg, Kenny Peng, Nikhil Garg: Correlated Errors in Large Language
-Models. ICML 2025.
-John C. Knight, Nancy G. Leveson: An Experimental Evaluation of the Assumption of
+Agents? arXiv:2602.11988. doi:10.48550/arXiv.2602.11988
+Hong, S., Zhuge, M., Chen, J., et al. (2023). MetaGPT: Meta Programming for A MultiAgent Collaborative Framework. arXiv:2308.00352. doi:10.48550/arXiv.2308.00352
+Huang, Jek, Hsia, J., Sun, J., Shi, F., Huang, W., White, I. H. (2026). Proof-or-Stop: Don't
+Trust the Agent, Trust the Evidence – Loop Engineering for Verifiable Evidence-Gated
+Lifecycle Control. arXiv:2607.14890. doi:10.48550/arXiv.2607.14890
+Huang, Jie, Chen, X., Mishra, S., Zheng, H. S., Yu, A. W., Song, X., Zhou, D. (2023). Large
+Language Models Cannot Self-Correct Reasoning Yet. arXiv:2310.01798; ICLR 2024.
+doi:10.48550/arXiv.2310.01798
+Huang, R., Reyna, A., Lerner, S., Xia, H., Hempel, B. (2025). Professional Software
+Developers Don't Vibe, They Control: AI Agent Use for Coding in 2025. arXiv:2512.14012.
+doi:10.48550/arXiv.2512.14012
+Kim, E. M., Garg, A., Peng, K., Garg, N. (2025). Correlated Errors in Large Language
+Models. Proceedings of ICML 2025, PMLR 267:30038–30066.
+proceedings.mlr.press/v267/kim25e.html
+Knight, J. C., Leveson, N. G. (1986). An Experimental Evaluation of the Assumption of
 Independence in Multiversion Programming. IEEE Transactions on Software
-Engineering 12(1), 1986.
-Mengyang Liu, Taozhi Chen, Zhenhua Xu, Xue Jiang, Yihong Dong: Multi-agent
-Collaboration with State Management. arXiv 2605.20563, 2026.
-Nelson F. Liu et al.: Lost in the Middle: How Language Models Use Long Contexts. TACL,
-2023.
-Hussein Mozannar, Gagan Bansal, Cheng Tan et al.: Magentic-UI: Towards Human-inthe-loop Agentic Systems. arXiv 2507.22358, 2025.
-Kazuki Nakayashiki: When Stale Constraints Go Unchecked: Budgeted Verification
-Failures in Inherited Agent Memory. arXiv 2608.25553, 2026.
-Michael Nygard: Documenting Architecture Decisions. 2011. See also MADR.
-Arjun Panickssery, Samuel R. Bowman, Shi Feng: LLM Evaluators Recognize and Favor
-Their Own Generations. arXiv 2404.13076, 2024.
-Javier Ron, Benoit Baudry, Martin Monperrus: N-Version Programming with Coding
-Agents. arXiv 2606.20158, 2026.
-Sahil Sen, Akhil Kasturi, Elias Lumer, Anmol Gulati, Vamse Kumar Subbiah: Is Grep All
-You Need? How Agent Harnesses Reshape Agentic Search. arXiv 2605.15184, 2026.
-Weiwei Sun et al.: Is ChatGPT Good at Search? Investigating Large Language Models as
-Re-Ranking Agents. EMNLP 2023.
-Yuvraj Virk, Dongyu Liu: Non-programmers Assessing AI-Generated Code: A Case
-Study of Business Users Analyzing Data. VL/HCC 2025.
-Zhiqi Wang, Yichi Zhang, Dongwon Lee, Yuchen Yang: Lost in Compaction: Evaluating
-Side-Constraint Loss under Context Compaction. arXiv 2608.11242, 2026.
-Zuodong Xiang, Yike Zhang, YueMing Zhang, Hailu Xu: Cross-Model LLM Code Review:
-Should you use Claude to review Codex or vice versa? arXiv 2607.21656, 2026.
+Engineering SE-12(1):96–109. doi:10.1109/TSE.1986.6312924
+Kopp, O., Armbruster, A., Zimmermann, O. (2018). Markdown Architectural Decision
+Records: Format and Tool Support. 10th Central European Workshop on Services and
+their Composition (ZEUS 2018), CEUR Workshop Proceedings Vol. 2072, 55–62. ceur-
 
-Page 31 of 32
+Page 32 of 34
 
 The Orchestrated Coding Team
 
-George Xu, Arjun Subramanian, Nithilan Karthik: AI Agent Pull Requests on GitHub:
-Frequency, Structure, and Merge Conflict Rates. arXiv 2607.04697, 2026.
-Haoyuan Zhu: Dead text or binding clause? Measuring and restoring constraint
-influence in black-box LLM dialogues. arXiv 2608.12599, 2026.
-Mohamed Zahran: From Requirements to Production: Governing AI-Assisted Software
-Delivery through a Canonical Requirements Model. Research Square preprint, 2026.
-Practice sources: Addy Osmani, The Code Agent Orchestra (26 March 2026); Justin
-Young (Anthropic), Effective harnesses for long-running agents (2025); Claude Code:
-Memory; AGENTS.md; Ruler; rulesync; Gas Town; Emerson Braun, I made stale coding
-agent context fail CI (2026); Docs as Tests.
-TypeSafe: documentation (Jev, "Re-ranking" and "Entity Alignment" recipes), read 26
-Sept 2026; privacy policy and data processing agreement, read in full 27 Sept 2026.
-All other numbers come from our own measurements and logs in the team's private
-repository (decisions E-001 to E-028, the contract, the Jev measurement report of 27
-September 2026, Jev's rating of the team channel scenarios of 1 October 2026). The
-process and the tools were built in 2026 by me working with Claude as orchestrator, and
-this report was written the same way. Quotes from me are translated from German. The
-second literature search (1 October 2026) used the literature agents of Edison Scientific;
-every hit cited here was looked up on its original page.
+ws.org/Vol-2072. Cited as "MADR"; current format: adr.github.io/madr
+Liu, M., Chen, T., Xu, Z., Jiang, X., Dong, Y. (2026). Multi-agent Collaboration with State
+Management. arXiv:2605.20563. doi:10.48550/arXiv.2605.20563
+Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua, M., Petroni, F., Liang, P. (2024). Lost
+in the Middle: How Language Models Use Long Contexts. Transactions of the ACL
+12:157–173. doi:10.1162/tacl_a_00638, aclanthology.org/2024.tacl-1.9
+Mozannar, H., Bansal, G., Tan, C., et al. (2025). Magentic-UI: Towards Human-in-the-loop
+Agentic Systems. arXiv:2507.22358. doi:10.48550/arXiv.2507.22358
+Nakayashiki, K. (2026). When Stale Constraints Go Unchecked: Budgeted Verification
+Failures in Inherited Agent Memory. arXiv:2608.25553. doi:10.48550/arXiv.2608.25553
+Panickssery, A., Bowman, S. R., Feng, S. (2024). LLM Evaluators Recognize and Favor
+Their Own Generations. arXiv:2404.13076. doi:10.48550/arXiv.2404.13076
+Ron, J., Baudry, B., Monperrus, M. (2026). N-Version Programming with Coding Agents.
+arXiv:2606.20158. doi:10.48550/arXiv.2606.20158
+Sen, S., Kasturi, A., Lumer, E., Gulati, A., Subbiah, V. K. (2026). Is Grep All You Need?
+How Agent Harnesses Reshape Agentic Search. arXiv:2605.15184.
+doi:10.48550/arXiv.2605.15184
+Sun, W., Yan, L., Ma, X., Wang, S., Ren, P., Chen, Z., Yin, D., Ren, Z. (2023). Is ChatGPT
+Good at Search? Investigating Large Language Models as Re-Ranking Agents.
+Proceedings of EMNLP 2023, 14918–14937. doi:10.18653/v1/2023.emnlp-main.923
+Virk, Y., Liu, D. (2025). Non-programmers Assessing AI-Generated Code: A Case Study
+of Business Users Analyzing Data. IEEE VL/HCC 2025; arXiv:2508.06484.
+doi:10.48550/arXiv.2508.06484
+Wang, Z., Zhang, Y., Lee, D., Yang, Y. (2026). Lost in Compaction: Evaluating SideConstraint Loss under Context Compaction. arXiv:2608.11242.
+doi:10.48550/arXiv.2608.11242
+Xiang, Z., Zhang, Y., Zhang, Y., Xu, H. (2026). Cross-Model LLM Code Review: Should you
+use Claude to review Codex or vice versa? Agentic SE @ KDD 2026; arXiv:2607.21656.
+doi:10.48550/arXiv.2607.21656
+Xu, G., Subramanian, A., Karthik, N. (2026). AI Agent Pull Requests on GitHub:
+Frequency, Structure, and Merge Conflict Rates. arXiv:2607.04697.
+doi:10.48550/arXiv.2607.04697
+Zahran, M. (2026). From Requirements to Production: Governing AI-Assisted Software
+Delivery through a Canonical Requirements Model. Research Square preprint, 21 July
+2026. doi:10.21203/rs.3.rs-10400858/v1
+Zhu, H. (2026). Dead text or binding clause? Measuring and restoring constraint
+influence in black-box LLM dialogues. arXiv:2608.12599. doi:10.48550/arXiv.2608.12599
+Practice sources and documentation
 
-Page 32 of 32
+Page 33 of 34
+
+The Orchestrated Coding Team
+
+AGENTS.md: a shared format for instructions to coding agents. agents.md
+Anthropic. How Claude remembers your project (Claude Code documentation; cited
+as "Claude Code docs"). code.claude.com/docs/en/memory
+Braun, E. (2026). I made stale coding-agent context fail CI instead of failing silently.
+DEV Community, 6 August 2026. dev.to/agentskit/i-made-stale-coding-agent-contextfail-ci-instead-of-failing-silently-3434
+Gas Town: multi-agent orchestration for coding agents. GitHub repository.
+github.com/gastownhall/gastown
+Nygard, M. (2011). Documenting Architecture Decisions. Cognitect blog, 15 November
+2011. cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+Osmani, A. (2026). The Code Agent Orchestra – what makes multi-agent coding work.
+Blog post, 26 March 2026. addyosmani.com/blog/code-agent-orchestra
+Ruler: apply the same rules to all coding agents. GitHub repository intellectronica/ruler.
+github.com/intellectronica/ruler
+rulesync: rule files for AI development tools from one source. GitHub repository
+dyoshikawa/rulesync. github.com/dyoshikawa/rulesync
+Silva, M. Docs as Tests. docsastests.com
+TypeSafe AI. Documentation of Jev, cookbooks "Re-ranking" and "Entity Alignment";
+read 26 September 2026. docs.typesafe.ai,
+docs.typesafe.ai/cookbooks/rerank_typesafe.md,
+docs.typesafe.ai/cookbooks/entity_alignment.md
+TypeSafe AI. Privacy Policy (last updated 19 November 2025) and Data processing
+addendum (last updated 24 April 2026); both read in full 27 September 2026.
+typesafe.ai/privacy-policy, typesafe.ai/legal/data-processing
+Young, J. (2025). Effective harnesses for long-running agents. Anthropic, 26 November
+2025. anthropic.com/engineering/effective-harnesses-for-long-running-agents
+All other numbers come from our own measurements and logs (decisions E-001 to E-028,
+the contract, the Jev measurement report of 27 September 2026, Jev's rating of the team
+channel scenarios of 1 October 2026); which of them can be recomputed from the public
+companion repository and which come only from the dated project log is set out under
+"Data and reproducibility". The process and the tools were built in 2026 by me working
+with Claude as orchestrator, and this report was written the same way. Quotes from me
+are translated from German. The second literature search (1 October 2026) used the
+literature agents of Edison Scientific; every hit cited here was looked up on its original
+page.
+
+Page 34 of 34
 
 

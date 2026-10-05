@@ -1,4 +1,4 @@
-.PHONY: check test test-scripts public-check
+.PHONY: check test test-scripts public-check results gate4-probe
 
 VERBOTE ?=
 MERKZETTEL ?=
@@ -14,3 +14,9 @@ test-scripts:
 
 public-check:
 	python3 scripts/check_public.py --verbote $(VERBOTE) --merkzettel $(MERKZETTEL)
+
+results:
+	python3 scripts/make_results.py
+
+gate4-probe:
+	python3 scripts/gate4_probe.py

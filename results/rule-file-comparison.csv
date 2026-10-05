@@ -1,0 +1,3 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N003,rules missing in the second tool's copy (of total),31 of 137,31 of 137,data/reviews/u0-matrix.csv,python3 scripts/numbers/count_u0_matrix.py N003
+N031,rules with different wording in the second tool's copy,7,7,data/reviews/u0-matrix.csv,python3 scripts/numbers/count_u0_matrix.py N031

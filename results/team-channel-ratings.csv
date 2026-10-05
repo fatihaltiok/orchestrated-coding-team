@@ -1,0 +1,4 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N068,team-channel scenarios rated,13,13,data/team-channel/jev_teamkanal_ergebnis.json,python3 scripts/numbers/team_channel_scores.py N068
+N069,rating cost in cents (tokens x list price),0.06 cents,0.05605740000000001,data/team-channel/jev_teamkanal_ergebnis.json;data/team-channel/vendor-list-price.json,python3 scripts/numbers/team_channel_scores.py N069
+N099,scenarios selected for implementation,3,3,data/team-channel/ausgewaehlt.json,python3 scripts/numbers/team_channel_scores.py N099

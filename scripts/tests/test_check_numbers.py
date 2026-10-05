@@ -274,6 +274,120 @@ def test_script_must_read_its_source(tmp_path, capsys):
     assert code == 0
 
 
+def test_script_source_under_results_needs_a_line_anchor(tmp_path, capsys):
+    """results/ sources point at a regenerated row: the anchor is required."""
+    root = make_root(tmp_path)
+    (root / "results").mkdir()
+    (root / "results" / "out.csv").write_text("N001,42\n", encoding="utf-8")
+    write_script(root, "calc.py", {"N001": "42"}, source="results/out.csv")
+    write_csv(root, [
+        ["N001", "42", "S.1", "q", "results/out.csv", "script:scripts/calc.py", "x"],
+    ])
+    code, out = run(root, capsys)
+    assert code == 1
+    assert "line anchor" in out
+    write_csv(root, [
+        ["N001", "42", "S.1", "q", "results/out.csv#/a", "script:scripts/calc.py", "x"],
+    ])
+    code, out = run(root, capsys)
+    assert code == 1
+    assert "line anchor" in out
+
+
+def test_script_need_not_name_a_results_source_but_the_line_is_checked(tmp_path, capsys):
+    """A results/ source skips the name check (rebuilt by make_results and the
+    byte-for-byte test) but the anchored CSV row must carry this id and value."""
+    root = make_root(tmp_path)
+    (root / "results").mkdir()
+    (root / "data" / "reviews").mkdir(parents=True, exist_ok=True)
+    (root / "data" / "reviews" / "a.txt").write_text("1\n", encoding="utf-8")
+    (root / "results" / "out.csv").write_text(
+        "id,quantity,value_as_in_paper,value_raw,inputs,command\n"
+        "N001,q,42,42,data/reviews/a.txt,python3 scripts/calc.py N001\n"
+        "N002,q,41,41,data/reviews/a.txt,python3 scripts/calc.py N002\n",
+        encoding="utf-8")
+    write_script(root, "calc.py", {"N001": "42"})  # names data/reviews/a.txt only
+    write_csv(root, [
+        ["N001", "42", "S.1", "q", "results/out.csv#L2", "script:scripts/calc.py", "x"],
+    ])
+    code, out = run(root, capsys)
+    assert code == 0
+    assert "N001  OK" in out
+    # the anchor points at another row's line
+    write_csv(root, [
+        ["N001", "42", "S.1", "q", "results/out.csv#L3", "script:scripts/calc.py", "x"],
+    ])
+    code, out = run(root, capsys)
+    assert code == 1
+    assert "row id" in out
+
+
+HARD_DUMPER_SRC = (
+    "import sys\n"
+    "print('42' if len(sys.argv) > 1 and sys.argv[1] == 'N001' else '42')\n"
+)
+
+
+def write_results_row(root, line):
+    (root / "results" / "out.csv").write_text(
+        "id,quantity,value_as_in_paper,value_raw,inputs,command\n" + line,
+        encoding="utf-8")
+
+
+def test_hardcoded_dumper_fails_when_command_names_another_script(tmp_path, capsys):
+    """R-N1 counterexample: a script that only prints a hard-coded value and
+    reads nothing must FAIL when the results row's command cell runs another
+    script than the one method names."""
+    root = make_root(tmp_path)
+    (root / "results").mkdir()
+    (root / "data" / "reviews" / "a.txt").write_text("1\n", encoding="utf-8")
+    write_results_row(
+        root, "N001,q,42,42,data/reviews/a.txt,python3 scripts/real.py N001\n")
+    (root / "scripts" / "dumper.py").write_text(HARD_DUMPER_SRC, encoding="utf-8")
+    write_csv(root, [
+        ["N001", "42", "S.1", "q", "results/out.csv#L2",
+         "script:scripts/dumper.py", "x"],
+    ])
+    code, out = run(root, capsys)
+    assert code == 1
+    assert "command cell runs" in out
+
+
+def test_hardcoded_dumper_fails_when_it_reads_no_inputs(tmp_path, capsys):
+    """Same dumper, command cell agreeing: it still FAILs because none of the
+    row's input files appears in the script text."""
+    root = make_root(tmp_path)
+    (root / "results").mkdir()
+    (root / "data" / "reviews" / "a.txt").write_text("1\n", encoding="utf-8")
+    write_results_row(
+        root, "N001,q,42,42,data/reviews/a.txt,python3 scripts/dumper.py N001\n")
+    (root / "scripts" / "dumper.py").write_text(HARD_DUMPER_SRC, encoding="utf-8")
+    write_csv(root, [
+        ["N001", "42", "S.1", "q", "results/out.csv#L2",
+         "script:scripts/dumper.py", "x"],
+    ])
+    code, out = run(root, capsys)
+    assert code == 1
+    assert "does not read its inputs" in out
+
+
+def test_script_that_names_inputs_and_command_verifies(tmp_path, capsys):
+    """Positive control for the hardened results/ checks."""
+    root = make_root(tmp_path)
+    (root / "results").mkdir()
+    (root / "data" / "reviews" / "a.txt").write_text("1\n", encoding="utf-8")
+    write_results_row(
+        root, "N001,q,42,42,data/reviews/a.txt,python3 scripts/calc.py N001\n")
+    write_script(root, "calc.py", {"N001": "42"})  # names data/reviews/a.txt
+    write_csv(root, [
+        ["N001", "42", "S.1", "q", "results/out.csv#L2",
+         "script:scripts/calc.py", "x"],
+    ])
+    code, out = run(root, capsys)
+    assert code == 0
+    assert "N001  OK" in out
+
+
 def test_line_form_counts_tokens(tmp_path, capsys):
     """The line offers its tokens once each: 2-2 needs two tokens 2."""
     root = make_root(tmp_path)

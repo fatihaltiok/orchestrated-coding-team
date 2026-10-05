@@ -1,0 +1,4 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N042,note pairs evaluated in the full duplicate run,"3,541",3541,data/dedup-run/jev-dublettenlauf-2026-09-21.json,python3 scripts/numbers/dedup_counts.py N042
+N044,related note pairs not yet linked,137,137,data/dedup-run/jev-unverlinkte-paare-2026-09-21.json,python3 scripts/numbers/dedup_counts.py N044
+N061,notes in the duplicate-run pair file,154,154,data/dedup-run/jev-dublettenlauf-2026-09-21.json,python3 scripts/numbers/dedup_counts.py N061

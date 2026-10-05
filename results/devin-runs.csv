@@ -1,0 +1,4 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N007,Devin runs up to U6 (counted from the run list),6,6,data/reviews/devin-runs.json,python3 scripts/make_results.py N007
+N008,packages in the Devin runs up to U6 (distinct packages),3,3,data/reviews/devin-runs.json,python3 scripts/make_results.py N008
+N009,Devin runs stopped early because the context package was outdated,2,2,data/reviews/devin-runs.json,python3 scripts/make_results.py N009

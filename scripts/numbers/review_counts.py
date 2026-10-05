@@ -4,15 +4,18 @@
 Reads data/reviews/findings-counts.json (the evidence lines behind it are
 quoted in data/reviews/report-extracts.md) and prints each figure the paper
 takes from the cross-vendor reviews and test gates. Only N078 is computed
-here ("3 of 4" = the four review gaps minus the ones deliberately left open,
-counted from the data fields); the other figures are typed-in counters of the
-JSON and are checked as `literal` rows against their fields. Run from the
-repository root without arguments for the overview, or with a numbers.csv id
-for exactly that row's value on one line (unknown id: exit 2). Standard
-library only.
+here ("3 of 4" = the four review gaps minus the ones deliberately left open),
+and it is computed from the one-by-one gap listing in
+data/reviews/report-extracts.md (section "Team-channel reviews", machine-
+readable `> Gap …` lines) — not from typed-in JSON counters. The other
+figures are typed-in counters of the JSON and are checked as `literal` rows
+against their fields. Run from the repository root without arguments for the
+overview, or with a numbers.csv id for exactly that row's value on one line
+(unknown id: exit 2). Standard library only.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -20,6 +23,12 @@ ROOT = Path(__file__).resolve().parents[2]
 # the full relative path on purpose: scripts/check_numbers.py requires the
 # script to name the file in numbers.csv's source_file column
 DATA_FILE = "data/reviews/findings-counts.json"
+EXTRACTS = "data/reviews/report-extracts.md"
+GAP_SECTION = "Team-channel reviews"
+# one machine-readable line per gap: "> Gap <id>: <what> — status: <status>"
+GAP_LINE_RE = re.compile(r"^> Gap (\S+): .* — status: (.+)$", re.M)
+OPEN_STATUS = "open (deliberate boundary)"
+FIXED_STATUS = "fixed"
 
 
 # one entry per numbers.csv row computed by this script: id -> f(values)
@@ -28,17 +37,44 @@ VALUES = {
 }
 
 
+def section(text: str, heading_fragment: str) -> str:
+    """Body of the first ## section whose heading contains the fragment."""
+    for part in re.split(r"(?m)^## ", text)[1:]:
+        if heading_fragment in part.splitlines()[0]:
+            return part
+    raise ValueError(f"no section heading containing {heading_fragment!r}")
+
+
 def compute() -> dict:
     counts = json.loads((ROOT / DATA_FILE).read_text(encoding="utf-8"))
-    # "three of the four gaps were fixed": the open ones are a data field with
-    # provenance (gaps_left_open_on_purpose), not a number typed in here
-    counts["gaps_total"] = (
-        counts["reviews"]["R12_team_channel"]["findings"]
-        + counts["reviews"]["R13_run_watcher"]["findings"]
-    )
-    counts["gaps_open"] = counts["gaps_left_open_on_purpose"]["count"]
-    counts["gaps_fixed"] = counts["gaps_total"] - counts["gaps_open"]
-    return counts
+    # "three of the four gaps were fixed": count the gaps listed one by one in
+    # the extracts and subtract those left open on purpose (also listed there),
+    # instead of doing arithmetic on typed-in JSON counters
+    text = (ROOT / EXTRACTS).read_text(encoding="utf-8")
+    gaps = GAP_LINE_RE.findall(section(text, GAP_SECTION))
+    return {**counts, **gap_counts(gaps)}
+
+
+def gap_counts(gaps: list) -> dict:
+    """Total, open and fixed gaps from (id, status) pairs.
+
+    Only the two known statuses count; anything else (e.g. "pending") or a
+    gap id listed twice is an error, so a typo or a new status can never be
+    booked as "fixed" without anyone noticing.
+    """
+    ids = [gap_id for gap_id, _ in gaps]
+    duplicates = sorted({i for i in ids if ids.count(i) > 1})
+    if duplicates:
+        raise ValueError(f"gap listed twice: {', '.join(duplicates)}")
+    statuses = [status.strip() for _, status in gaps]
+    unknown = sorted({s for s in statuses if s not in (OPEN_STATUS, FIXED_STATUS)})
+    if unknown:
+        raise ValueError(f"unknown gap status: {', '.join(unknown)}")
+    return {
+        "gaps_total": len(gaps),
+        "gaps_open": statuses.count(OPEN_STATUS),
+        "gaps_fixed": statuses.count(FIXED_STATUS),
+    }
 
 
 def main(argv=None) -> int:

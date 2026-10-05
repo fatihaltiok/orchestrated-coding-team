@@ -1,0 +1,2 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N082,sources opened and read (count rounded to the printed precision),100,103,data/reviews/literature-sources.csv,python3 scripts/numbers/count_sources.py N082

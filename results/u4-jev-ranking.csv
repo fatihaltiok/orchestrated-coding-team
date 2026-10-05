@@ -1,0 +1,16 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N004,Jev relevant sections in the top ten (sum over five tasks),34,34,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N004
+N005,keyword search relevant sections in the top ten (sum over five tasks),20,20,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N005
+N046,real tasks in the measurement,5,5,data/u4-jev/auftraege.json,python3 scripts/numbers/u4_metrics.py N046
+N047,"blind reference judges agreeing (share, rounded)",93 %,93.33333333333333,data/u4-jev/referenz.json,python3 scripts/numbers/u4_metrics.py N047
+N048,disputed reference cases decided by the orchestrator,10,10,data/u4-jev/referenz/entscheid.json,python3 scripts/numbers/u4_metrics.py N048
+N049,conditions of the decision rule,5,5,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N049
+N051,keyword search relevant sections in the top five (sum over five tasks),5,5,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N051
+N052,Jev relevant sections in the top five (sum over five tasks),18,18,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N052
+N053,control runs passed (of runs),10 of 10,10 of 10,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N053
+N054,"repeat runs with the same judgment (share, rounded)",98.7 %,98.69281045751634,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N054
+N055,mean cost per task in USD (mean over runs),0.003,0.0029337252,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N055
+N056,mean time per task in seconds (mean over runs),9 s,8.595137824909761,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N056
+N057,irrelevant sections with a high score (sum over five tasks),55,55,data/u4-jev/ergebnis.json,python3 scripts/numbers/u4_metrics.py N057
+N058,irrelevant sections in the rollout measurement,94,94,data/u4-jev/referenz.json,python3 scripts/numbers/u4_metrics.py N058
+N094,blind reference judges per task,2,2,data/u4-jev/referenz/beurteiler-1.json;data/u4-jev/referenz/beurteiler-2.json,python3 scripts/numbers/u4_metrics.py N094

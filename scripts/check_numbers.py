@@ -26,11 +26,27 @@ method,note) and verifies each row **at its anchored place**:
                      prints exactly the value of that row (one line) and
                      exits 0; an unknown id exits 2. The script must read the
                      file named in ``source_file``: that path has to appear in
-                     the script text ("script does not read its source"). The
-                     output must match the value **as a whole** (normalized:
-                     case, whitespace, thousand separators, numbers rounded to
-                     the precision printed in the paper) — ``0.06 dollars``
-                     against the output ``0.06 cents`` is a FAIL.
+                     the script text ("script does not read its source") —
+                     unless the source lies under ``results/`` (see below).
+                     The output must match the value **as a whole**
+                     (normalized: case, whitespace, thousand separators,
+                     numbers rounded to the precision printed in the paper) —
+                     ``0.06 dollars`` against the output ``0.06 cents`` is a
+                     FAIL. Sources under ``results/`` need a line anchor
+                     ``results/…csv#L<n>``: the anchored line must be that
+                     row's CSV line in a ``results/`` file — its ``id`` cell
+                     must equal the row id and its ``value_as_in_paper`` cell
+                     must match the value. The script need not name a
+                     ``results/`` file — those files are rebuilt from ``data/``
+                     by ``scripts/make_results.py`` and compared byte for byte
+                     in ``scripts/tests/test_results.py``, which keeps the
+                     chain data -> results -> value intact — but the anchored
+                     results row closes the remaining gap: the ``command``
+                     cell must run **this** script (the one ``method`` names),
+                     and every file of the ``inputs`` cell must appear in the
+                     script text ("script does not read its inputs"). A script
+                     that only prints a hard-coded value therefore fails here:
+                     it matches neither the command cell nor the inputs.
 * ``recorded``     — like ``literal``, but the value is only a dated sentence
                      of the contemporaneous project log; ``source_file`` must
                      lie under ``data/recorded/`` and ``note`` must carry the
@@ -62,6 +78,7 @@ from pathlib import Path
 HEADER = ["id", "value", "paper_section", "paper_quote", "source_file", "method", "note"]
 METHODS = {"literal", "recorded"}
 RECORDED_PREFIX = "data/recorded/"
+RESULTS_PREFIX = "results/"
 MIN_NON_RECORDED_SHARE = 80.0
 MAX_QUOTE_WORDS = 15
 PAPER_REL = "paper/paper.txt"
@@ -340,6 +357,18 @@ def split_anchor(source_file: str) -> tuple:
     return rel, "bad", spec
 
 
+def command_script_path(command: str):
+    """The script a results ``command`` cell runs (first ``*.py`` token).
+
+    ``python3 scripts/x.py N007`` -> ``scripts/x.py``; None when the command
+    names no script at all.
+    """
+    for token in (command or "").split():
+        if token.endswith(".py"):
+            return token
+    return None
+
+
 def json_pointer_node(target, pointer: str):
     """Resolve an RFC 6901 pointer; return (node, parent of the node)."""
     node, parent = target, None
@@ -383,18 +412,21 @@ def check_row(root: Path, row: dict, paper_norm: str = None) -> tuple:
             return "FAIL", detail
 
     if method.startswith("script:"):
-        rel, kind, _ = split_anchor(source_file)
+        rel, kind, spec = split_anchor(source_file)
         script_rel = method[len("script:"):]
         script = resolve_source(root, script_rel)
         if not script.is_file():
             return "FAIL", f"script missing: {script_rel}"
         if not resolve_source(root, rel).is_file():
             return "FAIL", f"source missing: {rel}"
+        under_results = rel.startswith(RESULTS_PREFIX)
+        if under_results and kind != "line":
+            return "FAIL", f"{source_file}: results/ sources need a line anchor (path#L<n>)"
         try:
             script_text = script.read_text(encoding="utf-8", errors="replace")
         except OSError as exc:
             return "FAIL", f"script missing: {exc}"
-        if rel not in script_text:
+        if not under_results and rel not in script_text:
             return "FAIL", f"script does not read its source: {rel}"
         try:
             proc = subprocess.run(
@@ -411,9 +443,44 @@ def check_row(root: Path, row: dict, paper_norm: str = None) -> tuple:
         out = proc.stdout.strip().splitlines()
         if len(out) != 1:
             return "FAIL", f"script must print exactly one line, got {len(out)}"
-        if value_matches_script_output(value, out[0]):
-            return "OK", f"script:{script_rel} {row.get('id')}"
-        return "FAIL", f"value {value!r} != script output {out[0]!r}"
+        if not value_matches_script_output(value, out[0]):
+            return "FAIL", f"value {value!r} != script output {out[0]!r}"
+        if kind == "line":
+            try:
+                lines = resolve_source(root, rel).read_text(encoding="utf-8").splitlines()
+            except (OSError, UnicodeDecodeError) as exc:
+                return "FAIL", f"cannot read source: {exc}"
+            if not 1 <= spec <= len(lines):
+                return "FAIL", f"line {spec} outside {rel} ({len(lines)} lines)"
+            if under_results:
+                # the line is a results/ CSV row: (id, quantity,
+                # value_as_in_paper, value_raw, inputs, command)
+                cells = next(csv.reader([lines[spec - 1]]))
+                if len(cells) < 6:
+                    return "FAIL", f"{rel}#L{spec}: not a results/ CSV row"
+                if cells[0].strip() != (row.get("id") or "").strip():
+                    return "FAIL", (f"{rel}#L{spec}: row id {cells[0]!r} != "
+                                    f"{(row.get('id') or '').strip()!r}")
+                if not value_matches_script_output(value, cells[2]):
+                    return "FAIL", (f"{rel}#L{spec}: value {value!r} != "
+                                    f"results cell {cells[2]!r}")
+                # the results row must run this very script, and the script
+                # must name every input file the row claims to read — a
+                # hard-coded dumper passes neither check
+                command_script = command_script_path(cells[5])
+                if command_script != script_rel:
+                    return "FAIL", (f"{rel}#L{spec}: command cell runs "
+                                    f"{command_script!r}, method names {script_rel!r}")
+                for inp in cells[4].split(";"):
+                    inp = inp.strip()
+                    if inp and inp not in script_text:
+                        return "FAIL", (f"{rel}#L{spec}: script does not read "
+                                        f"its inputs: {inp}")
+            else:
+                ok, detail = value_in_text(value, lines[spec - 1])
+                if not ok:
+                    return "FAIL", f"{rel}#L{spec}: {detail}"
+        return "OK", f"script:{script_rel} {row.get('id')}"
 
     if method not in METHODS:
         raise UsageError(f"{row.get('id')}: unknown method {method!r}")

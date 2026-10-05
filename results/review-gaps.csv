@@ -1,0 +1,3 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N078,team-channel review gaps fixed (of the four gaps),3 of 4,3 of 4,data/reviews/report-extracts.md,python3 scripts/numbers/review_counts.py N078
+N087,outside-review findings on the working-copy mode (one by one in the extracts),3,3,data/reviews/report-extracts.md,python3 scripts/make_results.py N087

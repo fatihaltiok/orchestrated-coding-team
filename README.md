@@ -1,7 +1,7 @@
 # The Orchestrated Coding Team — companion repository
 
 Code and data behind the paper *The Orchestrated Coding Team: How I build working software with a team of
-AI agents without being a developer* (Fatih Altiok, version 1.2, 5 October 2026). The paper is on Zenodo:
+AI agents without being a developer* (Fatih Altiok, version 1.3, 5 October 2026). The paper is on Zenodo:
 [doi:10.5281/zenodo.23086546](https://doi.org/10.5281/zenodo.23086546) always points to its latest version.
 
 The paper describes how one person who is not a developer runs several AI coding agents from different
@@ -32,7 +32,7 @@ Three kinds of evidence, named in the `method` column:
 | `recorded` | no raw data is left (for example a note folder that was not under version control); the file under `data/recorded/` is a dated excerpt from the project log written on the day |
 
 At least 80 % of the rows must be `literal` or `script`; `make check` fails otherwise. The check also
-reads the paper text (`paper/paper.txt`, extracted from `paper/the-orchestrated-coding-team-1.2.pdf`): every
+reads the paper text (`paper/paper.txt`, extracted from `paper/the-orchestrated-coding-team-1.3.pdf`): every
 quote in `numbers.csv` must stand there word for word, with its number written out. The column
 `paper_section` gives the page in that PDF and the section.
 
@@ -55,7 +55,7 @@ quote in `numbers.csv` must stand there word for word, with its number written o
 
 | Path | Content |
 |---|---|
-| `paper/` | the paper, version 1.2 (PDF, CC BY-NC-ND 4.0) and its plain text for the quote check |
+| `paper/` | the paper, version 1.3 (PDF, CC BY-NC-ND 4.0) and its plain text for the quote check; version 1.2 stays for reference |
 | `numbers.csv` | every empirical number of the paper and its source |
 | `data/` | measurement data, review counts and dated log excerpts — see [`data/README.md`](data/README.md) |
 | `scripts/numbers/` | small scripts that compute numbers from the data |

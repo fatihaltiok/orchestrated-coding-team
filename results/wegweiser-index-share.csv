@@ -1,0 +1,2 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N034,share of the oversized project index the tool read (percent),43 %,42.56524167673382,data/reviews/wegweiser-bytes.json,python3 scripts/numbers/wegweiser_share.py N034

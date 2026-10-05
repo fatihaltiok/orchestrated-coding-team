@@ -4,7 +4,10 @@ Every empirical number of the paper *The Orchestrated Coding Team* is listed in
 `numbers.csv` together with the file it comes from. This folder holds those
 files. `python3 scripts/check_numbers.py` verifies every row (exit 0 = all
 numbers check out and at least 80 % of them are backed by data or a script,
-not just by a dated log excerpt).
+not just by a dated log excerpt). Figures a script recomputes from the files
+here are also written down literally in [`results/`](../results/README.md) —
+regenerate them with `make results`; the `recorded` numbers are deliberately
+not there (see that README).
 
 ## Layout
 
@@ -14,6 +17,7 @@ not just by a dated log excerpt).
 | `data/dedup-run/` | The 21 Sept 2026 duplicate run over all note pairs (pseudonymized, see below). |
 | `data/reviews/` | Counts and measurement records from the cross-vendor reviews, test gates and small measurements: finding counts per review, the rule-file comparison matrix (classification only), run records, documented tool constants, a claims ledger for values that were only logged as sentences, the literature-search source table. |
 | `data/team-channel/` | The 1 Oct 2026 rating of team-channel scenarios (scores, token count), the vendor list price used to recompute the rating cost, and the list of scenarios selected for implementation. |
+| `data/memory-snapshot/` | A dated snapshot of the shared memory folder (5 Oct 2026): one entry per note with a neutral id (`m001` …), the note type, size in bytes and last-change date — no names, no content. Made by `python3 scripts/measurements/count_memory_notes.py <memory folder> <out.json>`; the folder itself is private, so this file is the record of the count. It replaces the logged count of 27 Sept, which could not be recounted. |
 | `data/recorded/` | Dated excerpts from the contemporaneous project log for the few numbers whose raw data no longer exists (method `recorded` in `numbers.csv`). |
 
 ## How the data was cleaned

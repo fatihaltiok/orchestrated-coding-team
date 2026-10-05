@@ -1,0 +1,6 @@
+id,quantity,value_as_in_paper,value_raw,inputs,command
+N017,findings in the second U3 review (counted from the one-by-one listing),3,3,data/reviews/report-extracts.md,python3 scripts/make_results.py N017
+N018,findings in the U2 review (counted from the one-by-one listing),6,6,data/reviews/report-extracts.md,python3 scripts/make_results.py N018
+N019,U2 findings marked leak (counted from the one-by-one listing),3,3,data/reviews/report-extracts.md,python3 scripts/make_results.py N019
+N102,U2 leaks through which a key could have gone out (heading names a key),two,2,data/reviews/report-extracts.md,python3 scripts/make_results.py N102
+N103,U2 leaks of a file path (heading names a path),one,1,data/reviews/report-extracts.md,python3 scripts/make_results.py N103
